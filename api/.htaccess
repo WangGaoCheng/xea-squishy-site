@@ -1,0 +1,3 @@
+<FilesMatch "\.(jsonl|log|txt)$">
+  Require all denied
+</FilesMatch>
