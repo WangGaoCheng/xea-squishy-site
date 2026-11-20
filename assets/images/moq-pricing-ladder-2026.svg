@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" width="960" height="400" role="img" aria-labelledby="l-title l-desc">
+  <title id="l-title">XEA 3-Tier Wholesale &amp; OEM Scaling Ladder (1 Carton to Full Container)</title>
+  <desc id="l-desc">B2B scaling tiers: Tier 1 Stock Trial (1 carton, $0 mold fee), Tier 2 Private Label (500-1,000 pcs logo/packaging), Tier 3 Exclusive 3D OEM Molding (3,000+ pcs, 100% mold rebate at 30,000 pcs).</desc>
+  <defs><style>.f{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}</style></defs>
+  <rect width="960" height="400" rx="20" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+  <rect width="960" height="84" rx="20" fill="#0f172a"/>
+  <rect y="64" width="960" height="20" fill="#0f172a"/>
+  <text x="36" y="34" class="f" font-size="12" font-weight="800" fill="#60a5fa" letter-spacing="1.4">XEA JINHUA DIRECT · LOW-RISK SCALING PATH</text>
+  <text x="36" y="62" class="f" font-size="22" font-weight="800" fill="#ffffff">3-Tier Wholesale &amp; Custom OEM Program (Start With 1 Carton)</text>
+
+  <!-- Tier 1 -->
+  <g transform="translate(36, 114)">
+    <rect width="280" height="230" rx="16" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+    <text x="20" y="34" class="f" font-size="11" font-weight="800" fill="#2563eb">TIER 1 · STOCK MARKET TEST</text>
+    <text x="20" y="62" class="f" font-size="20" font-weight="800" fill="#0f172a">1 Master Carton</text>
+    <text x="20" y="84" class="f" font-size="12" font-weight="700" fill="#475569">24 – 144 pcs · $0 Mold Fee</text>
+    <line x1="20" y1="100" x2="260" y2="100" stroke="#e2e8f0"/>
+    <text x="20" y="124" class="f" font-size="12" fill="#334155">• Pick from 150 ready CPC SKUs</text>
+    <text x="20" y="146" class="f" font-size="12" fill="#334155">• Dispatches in 3–5 business days</text>
+    <text x="20" y="168" class="f" font-size="12" fill="#334155">• Optional FNSKU barcode prep</text>
+    <text x="20" y="190" class="f" font-size="12" fill="#334155">• Ideal for FBA &amp; TikTok validation</text>
+  </g>
+
+  <!-- Tier 2 -->
+  <g transform="translate(340, 114)">
+    <rect width="280" height="230" rx="16" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+    <text x="20" y="34" class="f" font-size="11" font-weight="800" fill="#2563eb">TIER 2 · PRIVATE LABEL &amp; LOGO</text>
+    <text x="20" y="62" class="f" font-size="20" font-weight="800" fill="#0f172a">500 – 1,000+ pcs</text>
+    <text x="20" y="84" class="f" font-size="12" font-weight="700" fill="#1d4ed8">Brand Ready · $0 Mold Fee</text>
+    <line x1="20" y1="100" x2="260" y2="100" stroke="#bfdbfe"/>
+    <text x="20" y="124" class="f" font-size="12" fill="#1e293b">• Custom Pantone body colors</text>
+    <text x="20" y="146" class="f" font-size="12" fill="#1e293b">• Elastic pad / UV logo printing</text>
+    <text x="20" y="168" class="f" font-size="12" fill="#1e293b">• Custom window boxes &amp; PDQ trays</text>
+    <text x="20" y="190" class="f" font-size="12" fill="#1e293b">• 7–14 day custom production</text>
+  </g>
+
+  <!-- Tier 3 -->
+  <g transform="translate(644, 114)">
+    <rect width="280" height="230" rx="16" fill="#ecfdf5" stroke="#10b981" stroke-width="1.5"/>
+    <text x="20" y="34" class="f" font-size="11" font-weight="800" fill="#047857">TIER 3 · EXCLUSIVE 3D OEM</text>
+    <text x="20" y="62" class="f" font-size="20" font-weight="800" fill="#0f172a">3,000+ pcs / 20GP</text>
+    <text x="20" y="84" class="f" font-size="12" font-weight="700" fill="#047857">100% Mold Rebate @ 30k pcs</text>
+    <line x1="20" y1="100" x2="260" y2="100" stroke="#a7f3d0"/>
+    <text x="20" y="124" class="f" font-size="12" fill="#1e293b">• Exclusive NDA 3D steel tooling</text>
+    <text x="20" y="146" class="f" font-size="12" fill="#1e293b">• 14–20 days to T1 golden samples</text>
+    <text x="20" y="168" class="f" font-size="12" fill="#1e293b">• Dedicated multi-cavity press line</text>
+    <text x="20" y="190" class="f" font-size="12" fill="#1e293b">• Chain-store EDI carton compliance</text>
+  </g>
+
+  <text x="36" y="376" class="f" font-size="11" fill="#64748b">FOB Ningbo / Yiwu &amp; Air/Sea DDP available across all 3 tiers. 24-hour export engineering support.</text>
+</svg>

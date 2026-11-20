@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" width="960" height="480" role="img" aria-labelledby="m-title m-desc">
+  <title id="m-title">2026 Squishy Material Comparison: TPR vs. Platinum Silicone vs. PU Foam</title>
+  <desc id="m-desc">Side-by-side B2B factory comparison of TPR, Platinum Taba Silicone, and Slow-Rising PU Foam across unit cost, durability, rebound speed, MOQ, and best sales channels.</desc>
+  <defs><style>.f{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}</style></defs>
+  <rect width="960" height="480" rx="20" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+  <rect width="960" height="86" rx="20" fill="#0f172a"/>
+  <rect y="66" width="960" height="20" fill="#0f172a"/>
+  <text x="36" y="34" class="f" font-size="12" font-weight="800" fill="#60a5fa" letter-spacing="1.4">XEA JINHUA ENGINEERING · MATERIAL SELECTION MATRIX</text>
+  <text x="36" y="64" class="f" font-size="22" font-weight="800" fill="#ffffff">TPR vs. Platinum Taba Silicone vs. Slow-Rising PU Foam (2026)</text>
+
+  <!-- 3 Material Columns -->
+  <!-- Col 1: TPR -->
+  <g transform="translate(36, 110)">
+    <rect width="280" height="320" rx="16" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+    <rect width="280" height="48" rx="16" fill="#2563eb"/>
+    <rect y="30" width="280" height="18" fill="#2563eb"/>
+    <text x="140" y="31" text-anchor="middle" class="f" font-size="15" font-weight="800" fill="#ffffff">Bead-Free TPR (Gel / Block / Dough)</text>
+    <g transform="translate(18, 76)" class="f" font-size="13" fill="#1e293b">
+      <text y="0" font-weight="800" fill="#1d4ed8">FOB Unit Tier:</text><text x="125" y="0" font-weight="700">$0.55 – $1.65</text>
+      <text y="34" font-weight="800" fill="#1d4ed8">Rebound Feel:</text><text x="125" y="34">Elastic / Crunchy</text>
+      <text y="68" font-weight="800" fill="#1d4ed8">Heat Limit:</text><text x="125" y="68">45°C (48h tested)</text>
+      <text y="102" font-weight="800" fill="#1d4ed8">Trial MOQ:</text><text x="125" y="102" font-weight="700">1 Carton (48-144)</text>
+      <text y="136" font-weight="800" fill="#1d4ed8">Compliance:</text><text x="125" y="136">ASTM F963 / CPC</text>
+      <rect y="162" width="244" height="62" rx="10" fill="#ffffff" stroke="#bfdbfe"/>
+      <text x="12" y="184" font-size="11" font-weight="800" fill="#2563eb">BEST FOR:</text>
+      <text x="12" y="202" font-size="12" fill="#334155">TikTok Shop ASMR, Amazon FBA,</text>
+      <text x="12" y="217" font-size="12" fill="#334155">Claw Machines &amp; Gift Retail</text>
+    </g>
+  </g>
+
+  <!-- Col 2: Platinum Silicone -->
+  <g transform="translate(340, 110)">
+    <rect width="280" height="320" rx="16" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1.5"/>
+    <rect width="280" height="48" rx="16" fill="#059669"/>
+    <rect y="30" width="280" height="18" fill="#059669"/>
+    <text x="140" y="31" text-anchor="middle" class="f" font-size="15" font-weight="800" fill="#ffffff">Platinum Taba Silicone</text>
+    <g transform="translate(18, 76)" class="f" font-size="13" fill="#1e293b">
+      <text y="0" font-weight="800" fill="#047857">FOB Unit Tier:</text><text x="125" y="0" font-weight="700">$1.10 – $2.40</text>
+      <text y="34" font-weight="800" fill="#047857">Rebound Feel:</text><text x="125" y="34">Creamy Ultra-Soft</text>
+      <text y="68" font-weight="800" fill="#047857">Heat Limit:</text><text x="125" y="68">Up to 180°C</text>
+      <text y="102" font-weight="800" fill="#047857">Trial MOQ:</text><text x="125" y="102" font-weight="700">1 Carton (100-144)</text>
+      <text y="136" font-weight="800" fill="#047857">Compliance:</text><text x="125" y="136">Food-Grade / CPC</text>
+      <rect y="162" width="244" height="62" rx="10" fill="#ffffff" stroke="#a7f3d0"/>
+      <text x="12" y="184" font-size="11" font-weight="800" fill="#059669">BEST FOR:</text>
+      <text x="12" y="202" font-size="12" fill="#334155">High-AOV Boutique Gifts, Cat Paw</text>
+      <text x="12" y="217" font-size="12" fill="#334155">Sets &amp; Premium Sensory Brands</text>
+    </g>
+  </g>
+
+  <!-- Col 3: PU Foam -->
+  <g transform="translate(644, 110)">
+    <rect width="280" height="320" rx="16" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+    <rect width="280" height="48" rx="16" fill="#334155"/>
+    <rect y="30" width="280" height="18" fill="#334155"/>
+    <text x="140" y="31" text-anchor="middle" class="f" font-size="15" font-weight="800" fill="#ffffff">Slow-Rising PU Foam</text>
+    <g transform="translate(18, 76)" class="f" font-size="13" fill="#1e293b">
+      <text y="0" font-weight="800" fill="#334155">FOB Unit Tier:</text><text x="125" y="0" font-weight="700">$0.45 – $1.20</text>
+      <text y="34" font-weight="800" fill="#334155">Rebound Feel:</text><text x="125" y="34">5–12s Slow Rise</text>
+      <text y="68" font-weight="800" fill="#334155">Heat Limit:</text><text x="125" y="68">Dry Storage Only</text>
+      <text y="102" font-weight="800" fill="#334155">Trial MOQ:</text><text x="125" y="102" font-weight="700">500 pcs (Logo OK)</text>
+      <text y="136" font-weight="800" fill="#334155">Compliance:</text><text x="125" y="136">EN71 / ASTM F963</text>
+      <rect y="162" width="244" height="62" rx="10" fill="#ffffff" stroke="#cbd5e1"/>
+      <text x="12" y="184" font-size="11" font-weight="800" fill="#334155">BEST FOR:</text>
+      <text x="12" y="202" font-size="12" fill="#334155">Corporate Logo Promo Balls,</text>
+      <text x="12" y="217" font-size="12" fill="#334155">Trade Shows &amp; Budget Swag</text>
+    </g>
+  </g>
+  <text x="36" y="458" class="f" font-size="11" fill="#64748b">Source: XEA Jinhua Factory 2026 Engineering Benchmarks. All three lines ship 100% water-bead-free.</text>
+</svg>

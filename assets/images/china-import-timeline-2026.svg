@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" width="960" height="420" role="img" aria-labelledby="t-title t-desc">
+  <title id="t-title">2026 China Squishy Import &amp; FBA DDP Timeline (Jinhua to USA/EU)</title>
+  <desc id="t-desc">5-step wholesale squishy toy import timeline from Day 1 RFQ quote to Day 3-5 Jinhua dispatch and 7-12 day Air DDP or 22-32 day Sea DDP delivery.</desc>
+  <defs><style>.f{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}</style></defs>
+  <rect width="960" height="420" rx="20" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+  <rect width="960" height="86" rx="20" fill="#0f172a"/>
+  <rect y="66" width="960" height="20" fill="#0f172a"/>
+  <text x="36" y="34" class="f" font-size="12" font-weight="800" fill="#34d399" letter-spacing="1.4">XEA JINHUA DIRECT EXPORT · SUPPLY CHAIN TIMELINE</text>
+  <text x="36" y="64" class="f" font-size="22" font-weight="800" fill="#ffffff">From 1-Carton RFQ to US / EU Amazon FBA Warehouse (2026)</text>
+
+  <!-- Connector Line -->
+  <line x1="115" y1="180" x2="845" y2="180" stroke="#cbd5e1" stroke-width="4" stroke-dasharray="8 6"/>
+
+  <!-- Step 1 -->
+  <g transform="translate(36, 128)">
+    <rect width="160" height="218" rx="14" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+    <circle cx="80" cy="52" r="24" fill="#2563eb"/>
+    <text x="80" y="58" text-anchor="middle" class="f" font-size="15" font-weight="800" fill="#ffffff">01</text>
+    <text x="80" y="98" text-anchor="middle" class="f" font-size="11" font-weight="800" fill="#2563eb">24 HOURS</text>
+    <text x="80" y="120" text-anchor="middle" class="f" font-size="14" font-weight="800" fill="#0f172a">FOB &amp; CPC Quote</text>
+    <text x="80" y="144" text-anchor="middle" class="f" font-size="11" fill="#475569">Select 1+ stock cartons</text>
+    <text x="80" y="160" text-anchor="middle" class="f" font-size="11" fill="#475569">Get FOB + CBM + free</text>
+    <text x="80" y="176" text-anchor="middle" class="f" font-size="11" fill="#475569">ASTM F963 / CPC PDFs</text>
+  </g>
+
+  <!-- Step 2 -->
+  <g transform="translate(218, 128)">
+    <rect width="160" height="218" rx="14" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+    <circle cx="80" cy="52" r="24" fill="#2563eb"/>
+    <text x="80" y="58" text-anchor="middle" class="f" font-size="15" font-weight="800" fill="#ffffff">02</text>
+    <text x="80" y="98" text-anchor="middle" class="f" font-size="11" font-weight="800" fill="#2563eb">DAY 2 – 4</text>
+    <text x="80" y="120" text-anchor="middle" class="f" font-size="14" font-weight="800" fill="#0f172a">FBA Prep &amp; Labels</text>
+    <text x="80" y="144" text-anchor="middle" class="f" font-size="11" fill="#475569">FNSKU barcode stickers</text>
+    <text x="80" y="160" text-anchor="middle" class="f" font-size="11" fill="#475569">Suffocation warnings</text>
+    <text x="80" y="176" text-anchor="middle" class="f" font-size="11" fill="#475569">&amp; carton weight &lt;22.7kg</text>
+  </g>
+
+  <!-- Step 3 -->
+  <g transform="translate(400, 128)">
+    <rect width="160" height="218" rx="14" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+    <circle cx="80" cy="52" r="24" fill="#059669"/>
+    <text x="80" y="58" text-anchor="middle" class="f" font-size="15" font-weight="800" fill="#ffffff">03</text>
+    <text x="80" y="98" text-anchor="middle" class="f" font-size="11" font-weight="800" fill="#059669">DAY 4 – 5</text>
+    <text x="80" y="120" text-anchor="middle" class="f" font-size="14" font-weight="800" fill="#0f172a">AQL 2.5 QC Check</text>
+    <text x="80" y="144" text-anchor="middle" class="f" font-size="11" fill="#475569">45°C anti-leak check</text>
+    <text x="80" y="160" text-anchor="middle" class="f" font-size="11" fill="#475569">Drop-test &amp; pre-ship</text>
+    <text x="80" y="176" text-anchor="middle" class="f" font-size="11" fill="#475569">video confirmation</text>
+  </g>
+
+  <!-- Step 4 -->
+  <g transform="translate(582, 128)">
+    <rect width="160" height="218" rx="14" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5"/>
+    <circle cx="80" cy="52" r="24" fill="#0f172a"/>
+    <text x="80" y="58" text-anchor="middle" class="f" font-size="15" font-weight="800" fill="#ffffff">04</text>
+    <text x="80" y="98" text-anchor="middle" class="f" font-size="11" font-weight="800" fill="#0f172a">7–12d AIR / 22–32d SEA</text>
+    <text x="80" y="120" text-anchor="middle" class="f" font-size="14" font-weight="800" fill="#0f172a">DDP Door-to-Door</text>
+    <text x="80" y="144" text-anchor="middle" class="f" font-size="11" fill="#475569">Export customs cleared</text>
+    <text x="80" y="160" text-anchor="middle" class="f" font-size="11" fill="#475569">Tariffs &amp; duties paid</text>
+    <text x="80" y="176" text-anchor="middle" class="f" font-size="11" fill="#475569">Ningbo / Yiwu hub</text>
+  </g>
+
+  <!-- Step 5 -->
+  <g transform="translate(764, 128)">
+    <rect width="160" height="218" rx="14" fill="#ecfdf5" stroke="#6ee7b7" stroke-width="1.5"/>
+    <circle cx="80" cy="52" r="24" fill="#10b981"/>
+    <text x="80" y="58" text-anchor="middle" class="f" font-size="15" font-weight="800" fill="#ffffff">05</text>
+    <text x="80" y="98" text-anchor="middle" class="f" font-size="11" font-weight="800" fill="#047857">LIVE ON SHELF</text>
+    <text x="80" y="120" text-anchor="middle" class="f" font-size="14" font-weight="800" fill="#0f172a">Scale &amp; OEM</text>
+    <text x="80" y="144" text-anchor="middle" class="f" font-size="11" fill="#475569">Fast 1-carton reorders</text>
+    <text x="80" y="160" text-anchor="middle" class="f" font-size="11" fill="#475569">Custom boxes (1,000+)</text>
+    <text x="80" y="176" text-anchor="middle" class="f" font-size="11" fill="#475569">or 3D OEM mold</text>
+  </g>
+
+  <text x="36" y="394" class="f" font-size="11" fill="#64748b">Timelines reflect ready-to-ship XEA stock SKUs (150 molds in Jinhua). Custom 3D OEM tooling adds 14–20 calendar days.</text>
+</svg>
