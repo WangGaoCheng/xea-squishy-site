@@ -1,3 +1,17 @@
 User-agent: *
 Allow: /
+
+# Explicitly allow AI Search & GEO retrieval crawlers (Aleyda Solis / 2026 GEO best practice)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
 Sitemap: https://epic-sienna-wren-23.hostingersite.com/sitemap.xml
