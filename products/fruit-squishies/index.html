@@ -744,16 +744,62 @@
       var submitBtn = form.querySelector('button[type="submit"], input[type="submit"]');
       var origText = submitBtn ? submitBtn.innerHTML : '';
       if(submitBtn){ submitBtn.disabled = true; submitBtn.innerHTML = 'Sending...'; }
-      var fd = new FormData(form);
+
+      // Auto-collect EVERY field even if legacy HTML inputs omit name="..."
+      var fd = new FormData();
+      var fdBackup = new FormData();
+      var buyerEmail = '';
+      var reqType = '';
+      var fieldIdx = 1;
+
+      form.querySelectorAll('input, select, textarea').forEach(function(el){
+        var t = (el.type || '').toLowerCase();
+        if(t === 'submit' || t === 'button' || t === 'reset') return;
+        if((t === 'checkbox' || t === 'radio') && !el.checked) return;
+        var val = (el.value || '').trim();
+        if(!val) return;
+
+        var key = (el.getAttribute('name') || '').trim();
+        if(!key){
+          var lbl = '';
+          if(el.parentElement){
+            var lblEl = el.parentElement.querySelector('label');
+            if(lblEl) lbl = (lblEl.textContent || '').replace(/\*/g, '').trim();
+          }
+          if(!lbl) lbl = (el.getAttribute('placeholder') || el.id || ('field_' + fieldIdx)).trim();
+          var low = lbl.toLowerCase();
+          if(t === 'email' || low.indexOf('email') !== -1){ key = 'email'; }
+          else if(low.indexOf('your name') !== -1 || low === 'name'){ key = 'name'; }
+          else if(el.tagName.toLowerCase() === 'textarea'){ key = 'message'; }
+          else {
+            key = lbl.replace(/[^a-zA-Z0-9]+/g, '_').replace(/^_|_$/g, '').toLowerCase().slice(0, 32) || ('field_' + fieldIdx);
+          }
+        }
+        fieldIdx++;
+        if(key === 'email' || t === 'email'){ buyerEmail = val; }
+        if(key === 'request_type'){ reqType = val; }
+        fd.append(key, val);
+        fdBackup.append(key, val);
+      });
+
+      // Capture active tab label on /contact-us/ if present
+      var activeTab = form.querySelector('button.bg-blue-600');
+      if(activeTab && activeTab.type !== 'submit' && !reqType){
+        var tabTxt = (activeTab.textContent || '').trim();
+        if(tabTxt){ fd.append('inquiry_mode', tabTxt); fdBackup.append('inquiry_mode', tabTxt); }
+      }
+
       fd.append('page_url', window.location.href);
-      var isCatalog = (fd.get('request_type') || '').toLowerCase().indexOf('catalog') !== -1;
+      fdBackup.append('page_url', window.location.href);
+      var isCatalog = reqType.toLowerCase().indexOf('catalog') !== -1;
 
       // 1. Silent server-side backup log on Hostinger
-      try { fetch('/api/send-rfq.php', { method: 'POST', body: new FormData(form) }).catch(function(){}); } catch(err){}
+      try { fetch('/api/send-rfq.php', { method: 'POST', body: fdBackup }).catch(function(){}); } catch(err){}
 
       // 2. Primary reliable email delivery via Web3Forms
       fd.append('access_key', WEB3FORMS_KEY);
       fd.append('from_name', 'XEA Squishy B2B Website');
+      if(buyerEmail){ fd.append('replyto', buyerEmail); }
       fd.append('subject', isCatalog ? '[XEA Catalog PDF] 2026 Wholesale Catalog Request' : '[XEA B2B RFQ] New Wholesale Inquiry');
 
       fetch('https://api.web3forms.com/submit', { method: 'POST', body: fd })
