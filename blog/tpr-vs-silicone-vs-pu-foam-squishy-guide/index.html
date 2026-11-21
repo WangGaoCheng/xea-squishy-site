@@ -35,7 +35,7 @@
       <a href="/" class="flex items-center gap-2.5 !no-underline group">
         <div class="w-9 h-9 rounded-xl bg-blue-600 text-white font-black text-base flex items-center justify-center shadow-sm group-hover:bg-slate-900 transition-colors">XEA</div>
         <div class="leading-tight">
-          <div class="text-sm font-extrabold text-slate-900 tracking-tight">XEA SQUISHY</div>
+          <div class="text-sm font-extrabold text-slate-900 tracking-tight">XEA<span class="text-blue-600">toy</span></div>
           <div class="text-[11px] font-medium text-slate-500">Wholesale &amp; OEM Factory</div>
         </div>
       </a>
@@ -197,7 +197,7 @@
         <a href="/factory-quality/" class="px-3.5 py-2 rounded-lg text-sm font-semibold text-slate-700 hover:text-blue-600 hover:bg-slate-50 transition-colors !no-underline">Factory &amp; QC</a>
         <a href="/faq/" class="px-3.5 py-2 rounded-lg text-sm font-semibold text-slate-700 hover:text-blue-600 hover:bg-slate-50 transition-colors !no-underline">FAQ</a>
         <a href="/blog/" class="px-3.5 py-2 rounded-lg text-sm font-semibold text-slate-700 hover:text-blue-600 hover:bg-slate-50 transition-colors !no-underline">Blog</a>
-        <a href="/about-us/" class="px-3.5 py-2 rounded-lg text-sm font-semibold text-slate-700 hover:text-blue-600 hover:bg-slate-50 transition-colors !no-underline">About XEA</a>
+        <a href="/about-us/" class="px-3.5 py-2 rounded-lg text-sm font-semibold text-slate-700 hover:text-blue-600 hover:bg-slate-50 transition-colors !no-underline">About XEAtoy</a>
       </nav>
 
       <!-- Right CTA + Mobile Menu Toggle -->
@@ -233,7 +233,7 @@
       <a href="/factory-quality/" class="px-3 py-2 rounded-lg bg-slate-100 text-slate-800 !no-underline">Factory &amp; QC</a>
       <a href="/faq/" class="px-3 py-2 rounded-lg bg-slate-100 text-slate-800 !no-underline">FAQ</a>
       <a href="/blog/" class="px-3 py-2 rounded-lg bg-slate-100 text-slate-800 !no-underline">Blog</a>
-      <a href="/about-us/" class="px-3 py-2 rounded-lg bg-slate-100 text-slate-800 !no-underline">About XEA</a>
+      <a href="/about-us/" class="px-3 py-2 rounded-lg bg-slate-100 text-slate-800 !no-underline">About XEAtoy</a>
     </div>
     <a href="/contact-us/" class="block text-center py-3 rounded-xl bg-blue-600 text-white text-sm font-bold !no-underline">Request Wholesale Quote</a>
   </div>
@@ -368,7 +368,7 @@
     <div class="lg:col-span-4">
       <a href="/" class="inline-flex items-center gap-2.5 !no-underline">
         <div class="w-9 h-9 rounded-xl bg-blue-600 text-white font-black text-base flex items-center justify-center">XEA</div>
-        <span class="text-lg font-extrabold text-white tracking-tight">XEA SQUISHY</span>
+        <span class="text-lg font-extrabold text-white tracking-tight">XEA<span class="text-blue-400">toy</span></span>
       </a>
       <p class="mt-4 text-xs text-slate-400 leading-relaxed">
         Direct squishy toy factory &amp; B2B export supplier in Jinhua, Zhejiang, China. Serving global toy importers, Amazon FBA sellers, TikTok Shop brands, and promotional agencies with 5 core squishy lines and 1-carton stock MOQs.
@@ -416,7 +416,7 @@
         <li><a href="/factory-quality/" class="hover:text-white !no-underline">Factory &amp; QA Lab</a></li>
         <li><a href="/faq/" class="hover:text-white !no-underline">Procurement &amp; CPSC FAQ</a></li>
         <li><a href="/blog/" class="hover:text-white !no-underline">Sourcing Blog &amp; Guides</a></li>
-        <li><a href="/about-us/" class="hover:text-white !no-underline">About XEA</a></li>
+        <li><a href="/about-us/" class="hover:text-white !no-underline">About XEAtoy</a></li>
         <li><a href="/contact-us/" class="hover:text-white !no-underline font-bold text-blue-400">Contact &amp; RFQ</a></li>
         <li><a href="/privacy-policy/" class="hover:text-white !no-underline">Privacy Policy</a></li>
         <li><a href="/terms-of-service/" class="hover:text-white !no-underline">Terms of Service</a></li>
@@ -424,7 +424,7 @@
     </div>
   </div>
   <div class="border-t border-slate-800 py-5 px-4 text-center text-xs text-slate-500">
-    &copy; 2026 XEA B2B Export Division (Jinhua, Zhejiang, China). All rights reserved.
+    &copy; 2026 XEAtoy B2B Export Division (Jinhua, Zhejiang, China). All rights reserved.
   </div>
 </footer>
 <script>
@@ -496,9 +496,9 @@
 
       // 2. Primary reliable email delivery via Web3Forms
       fd.append('access_key', WEB3FORMS_KEY);
-      fd.append('from_name', 'XEA Squishy B2B Website');
+      fd.append('from_name', 'XEAtoy B2B Website');
       if(buyerEmail){ fd.append('replyto', buyerEmail); }
-      fd.append('subject', isCatalog ? '[XEA Catalog PDF] 2026 Wholesale Catalog Request' : '[XEA B2B RFQ] New Wholesale Inquiry');
+      fd.append('subject', isCatalog ? '[XEAtoy Catalog PDF] 2026 Wholesale Catalog Request' : '[XEAtoy B2B RFQ] New Wholesale Inquiry');
 
       fetch('https://api.web3forms.com/submit', { method: 'POST', body: fd })
         .then(function(r){ return r.json(); })
@@ -513,9 +513,9 @@
           if(res && (res.success || res.ok)){
             box.className = 'mt-4 p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-sm font-semibold';
             if(isCatalog){
-              box.innerHTML = '<i class="fa-solid fa-circle-check mr-2"></i>Thank you! Your request has been sent to our export team. <a href="/downloads/XEA-2026-Wholesale-Squishy-Catalog-150-SKUs.pdf" target="_blank" class="inline-block mt-2 sm:mt-0 sm:ml-2 px-3.5 py-1.5 rounded-lg bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold !no-underline"><i class="fa-solid fa-file-pdf mr-1"></i>Download 2026 Catalog PDF Now &rarr;</a>';
+              box.innerHTML = '<i class="fa-solid fa-circle-check mr-2"></i>Thank you! Your request has been sent to our export team. <a href="/downloads/XEAtoy-2026-Wholesale-Catalog-150-SKUs.pdf" target="_blank" class="inline-block mt-2 sm:mt-0 sm:ml-2 px-3.5 py-1.5 rounded-lg bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold !no-underline"><i class="fa-solid fa-file-pdf mr-1"></i>Download 2026 Catalog PDF Now &rarr;</a>';
             } else {
-              box.innerHTML = '<i class="fa-solid fa-circle-check mr-2"></i>Thank you! Your inquiry has been received by XEA Jinhua Export Team. We will reply within 24 hours.';
+              box.innerHTML = '<i class="fa-solid fa-circle-check mr-2"></i>Thank you! Your inquiry has been received by XEAtoy Jinhua Export Team. We will reply within 24 hours.';
             }
             form.reset();
           } else {

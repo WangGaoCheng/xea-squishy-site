@@ -44,7 +44,7 @@ foreach ($fields as $k => $v) {
 }
 $body .= "=================================\nTime (UTC): " . gmdate('Y-m-d H:i:s') . "\n";
 
-$host = preg_replace('/[^a-zA-Z0-9.-]/', '', $_SERVER['HTTP_HOST'] ?? 'xeasquishy.com');
+$host = preg_replace('/[^a-zA-Z0-9.-]/', '', $_SERVER['HTTP_HOST'] ?? 'xeatoy.com');
 $headers = "From: XEA Website <noreply@" . $host . ">\r\n";
 if ($reply_email !== '') {
     $headers .= "Reply-To: " . $reply_email . "\r\n";
