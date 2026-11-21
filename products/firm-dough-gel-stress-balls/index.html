@@ -519,8 +519,13 @@
             form.appendChild(box);
           }
           if(res && res.ok){
+            var isCatalog = (fd.get('request_type') || '').toLowerCase().indexOf('catalog') !== -1;
             box.className = 'mt-4 p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-sm font-semibold';
-            box.innerHTML = '<i class="fa-solid fa-circle-check mr-2"></i>Thank you! Your inquiry has been received by XEA Jinhua Export Team. We will reply within 24 hours.';
+            if(isCatalog){
+              box.innerHTML = '<i class="fa-solid fa-circle-check mr-2"></i>Thank you! Your request has been sent to our export team. <a href="/downloads/XEA-2026-Wholesale-Squishy-Catalog-150-SKUs.pdf" target="_blank" class="inline-block mt-2 sm:mt-0 sm:ml-2 px-3.5 py-1.5 rounded-lg bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold !no-underline"><i class="fa-solid fa-file-pdf mr-1"></i>Download 2026 Catalog PDF Now &rarr;</a>';
+            } else {
+              box.innerHTML = '<i class="fa-solid fa-circle-check mr-2"></i>Thank you! Your inquiry has been received by XEA Jinhua Export Team. We will reply within 24 hours.';
+            }
             form.reset();
           } else {
             box.className = 'mt-4 p-4 rounded-xl bg-amber-50 border border-amber-200 text-amber-800 text-sm font-semibold';
