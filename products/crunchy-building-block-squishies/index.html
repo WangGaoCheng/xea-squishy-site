@@ -14,9 +14,57 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
+  <style id="xea-design-system">
+    :root {
+      --xea-bg: #f8fafc;
+      --xea-surface: #ffffff;
+      --xea-surface-dark: #0f172a;
+      --xea-text: #0f172a;
+      --xea-body: #334155;
+      --xea-muted: #64748b;
+      --xea-primary: #2563eb;
+      --xea-primary-hover: #1d4ed8;
+      --xea-accent: #d97706;
+      --xea-success: #059669;
+      --xea-border: #e2e8f0;
+      --xea-radius-card: 1rem;
+      --xea-font-sans: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --xea-font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+    html { scroll-behavior: smooth; }
+    header.xea-site-header { border-bottom: 1px solid var(--xea-border); }
+    @layer base {
+      body {
+        font-family: var(--xea-font-sans);
+        font-size: 16px;
+        line-height: 1.6;
+        color: var(--xea-body);
+        background-color: var(--xea-surface);
+      }
+      h1 { font-size: 40px; line-height: 1.15; font-weight: 800; letter-spacing: -0.025em; }
+      h2 { font-size: 28px; line-height: 1.25; font-weight: 800; letter-spacing: -0.02em; }
+      h3 { font-size: 20px; line-height: 1.35; font-weight: 700; }
+      h4 { font-size: 16px; line-height: 1.4; font-weight: 700; }
+    }
+    table, .font-mono, .tabular-nums { font-variant-numeric: tabular-nums; }
+    ::selection { background-color: #dbeafe; color: #1e3a8a; }
+    :focus-visible { outline: 2px solid var(--xea-primary); outline-offset: 2px; }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
 </head>
 <body class="bg-white text-slate-600 antialiased">
-<header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
+<a href="#xea-p1-05" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:bg-blue-600 focus:text-white focus:px-4 focus:py-2 focus:rounded-lg focus:text-sm focus:font-bold focus:shadow-lg">Skip to main content</a>
+<header class="xea-site-header sticky top-0 z-50 bg-white/95 backdrop-blur">
   <!-- Top B2B Announcement Bar -->
   <div class="bg-slate-900 text-slate-200 text-xs py-2 px-4">
     <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
@@ -40,7 +88,7 @@
         <div class="w-9 h-9 rounded-xl bg-blue-600 text-white font-black text-base flex items-center justify-center shadow-sm group-hover:bg-slate-900 transition-colors">XEA</div>
         <div class="leading-tight">
           <div class="text-sm font-extrabold text-slate-900 tracking-tight">XEA<span class="text-blue-600">toy</span></div>
-          <div class="text-[11px] font-medium text-slate-500">Wholesale &amp; OEM Factory</div>
+          <div class="text-xs font-medium text-slate-500">Wholesale &amp; OEM Factory</div>
         </div>
       </a>
 
@@ -49,14 +97,14 @@
         <!-- MEGA MENU: PRODUCTS -->
         <div class="relative group" data-mega-item>
           <a href="/products/" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-sm font-semibold text-slate-700 hover:text-blue-600 hover:bg-slate-50 transition-colors !no-underline">
-            Products <i class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-hover:text-blue-600 transition-transform group-hover:rotate-180"></i>
+            Products <i class="fa-solid fa-chevron-down text-xs text-slate-500 group-hover:text-blue-600 transition-transform group-hover:rotate-180"></i>
           </a>
           <!-- 3-Column Mega Panel -->
-          <div class="invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-150 absolute left-1/2 -translate-x-1/2 top-full pt-3 w-[820px] z-50">
+          <div class="invisible opacity-0 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 transition-all duration-150 absolute left-1/2 -translate-x-1/2 top-full pt-3 w-[820px] z-50">
             <div class="rounded-2xl bg-white border border-slate-200 shadow-2xl p-6 grid grid-cols-12 gap-6">
               <!-- Col 1: By Material -->
-              <div class="col-span-4 border-r border-slate-100 pr-4">
-                <div class="text-[11px] font-extrabold uppercase tracking-wider text-blue-600 mb-3"><i class="fa-solid fa-flask mr-1.5"></i>By Material (5 Core Lines)</div>
+              <div class="col-span-4">
+                <div class="text-xs font-extrabold uppercase tracking-wider text-blue-600 mb-3"><i class="fa-solid fa-flask mr-1.5"></i>By Material (5 Core Lines)</div>
                 <ul class="space-y-2">
                   <li>
                     <a href="/products/crunchy-building-block-squishies/" class="block p-2 rounded-xl hover:bg-slate-50 !no-underline">
@@ -92,8 +140,8 @@
               </div>
 
               <!-- Col 2: By Shape / Theme -->
-              <div class="col-span-4 border-r border-slate-100 pr-4">
-                <div class="text-[11px] font-extrabold uppercase tracking-wider text-emerald-600 mb-3"><i class="fa-solid fa-shapes mr-1.5"></i>By Shape &amp; Theme</div>
+              <div class="col-span-4">
+                <div class="text-xs font-extrabold uppercase tracking-wider text-emerald-600 mb-3"><i class="fa-solid fa-shapes mr-1.5"></i>By Shape &amp; Theme</div>
                 <ul class="space-y-2">
                   <li>
                     <a href="/products/food-bakery-squishies/" class="block p-2 rounded-xl hover:bg-slate-50 !no-underline">
@@ -115,24 +163,25 @@
                   </li>
                   <li>
                     <a href="/products/fidget-keyboards/" class="block p-2 rounded-xl hover:bg-blue-50/70 !no-underline">
-                      <div class="text-sm font-bold text-blue-700">Fidget Keyboards (26-Key LED) <span class="ml-1 px-1.5 py-0.5 rounded bg-blue-100 text-[10px]">NEW</span></div>
+                      <div class="text-sm font-bold text-blue-700">Fidget Keyboards (26-Key LED) <span class="ml-1 px-1.5 py-0.5 rounded bg-blue-100 text-xs">NEW</span></div>
                       <div class="text-xs text-slate-500">26-LED, 10-LED &amp; Non-LED Clickers</div>
                     </a>
                   </li>
                   <li>
                     <a href="/products/crystal-gel-slushie-stress-balls/" class="block p-2 rounded-xl hover:bg-emerald-50/70 !no-underline">
-                      <div class="text-sm font-bold text-emerald-700">Crystal Gel &amp; Slushie Balls <span class="ml-1 px-1.5 py-0.5 rounded bg-emerald-100 text-[10px]">NEW</span></div>
+                      <div class="text-sm font-bold text-emerald-700">Crystal Gel &amp; Slushie Balls <span class="ml-1 px-1.5 py-0.5 rounded bg-emerald-100 text-xs">NEW</span></div>
                       <div class="text-xs text-slate-500">39 Bead-Free Glitter, Rose &amp; Pearl SKUs</div>
                     </a>
                   </li>
                   <li>
                     <a href="/products/jumbo-dough-squishies/" class="block p-2 rounded-xl hover:bg-amber-50/70 !no-underline">
-                      <div class="text-sm font-bold text-slate-900">Jumbo Dough, Highland Cow &amp; Axolotl <span class="ml-1 px-1.5 py-0.5 rounded bg-amber-100 text-amber-800 text-[10px]">HOT</span></div>
+                      <div class="text-sm font-bold text-slate-900">Jumbo Dough, Highland Cow &amp; Axolotl <span class="ml-1 px-1.5 py-0.5 rounded bg-amber-100 text-amber-800 text-xs">HOT</span></div>
                       <div class="text-xs text-slate-500">350g-400g Giants, Holiday &amp; Blind Boxes</div>
                     </a>
                   </li>
                 </ul>
-                <div class="mt-4 pt-3 border-t border-slate-100">
+                <hr class="my-3 border-slate-100" />
+                <div>
                   <a href="/products/" class="inline-flex items-center text-xs font-bold text-blue-600 hover:text-blue-700 !no-underline">
                     Browse All 150 Stock SKUs &amp; Hub <i class="fa-solid fa-arrow-right ml-1.5"></i>
                   </a>
@@ -140,10 +189,10 @@
               </div>
 
               <!-- Col 3: Featured Factory Spotlight -->
-              <div class="col-span-4 flex flex-col justify-between bg-slate-50 rounded-xl p-4 border border-slate-200">
+              <div class="col-span-4 flex flex-col justify-between pl-2">
                 <div>
-                  <span class="inline-block px-2 py-0.5 rounded bg-emerald-100 text-emerald-700 text-[10px] font-extrabold uppercase">Factory Best-Seller</span>
-                  <img src="/assets/images/color-changing-durian-squishy.webp" alt="Color-changing durian squishy wholesale" class="mt-2.5 w-full aspect-[4/3] object-cover rounded-lg border border-slate-200" />
+                  <span class="inline-block px-2 py-0.5 rounded bg-emerald-100 text-emerald-700 text-xs font-extrabold uppercase">Factory Best-Seller</span>
+                  <img src="/assets/images/color-changing-durian-squishy.webp" alt="Color-changing durian squishy wholesale" class="mt-2.5 w-full aspect-[4/3] object-cover rounded-lg border border-slate-200" / width="899" height="1200" loading="lazy" decoding="async" />
                   <div class="mt-2.5 text-sm font-bold text-slate-900">Color-Changing Durian &amp; 25 Block Shapes</div>
                   <p class="mt-1 text-xs text-slate-600">Mix any 1 carton (144 pcs) per SKU. Ships in 3&ndash;5 days for samples.</p>
                 </div>
@@ -156,9 +205,9 @@
         <!-- DROPDOWN: OEM / ODM -->
         <div class="relative group">
           <a href="/oem-odm/" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-sm font-semibold text-slate-700 hover:text-blue-600 hover:bg-slate-50 transition-colors !no-underline">
-            OEM / ODM <i class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-hover:text-blue-600 transition-transform group-hover:rotate-180"></i>
+            OEM / ODM <i class="fa-solid fa-chevron-down text-xs text-slate-500 group-hover:text-blue-600 transition-transform group-hover:rotate-180"></i>
           </a>
-          <div class="invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-150 absolute left-0 top-full pt-3 w-72 z-50">
+          <div class="invisible opacity-0 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 transition-all duration-150 absolute left-0 top-full pt-3 w-72 z-50">
             <div class="rounded-2xl bg-white border border-slate-200 shadow-xl p-3 space-y-1">
               <a href="/oem-odm/" class="block p-3 rounded-xl hover:bg-slate-50 !no-underline">
                 <div class="text-sm font-bold text-slate-900"><i class="fa-solid fa-cubes text-blue-600 mr-2"></i>Custom 3D Molding &amp; OEM</div>
@@ -168,8 +217,9 @@
                 <div class="text-sm font-bold text-slate-900"><i class="fa-solid fa-box-open text-emerald-600 mr-2"></i>Custom Packaging &amp; Logo</div>
                 <div class="text-xs text-slate-500 mt-0.5">PDQ trays, window boxes &amp; FNSKU (500 pcs)</div>
               </a>
-              <a href="/custom-logo-stress-balls/" class="block p-3 rounded-xl hover:bg-blue-50/70 !no-underline border-t border-slate-100">
-                <div class="text-sm font-bold text-blue-700"><i class="fa-solid fa-stamp text-blue-600 mr-2"></i>Custom Logo Stress Balls <span class="ml-1 px-1.5 py-0.5 rounded bg-blue-100 text-[10px]">PROMO</span></div>
+              <hr class="my-1 border-slate-100" />
+              <a href="/custom-logo-stress-balls/" class="block p-3 rounded-xl hover:bg-blue-50/70 !no-underline">
+                <div class="text-sm font-bold text-blue-700"><i class="fa-solid fa-stamp text-blue-600 mr-2"></i>Custom Logo Stress Balls <span class="ml-1 px-1.5 py-0.5 rounded bg-blue-100 text-xs">PROMO</span></div>
                 <div class="text-xs text-slate-500 mt-0.5">Trade show &amp; corporate logo print (500 pcs)</div>
               </a>
             </div>
@@ -179,9 +229,9 @@
         <!-- DROPDOWN: SOLUTIONS (By Buyer Channel) -->
         <div class="relative group">
           <a href="/solutions/" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-sm font-semibold text-slate-700 hover:text-blue-600 hover:bg-slate-50 transition-colors !no-underline">
-            Solutions <i class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-hover:text-blue-600 transition-transform group-hover:rotate-180"></i>
+            Solutions <i class="fa-solid fa-chevron-down text-xs text-slate-500 group-hover:text-blue-600 transition-transform group-hover:rotate-180"></i>
           </a>
-          <div class="invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-150 absolute left-0 top-full pt-3 w-80 z-50">
+          <div class="invisible opacity-0 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 transition-all duration-150 absolute left-0 top-full pt-3 w-80 z-50">
             <div class="rounded-2xl bg-white border border-slate-200 shadow-xl p-3 space-y-1">
               <a href="/ecommerce-fba/" class="block p-3 rounded-xl hover:bg-slate-50 !no-underline">
                 <div class="text-sm font-bold text-slate-900"><i class="fa-solid fa-truck-fast text-blue-600 mr-2"></i>Amazon FBA &amp; TikTok Shop</div>
@@ -191,7 +241,8 @@
                 <div class="text-sm font-bold text-slate-900"><i class="fa-solid fa-trophy text-emerald-600 mr-2"></i>Claw Machine, Party &amp; Promo</div>
                 <div class="text-xs text-slate-500 mt-0.5">High-volume prizes &amp; logo stress balls</div>
               </a>
-              <a href="/solutions/" class="block p-3 rounded-xl hover:bg-slate-50 !no-underline border-t border-slate-100">
+              <hr class="my-1 border-slate-100" />
+              <a href="/solutions/" class="block p-3 rounded-xl hover:bg-slate-50 !no-underline">
                 <div class="text-xs font-bold text-blue-600">View All Buyer Playbooks &rarr;</div>
               </a>
             </div>
@@ -209,7 +260,7 @@
         <a href="/contact-us/" class="hidden sm:inline-flex items-center px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold shadow-sm transition-colors !no-underline">
           Get Wholesale Quote
         </a>
-        <button id="xea-mobile-btn" type="button" class="lg:hidden inline-flex items-center justify-center w-10 h-10 rounded-xl border border-slate-200 text-slate-700 hover:bg-slate-50" aria-label="Open menu">
+        <button id="xea-mobile-btn" type="button" aria-expanded="false" aria-controls="xea-mobile-menu" class="lg:hidden inline-flex items-center justify-center w-10 h-10 rounded-xl border border-slate-200 text-slate-700 hover:bg-slate-50" aria-label="Open menu">
           <i class="fa-solid fa-bars"></i>
         </button>
       </div>
@@ -229,7 +280,8 @@
       <a href="/products/mochi-mini-squishies/" class="p-2 rounded-lg bg-slate-50 text-slate-800 !no-underline">Mochi Mini Bulk</a>
       <a href="/products/novelty-squishies/" class="p-2 rounded-lg bg-slate-50 text-slate-800 !no-underline">Novelty &amp; ASMR</a>
     </div>
-    <div class="border-t border-slate-100 pt-3 flex flex-wrap gap-2 text-xs font-bold">
+    <hr class="border-slate-100 my-1" />
+    <div class="flex flex-wrap gap-2 text-xs font-bold">
       <a href="/oem-odm/" class="px-3 py-2 rounded-lg bg-slate-100 text-slate-800 !no-underline">OEM / ODM</a>
       <a href="/custom-packaging/" class="px-3 py-2 rounded-lg bg-slate-100 text-slate-800 !no-underline">Custom Packaging</a>
       <a href="/ecommerce-fba/" class="px-3 py-2 rounded-lg bg-slate-100 text-slate-800 !no-underline">Amazon FBA</a>
@@ -250,9 +302,9 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <nav aria-label="Breadcrumb" class="flex items-center gap-2 text-xs font-medium text-slate-500 mb-6">
         <a href="/" class="hover:text-blue-600 !no-underline">Home</a>
-        <i class="fa-solid fa-chevron-right text-[10px]"></i>
+        <i class="fa-solid fa-chevron-right text-xs"></i>
         <a href="/products/" class="hover:text-blue-600 !no-underline">Products</a>
-        <i class="fa-solid fa-chevron-right text-[10px]"></i>
+        <i class="fa-solid fa-chevron-right text-xs"></i>
         <span class="text-slate-900 font-semibold">Crunchy &amp; Building Block TPR Squishies</span>
       </nav>
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
@@ -278,7 +330,7 @@
         <div class="lg:col-span-5">
           <div class="rounded-2xl bg-white border border-slate-200 p-3 shadow-xl">
             <div class="aspect-[4/3] rounded-xl overflow-hidden bg-slate-100">
-              <img src="/assets/images/cheese-block-squishy-emoji.webp" alt="Wholesale crunchy building block TPR squishy collection" class="w-full h-full object-cover" />
+              <img src="/assets/images/cheese-block-squishy-emoji.webp" alt="Wholesale crunchy building block TPR squishy collection" class="w-full h-full object-cover" / width="899" height="1200" fetchpriority="high" decoding="async" />
             </div>
             <div class="mt-3 flex items-center justify-between px-2 text-xs font-semibold text-slate-600">
               <span><i class="fa-solid fa-circle-check text-emerald-600 mr-1"></i>EN71 &middot; ASTM F963-23 &middot; CPC</span>
@@ -311,8 +363,8 @@
         
         <a href="/products/cheese-block-squishy/" class="group rounded-xl bg-white border border-slate-200 hover:border-blue-600 hover:shadow-md transition-all overflow-hidden flex flex-col !no-underline">
           <div class="relative aspect-[4/3] bg-slate-50 border-b border-slate-100 overflow-hidden">
-            <img src="/assets/images/cheese-block-squishy-emoji.webp" alt="Wholesale cheese squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-[11px] font-semibold">Plain & Emoji</span>
+            <img src="/assets/images/cheese-block-squishy-emoji.webp" alt="Wholesale cheese squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" / width="899" height="1200" loading="lazy" decoding="async" />
+            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-xs font-semibold">Plain & Emoji</span>
           </div>
           <div class="p-4 flex-1 flex flex-col justify-between">
             <div>
@@ -321,15 +373,15 @@
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-700 tabular-nums">
               <span>144 pcs &middot; 18 / 28 kg</span>
-              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-[10px]"></i></span>
+              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-xs"></i></span>
             </div>
           </div>
         </a>
 
         <a href="/products/peanut-block-squishy/" class="group rounded-xl bg-white border border-slate-200 hover:border-blue-600 hover:shadow-md transition-all overflow-hidden flex flex-col !no-underline">
           <div class="relative aspect-[4/3] bg-slate-50 border-b border-slate-100 overflow-hidden">
-            <img src="/assets/images/peanut-block-squishy-emoji.webp" alt="Wholesale peanut squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-[11px] font-semibold">Plain & Emoji</span>
+            <img src="/assets/images/peanut-block-squishy-emoji.webp" alt="Wholesale peanut squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" / width="900" height="1200" loading="lazy" decoding="async" />
+            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-xs font-semibold">Plain & Emoji</span>
           </div>
           <div class="p-4 flex-1 flex flex-col justify-between">
             <div>
@@ -338,15 +390,15 @@
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-700 tabular-nums">
               <span>144 pcs &middot; 18 kg</span>
-              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-[10px]"></i></span>
+              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-xs"></i></span>
             </div>
           </div>
         </a>
 
         <a href="/products/carrot-block-squishy/" class="group rounded-xl bg-white border border-slate-200 hover:border-blue-600 hover:shadow-md transition-all overflow-hidden flex flex-col !no-underline">
           <div class="relative aspect-[4/3] bg-slate-50 border-b border-slate-100 overflow-hidden">
-            <img src="/assets/images/carrot-block-squishy-emoji.webp" alt="Wholesale carrot squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-[11px] font-semibold">Plain & Emoji</span>
+            <img src="/assets/images/carrot-block-squishy-emoji.webp" alt="Wholesale carrot squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" / width="899" height="1200" loading="lazy" decoding="async" />
+            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-xs font-semibold">Plain & Emoji</span>
           </div>
           <div class="p-4 flex-1 flex flex-col justify-between">
             <div>
@@ -355,15 +407,15 @@
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-700 tabular-nums">
               <span>144 pcs &middot; 18 kg</span>
-              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-[10px]"></i></span>
+              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-xs"></i></span>
             </div>
           </div>
         </a>
 
         <a href="/products/pineapple-bun-block-squishy/" class="group rounded-xl bg-white border border-slate-200 hover:border-blue-600 hover:shadow-md transition-all overflow-hidden flex flex-col !no-underline">
           <div class="relative aspect-[4/3] bg-slate-50 border-b border-slate-100 overflow-hidden">
-            <img src="/assets/images/pineapple-bun-block-squishy.webp" alt="Wholesale bread squishy & pineapple bun squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-[11px] font-semibold">Plain & Emoji</span>
+            <img src="/assets/images/pineapple-bun-block-squishy.webp" alt="Wholesale bread squishy & pineapple bun squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" / width="675" height="1200" loading="lazy" decoding="async" />
+            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-xs font-semibold">Plain & Emoji</span>
           </div>
           <div class="p-4 flex-1 flex flex-col justify-between">
             <div>
@@ -372,15 +424,15 @@
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-700 tabular-nums">
               <span>144 pcs &middot; 28 kg</span>
-              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-[10px]"></i></span>
+              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-xs"></i></span>
             </div>
           </div>
         </a>
 
         <a href="/products/potato-block-squishy/" class="group rounded-xl bg-white border border-slate-200 hover:border-blue-600 hover:shadow-md transition-all overflow-hidden flex flex-col !no-underline">
           <div class="relative aspect-[4/3] bg-slate-50 border-b border-slate-100 overflow-hidden">
-            <img src="/assets/images/potato-block-squishy.webp" alt="Wholesale potato squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-[11px] font-semibold">Plain & Emoji</span>
+            <img src="/assets/images/potato-block-squishy.webp" alt="Wholesale potato squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" / width="1200" height="900" loading="lazy" decoding="async" />
+            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-xs font-semibold">Plain & Emoji</span>
           </div>
           <div class="p-4 flex-1 flex flex-col justify-between">
             <div>
@@ -389,15 +441,15 @@
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-700 tabular-nums">
               <span>144 pcs &middot; 28 kg</span>
-              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-[10px]"></i></span>
+              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-xs"></i></span>
             </div>
           </div>
         </a>
 
         <a href="/products/corn-block-squishy/" class="group rounded-xl bg-white border border-slate-200 hover:border-blue-600 hover:shadow-md transition-all overflow-hidden flex flex-col !no-underline">
           <div class="relative aspect-[4/3] bg-slate-50 border-b border-slate-100 overflow-hidden">
-            <img src="/assets/images/corn-block-squishy.webp" alt="Wholesale corn squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-[11px] font-semibold">Plain & Emoji</span>
+            <img src="/assets/images/corn-block-squishy.webp" alt="Wholesale corn squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" / width="900" height="1200" loading="lazy" decoding="async" />
+            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-xs font-semibold">Plain & Emoji</span>
           </div>
           <div class="p-4 flex-1 flex flex-col justify-between">
             <div>
@@ -406,15 +458,15 @@
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-700 tabular-nums">
               <span>144 pcs &middot; 25 kg</span>
-              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-[10px]"></i></span>
+              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-xs"></i></span>
             </div>
           </div>
         </a>
 
         <a href="/products/pudding-block-squishy/" class="group rounded-xl bg-white border border-slate-200 hover:border-blue-600 hover:shadow-md transition-all overflow-hidden flex flex-col !no-underline">
           <div class="relative aspect-[4/3] bg-slate-50 border-b border-slate-100 overflow-hidden">
-            <img src="/assets/images/pudding-block-squishy.webp" alt="Wholesale pudding squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-[11px] font-semibold">Plain & Emoji</span>
+            <img src="/assets/images/pudding-block-squishy.webp" alt="Wholesale pudding squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" / width="1200" height="1200" loading="lazy" decoding="async" />
+            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-xs font-semibold">Plain & Emoji</span>
           </div>
           <div class="p-4 flex-1 flex flex-col justify-between">
             <div>
@@ -423,15 +475,15 @@
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-700 tabular-nums">
               <span>144 pcs &middot; 28 kg</span>
-              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-[10px]"></i></span>
+              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-xs"></i></span>
             </div>
           </div>
         </a>
 
         <a href="/products/instant-noodle-block-squishy/" class="group rounded-xl bg-white border border-slate-200 hover:border-blue-600 hover:shadow-md transition-all overflow-hidden flex flex-col !no-underline">
           <div class="relative aspect-[4/3] bg-slate-50 border-b border-slate-100 overflow-hidden">
-            <img src="/assets/images/instant-noodle-block-squishy.webp" alt="Wholesale ramen squishy & instant noodle squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-[11px] font-semibold">Plain & Emoji</span>
+            <img src="/assets/images/instant-noodle-block-squishy.webp" alt="Wholesale ramen squishy & instant noodle squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" / width="900" height="1200" loading="lazy" decoding="async" />
+            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-xs font-semibold">Plain & Emoji</span>
           </div>
           <div class="p-4 flex-1 flex flex-col justify-between">
             <div>
@@ -440,15 +492,15 @@
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-700 tabular-nums">
               <span>144 pcs &middot; 18 kg</span>
-              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-[10px]"></i></span>
+              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-xs"></i></span>
             </div>
           </div>
         </a>
 
         <a href="/products/popcorn-block-squishy/" class="group rounded-xl bg-white border border-slate-200 hover:border-blue-600 hover:shadow-md transition-all overflow-hidden flex flex-col !no-underline">
           <div class="relative aspect-[4/3] bg-slate-50 border-b border-slate-100 overflow-hidden">
-            <img src="/assets/images/popcorn-block-squishy.webp" alt="Wholesale popcorn squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-[11px] font-semibold">Stock Edition</span>
+            <img src="/assets/images/popcorn-block-squishy.webp" alt="Wholesale popcorn squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" / width="1024" height="1024" loading="lazy" decoding="async" />
+            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-xs font-semibold">Stock Edition</span>
           </div>
           <div class="p-4 flex-1 flex flex-col justify-between">
             <div>
@@ -457,15 +509,15 @@
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-700 tabular-nums">
               <span>144 pcs &middot; 24.2 kg</span>
-              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-[10px]"></i></span>
+              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-xs"></i></span>
             </div>
           </div>
         </a>
 
         <a href="/products/cake-roll-block-squishy/" class="group rounded-xl bg-white border border-slate-200 hover:border-blue-600 hover:shadow-md transition-all overflow-hidden flex flex-col !no-underline">
           <div class="relative aspect-[4/3] bg-slate-50 border-b border-slate-100 overflow-hidden">
-            <img src="/assets/images/cake-roll-block-squishy.webp" alt="Wholesale cake roll squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-[11px] font-semibold">Plain & Emoji</span>
+            <img src="/assets/images/cake-roll-block-squishy.webp" alt="Wholesale cake roll squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" / width="1200" height="900" loading="lazy" decoding="async" />
+            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-xs font-semibold">Plain & Emoji</span>
           </div>
           <div class="p-4 flex-1 flex flex-col justify-between">
             <div>
@@ -474,7 +526,7 @@
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-700 tabular-nums">
               <span>144 pcs &middot; 28 kg</span>
-              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-[10px]"></i></span>
+              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-xs"></i></span>
             </div>
           </div>
         </a>
@@ -483,8 +535,8 @@
         
         <a href="/products/strawberry-block-squishy/" class="group rounded-xl bg-white border border-slate-200 hover:border-blue-600 hover:shadow-md transition-all overflow-hidden flex flex-col !no-underline">
           <div class="relative aspect-[4/3] bg-slate-50 border-b border-slate-100 overflow-hidden">
-            <img src="/assets/images/strawberry-block-squishy.webp" alt="Wholesale strawberry squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-[11px] font-semibold">Plain & Emoji</span>
+            <img src="/assets/images/strawberry-block-squishy.webp" alt="Wholesale strawberry squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" / width="899" height="1200" loading="lazy" decoding="async" />
+            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-xs font-semibold">Plain & Emoji</span>
           </div>
           <div class="p-4 flex-1 flex flex-col justify-between">
             <div>
@@ -493,15 +545,15 @@
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-700 tabular-nums">
               <span>144 pcs &middot; 24.5 kg</span>
-              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-[10px]"></i></span>
+              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-xs"></i></span>
             </div>
           </div>
         </a>
 
         <a href="/products/banana-block-squishy/" class="group rounded-xl bg-white border border-slate-200 hover:border-blue-600 hover:shadow-md transition-all overflow-hidden flex flex-col !no-underline">
           <div class="relative aspect-[4/3] bg-slate-50 border-b border-slate-100 overflow-hidden">
-            <img src="/assets/images/banana-block-squishy-emoji.webp" alt="Wholesale banana squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-[11px] font-semibold">Plain & Emoji</span>
+            <img src="/assets/images/banana-block-squishy-emoji.webp" alt="Wholesale banana squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" / width="899" height="1200" loading="lazy" decoding="async" />
+            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-xs font-semibold">Plain & Emoji</span>
           </div>
           <div class="p-4 flex-1 flex flex-col justify-between">
             <div>
@@ -510,15 +562,15 @@
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-700 tabular-nums">
               <span>144 pcs &middot; 18 / 25 kg</span>
-              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-[10px]"></i></span>
+              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-xs"></i></span>
             </div>
           </div>
         </a>
 
         <a href="/products/peach-block-squishy/" class="group rounded-xl bg-white border border-slate-200 hover:border-blue-600 hover:shadow-md transition-all overflow-hidden flex flex-col !no-underline">
           <div class="relative aspect-[4/3] bg-slate-50 border-b border-slate-100 overflow-hidden">
-            <img src="/assets/images/peach-block-squishy.webp" alt="Wholesale peach squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-[11px] font-semibold">Plain & Emoji</span>
+            <img src="/assets/images/peach-block-squishy.webp" alt="Wholesale peach squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" / width="900" height="1200" loading="lazy" decoding="async" />
+            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-xs font-semibold">Plain & Emoji</span>
           </div>
           <div class="p-4 flex-1 flex flex-col justify-between">
             <div>
@@ -527,15 +579,15 @@
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-700 tabular-nums">
               <span>144 pcs &middot; 28 kg</span>
-              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-[10px]"></i></span>
+              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-xs"></i></span>
             </div>
           </div>
         </a>
 
         <a href="/products/dragon-fruit-block-squishy/" class="group rounded-xl bg-white border border-slate-200 hover:border-blue-600 hover:shadow-md transition-all overflow-hidden flex flex-col !no-underline">
           <div class="relative aspect-[4/3] bg-slate-50 border-b border-slate-100 overflow-hidden">
-            <img src="/assets/images/dragon-fruit-block-squishy.webp" alt="Wholesale dragon fruit squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-[11px] font-semibold">Plain & Emoji</span>
+            <img src="/assets/images/dragon-fruit-block-squishy.webp" alt="Wholesale dragon fruit squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" / width="900" height="1200" loading="lazy" decoding="async" />
+            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-xs font-semibold">Plain & Emoji</span>
           </div>
           <div class="p-4 flex-1 flex flex-col justify-between">
             <div>
@@ -544,15 +596,15 @@
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-700 tabular-nums">
               <span>144 pcs &middot; 18 kg</span>
-              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-[10px]"></i></span>
+              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-xs"></i></span>
             </div>
           </div>
         </a>
 
         <a href="/products/mango-block-squishy/" class="group rounded-xl bg-white border border-slate-200 hover:border-blue-600 hover:shadow-md transition-all overflow-hidden flex flex-col !no-underline">
           <div class="relative aspect-[4/3] bg-slate-50 border-b border-slate-100 overflow-hidden">
-            <img src="/assets/images/mango-block-squishy.webp" alt="Wholesale mango squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-[11px] font-semibold">Plain & Emoji</span>
+            <img src="/assets/images/mango-block-squishy.webp" alt="Wholesale mango squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" / width="788" height="1200" loading="lazy" decoding="async" />
+            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-xs font-semibold">Plain & Emoji</span>
           </div>
           <div class="p-4 flex-1 flex flex-col justify-between">
             <div>
@@ -561,15 +613,15 @@
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-700 tabular-nums">
               <span>144 pcs &middot; 28 kg</span>
-              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-[10px]"></i></span>
+              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-xs"></i></span>
             </div>
           </div>
         </a>
 
         <a href="/products/durian-block-squishy/" class="group rounded-xl bg-white border border-slate-200 hover:border-blue-600 hover:shadow-md transition-all overflow-hidden flex flex-col !no-underline">
           <div class="relative aspect-[4/3] bg-slate-50 border-b border-slate-100 overflow-hidden">
-            <img src="/assets/images/durian-block-squishy-emoji.webp" alt="Wholesale durian squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-[11px] font-semibold">Plain & Emoji</span>
+            <img src="/assets/images/durian-block-squishy-emoji.webp" alt="Wholesale durian squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" / width="899" height="1200" loading="lazy" decoding="async" />
+            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-xs font-semibold">Plain & Emoji</span>
           </div>
           <div class="p-4 flex-1 flex flex-col justify-between">
             <div>
@@ -578,15 +630,15 @@
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-700 tabular-nums">
               <span>144 pcs &middot; 18 kg</span>
-              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-[10px]"></i></span>
+              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-xs"></i></span>
             </div>
           </div>
         </a>
 
         <a href="/products/orange-block-squishy/" class="group rounded-xl bg-white border border-slate-200 hover:border-blue-600 hover:shadow-md transition-all overflow-hidden flex flex-col !no-underline">
           <div class="relative aspect-[4/3] bg-slate-50 border-b border-slate-100 overflow-hidden">
-            <img src="/assets/images/orange-block-squishy-emoji.webp" alt="Wholesale orange squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-[11px] font-semibold">Plain & Emoji</span>
+            <img src="/assets/images/orange-block-squishy-emoji.webp" alt="Wholesale orange squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" / width="899" height="1200" loading="lazy" decoding="async" />
+            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-xs font-semibold">Plain & Emoji</span>
           </div>
           <div class="p-4 flex-1 flex flex-col justify-between">
             <div>
@@ -595,15 +647,15 @@
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-700 tabular-nums">
               <span>144 pcs &middot; 18 / 27.5 kg</span>
-              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-[10px]"></i></span>
+              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-xs"></i></span>
             </div>
           </div>
         </a>
 
         <a href="/products/mangosteen-block-squishy/" class="group rounded-xl bg-white border border-slate-200 hover:border-blue-600 hover:shadow-md transition-all overflow-hidden flex flex-col !no-underline">
           <div class="relative aspect-[4/3] bg-slate-50 border-b border-slate-100 overflow-hidden">
-            <img src="/assets/images/mangosteen-block-squishy.webp" alt="Wholesale mangosteen squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-[11px] font-semibold">Plain & Emoji</span>
+            <img src="/assets/images/mangosteen-block-squishy.webp" alt="Wholesale mangosteen squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" / width="900" height="1200" loading="lazy" decoding="async" />
+            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-xs font-semibold">Plain & Emoji</span>
           </div>
           <div class="p-4 flex-1 flex flex-col justify-between">
             <div>
@@ -612,7 +664,7 @@
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-700 tabular-nums">
               <span>144 pcs &middot; 18 kg</span>
-              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-[10px]"></i></span>
+              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-xs"></i></span>
             </div>
           </div>
         </a>
@@ -621,8 +673,8 @@
         
         <a href="/products/capybara-block-squishy/" class="group rounded-xl bg-white border border-slate-200 hover:border-blue-600 hover:shadow-md transition-all overflow-hidden flex flex-col !no-underline">
           <div class="relative aspect-[4/3] bg-slate-50 border-b border-slate-100 overflow-hidden">
-            <img src="/assets/images/capybara-block-squishy.webp" alt="Wholesale capybara squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-[11px] font-semibold">Kawaii Edition</span>
+            <img src="/assets/images/capybara-block-squishy.webp" alt="Wholesale capybara squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" / width="900" height="1200" loading="lazy" decoding="async" />
+            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-xs font-semibold">Kawaii Edition</span>
           </div>
           <div class="p-4 flex-1 flex flex-col justify-between">
             <div>
@@ -631,15 +683,15 @@
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-700 tabular-nums">
               <span>144 pcs &middot; 16 kg</span>
-              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-[10px]"></i></span>
+              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-xs"></i></span>
             </div>
           </div>
         </a>
 
         <a href="/products/teddy-bear-dog-block-squishy/" class="group rounded-xl bg-white border border-slate-200 hover:border-blue-600 hover:shadow-md transition-all overflow-hidden flex flex-col !no-underline">
           <div class="relative aspect-[4/3] bg-slate-50 border-b border-slate-100 overflow-hidden">
-            <img src="/assets/images/teddy-bear-dog-block-squishy.webp" alt="Wholesale teddy bear squishy & dog squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-[11px] font-semibold">Kawaii Edition</span>
+            <img src="/assets/images/teddy-bear-dog-block-squishy.webp" alt="Wholesale teddy bear squishy & dog squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" / width="1024" height="1024" loading="lazy" decoding="async" />
+            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-xs font-semibold">Kawaii Edition</span>
           </div>
           <div class="p-4 flex-1 flex flex-col justify-between">
             <div>
@@ -648,7 +700,7 @@
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-700 tabular-nums">
               <span>144 pcs &middot; 17.5 kg</span>
-              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-[10px]"></i></span>
+              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-xs"></i></span>
             </div>
           </div>
         </a>
@@ -657,8 +709,8 @@
         
         <a href="/products/soap-block-squishy/" class="group rounded-xl bg-white border border-slate-200 hover:border-blue-600 hover:shadow-md transition-all overflow-hidden flex flex-col !no-underline">
           <div class="relative aspect-[4/3] bg-slate-50 border-b border-slate-100 overflow-hidden">
-            <img src="/assets/images/soap-block-squishy.webp" alt="Wholesale soap squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-[11px] font-semibold">Plain & Emoji</span>
+            <img src="/assets/images/soap-block-squishy.webp" alt="Wholesale soap squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" / width="1200" height="1200" loading="lazy" decoding="async" />
+            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-xs font-semibold">Plain & Emoji</span>
           </div>
           <div class="p-4 flex-1 flex flex-col justify-between">
             <div>
@@ -667,15 +719,15 @@
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-700 tabular-nums">
               <span>144 pcs &middot; 28 kg</span>
-              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-[10px]"></i></span>
+              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-xs"></i></span>
             </div>
           </div>
         </a>
 
         <a href="/products/color-changing-durian-squishy/" class="group rounded-xl bg-white border border-slate-200 hover:border-blue-600 hover:shadow-md transition-all overflow-hidden flex flex-col !no-underline">
           <div class="relative aspect-[4/3] bg-slate-50 border-b border-slate-100 overflow-hidden">
-            <img src="/assets/images/color-changing-durian-squishy.webp" alt="Wholesale color changing squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-[11px] font-semibold">31&deg;C Thermochromic</span>
+            <img src="/assets/images/color-changing-durian-squishy.webp" alt="Wholesale color changing squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" / width="899" height="1200" loading="lazy" decoding="async" />
+            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-xs font-semibold">31&deg;C Thermochromic</span>
           </div>
           <div class="p-4 flex-1 flex flex-col justify-between">
             <div>
@@ -684,15 +736,15 @@
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-700 tabular-nums">
               <span>144 pcs &middot; 18 kg</span>
-              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-[10px]"></i></span>
+              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-xs"></i></span>
             </div>
           </div>
         </a>
 
         <a href="/products/big-tooth-block-squishy/" class="group rounded-xl bg-white border border-slate-200 hover:border-blue-600 hover:shadow-md transition-all overflow-hidden flex flex-col !no-underline">
           <div class="relative aspect-[4/3] bg-slate-50 border-b border-slate-100 overflow-hidden">
-            <img src="/assets/images/big-tooth-block-squishy.webp" alt="Wholesale tooth squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-[11px] font-semibold">192 pcs/ctn</span>
+            <img src="/assets/images/big-tooth-block-squishy.webp" alt="Wholesale tooth squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" / width="899" height="1200" loading="lazy" decoding="async" />
+            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-xs font-semibold">192 pcs/ctn</span>
           </div>
           <div class="p-4 flex-1 flex flex-col justify-between">
             <div>
@@ -701,15 +753,15 @@
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-700 tabular-nums">
               <span>192 pcs &middot; 20 kg</span>
-              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-[10px]"></i></span>
+              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-xs"></i></span>
             </div>
           </div>
         </a>
 
         <a href="/products/sunflower-block-squishy/" class="group rounded-xl bg-white border border-slate-200 hover:border-blue-600 hover:shadow-md transition-all overflow-hidden flex flex-col !no-underline">
           <div class="relative aspect-[4/3] bg-slate-50 border-b border-slate-100 overflow-hidden">
-            <img src="/assets/images/sunflower-block-squishy.webp" alt="Wholesale sunflower squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-[11px] font-semibold">Plain & Emoji</span>
+            <img src="/assets/images/sunflower-block-squishy.webp" alt="Wholesale sunflower squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" / width="900" height="1200" loading="lazy" decoding="async" />
+            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-xs font-semibold">Plain & Emoji</span>
           </div>
           <div class="p-4 flex-1 flex flex-col justify-between">
             <div>
@@ -718,15 +770,15 @@
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-700 tabular-nums">
               <span>144 pcs &middot; 28 kg</span>
-              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-[10px]"></i></span>
+              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-xs"></i></span>
             </div>
           </div>
         </a>
 
         <a href="/products/rolling-tire-block-squishy/" class="group rounded-xl bg-white border border-slate-200 hover:border-blue-600 hover:shadow-md transition-all overflow-hidden flex flex-col !no-underline">
           <div class="relative aspect-[4/3] bg-slate-50 border-b border-slate-100 overflow-hidden">
-            <img src="/assets/images/rolling-tire-block-squishy.webp" alt="Wholesale tire squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-[11px] font-semibold">Novelty Edition</span>
+            <img src="/assets/images/rolling-tire-block-squishy.webp" alt="Wholesale tire squishy building block TPR squishy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" / width="900" height="1200" loading="lazy" decoding="async" />
+            <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-900/90 text-white text-xs font-semibold">Novelty Edition</span>
           </div>
           <div class="p-4 flex-1 flex flex-col justify-between">
             <div>
@@ -735,7 +787,7 @@
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-700 tabular-nums">
               <span>144 pcs &middot; 16.5 kg</span>
-              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-[10px]"></i></span>
+              <span class="text-blue-600">Specs <i class="fa-solid fa-arrow-right text-xs"></i></span>
             </div>
           </div>
         </a>
@@ -845,7 +897,7 @@
           <p class="mt-1 text-sm text-slate-600">Includes Plain vs. Emoji unit tiers, exact CBM per SKU, and mixed-carton trial availability.</p>
         </div>
         <form action="/contact-us" method="get" class="flex-1 flex flex-col sm:flex-row gap-3">
-          <input type="email" name="email" required placeholder="Your work email *" class="flex-1 px-4 py-3 rounded-xl bg-white border border-slate-300 text-sm focus:border-blue-600 focus:outline-none" />
+          <input type="email" name="email" required placeholder="Your work email *" class="flex-1 px-4 py-3 rounded-xl bg-white border border-slate-300 text-sm focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600" />
           <button type="submit" class="px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm shrink-0 cursor-pointer">Send Price Sheet</button>
         </form>
       </div>
@@ -858,7 +910,7 @@
       <div class="lg:col-span-5">
         <div class="rounded-2xl bg-slate-50 border border-slate-200 p-3 shadow-sm">
           <div class="aspect-square rounded-xl overflow-hidden bg-white">
-            <img src="/assets/images/color-changing-durian-squishy.webp" alt="Bead-free crunchy building block TPR squishy anatomy" class="w-full h-full object-cover" />
+            <img src="/assets/images/color-changing-durian-squishy.webp" alt="Bead-free crunchy building block TPR squishy anatomy" class="w-full h-full object-cover" / width="899" height="1200" loading="lazy" decoding="async" />
           </div>
         </div>
       </div>
@@ -944,7 +996,7 @@
       <div class="lg:col-span-6">
         <div class="rounded-2xl bg-slate-50 border border-slate-200 p-3 shadow-sm">
           <div class="aspect-[16/10] rounded-xl overflow-hidden bg-white">
-            <img src="/assets/images/strawberry-block-squishy.webp" alt="XEA Jinhua factory bead-free crunchy squishy quality inspection" class="w-full h-full object-cover" />
+            <img src="/assets/images/strawberry-block-squishy.webp" alt="XEA Jinhua factory bead-free crunchy squishy quality inspection" class="w-full h-full object-cover" / width="899" height="1200" loading="lazy" decoding="async" />
           </div>
         </div>
       </div>
@@ -959,28 +1011,28 @@
         <details class="group rounded-xl bg-white border border-slate-200 overflow-hidden">
           <summary class="flex items-center justify-between p-4 sm:p-5 cursor-pointer list-none font-semibold text-sm text-slate-900">
             <span>01 &middot; Can I mix different block squishy shapes in a 1-carton trial?</span>
-            <i class="fa-solid fa-chevron-down text-xs text-slate-400 group-open:rotate-180 transition-transform"></i>
+            <i class="fa-solid fa-chevron-down text-xs text-slate-500 group-open:rotate-180 transition-transform"></i>
           </summary>
           <div class="px-5 pb-5 pt-2 text-sm text-slate-600 border-t border-slate-100">Standard wholesale cartons contain 144 pcs (or 192 pcs for Big White Tooth) of one SKU, while mixed-SKU sample packs are available in 3&ndash;5 days so you can test multiple shapes before ordering full cartons.</div>
         </details>
         <details class="group rounded-xl bg-white border border-slate-200 overflow-hidden">
           <summary class="flex items-center justify-between p-4 sm:p-5 cursor-pointer list-none font-semibold text-sm text-slate-900">
             <span>02 &middot; What is the price difference between Plain and Emoji Face editions?</span>
-            <i class="fa-solid fa-chevron-down text-xs text-slate-400 group-open:rotate-180 transition-transform"></i>
+            <i class="fa-solid fa-chevron-down text-xs text-slate-500 group-open:rotate-180 transition-transform"></i>
           </summary>
           <div class="px-5 pb-5 pt-2 text-sm text-slate-600 border-t border-slate-100">Emoji-printed versions add a small pad-printing charge (typically ~$0.04&ndash;$0.05 per unit) across 24 core molds, giving retailers higher shelf impulse appeal at minimal extra cost.</div>
         </details>
         <details class="group rounded-xl bg-white border border-slate-200 overflow-hidden">
           <summary class="flex items-center justify-between p-4 sm:p-5 cursor-pointer list-none font-semibold text-sm text-slate-900">
             <span>03 &middot; Are these crunchy block squishies suitable for claw machines and party favors?</span>
-            <i class="fa-solid fa-chevron-down text-xs text-slate-400 group-open:rotate-180 transition-transform"></i>
+            <i class="fa-solid fa-chevron-down text-xs text-slate-500 group-open:rotate-180 transition-transform"></i>
           </summary>
           <div class="px-5 pb-5 pt-2 text-sm text-slate-600 border-t border-slate-100">Yes, unit weights of 104g&ndash;194g and individual OPP bags make them top performers for claw machine toys bulk, party favor squishies, and retail gift counters.</div>
         </details>
         <details class="group rounded-xl bg-white border border-slate-200 overflow-hidden">
           <summary class="flex items-center justify-between p-4 sm:p-5 cursor-pointer list-none font-semibold text-sm text-slate-900">
             <span>04 &middot; Are the internal mini blocks safe under US CPSC rules?</span>
-            <i class="fa-solid fa-chevron-down text-xs text-slate-400 group-open:rotate-180 transition-transform"></i>
+            <i class="fa-solid fa-chevron-down text-xs text-slate-500 group-open:rotate-180 transition-transform"></i>
           </summary>
           <div class="px-5 pb-5 pt-2 text-sm text-slate-600 border-t border-slate-100">Yes, our block-filled TPR line is 100% water-bead-free and complies with ASTM F963-23, CPSIA, and EN71 Parts 1&ndash;3 for US and European distribution.</div>
         </details>
@@ -997,13 +1049,13 @@
           <h2 class="mt-4 text-3xl font-extrabold text-slate-900">Request Crunchy Block Squishy Pricing</h2>
           <p class="mt-3 text-sm text-slate-600 leading-relaxed">Tell us which shapes you want (Plain or Emoji), carton quantity, and destination country for a 24-hour FOB/DDP quote.</p>
         </div>
-        <div class="mt-6 pt-6 border-t border-slate-200 text-xs text-slate-500">Jinhua, Zhejiang Direct Factory &middot; 1-Carton Trial MOQ</div>
+        <hr class="my-3 border-slate-200/80" /><div class="text-xs text-slate-500">Jinhua, Zhejiang Direct Factory &middot; 1-Carton Trial MOQ</div>
       </div>
       <div class="lg:col-span-7 rounded-2xl bg-white border border-slate-200 p-8 shadow-lg">
         <form action="/contact-us" method="get" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <input type="text" name="name" required placeholder="Your Name *" class="px-4 py-3 rounded-xl border border-slate-300 text-sm focus:border-blue-600 focus:outline-none" />
-          <input type="email" name="email" required placeholder="Work Email *" class="px-4 py-3 rounded-xl border border-slate-300 text-sm focus:border-blue-600 focus:outline-none" />
-          <textarea name="details" rows="3" required placeholder="e.g. 2 cartons Cheese (Emoji), 1 carton Capybara, 1 carton Color-Changing Durian to USA..." class="sm:col-span-2 px-4 py-3 rounded-xl border border-slate-300 text-sm focus:border-blue-600 focus:outline-none"></textarea>
+          <input type="text" name="name" required placeholder="Your Name *" class="px-4 py-3 rounded-xl border border-slate-300 text-sm focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600" />
+          <input type="email" name="email" required placeholder="Work Email *" class="px-4 py-3 rounded-xl border border-slate-300 text-sm focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600" />
+          <textarea name="details" rows="3" required placeholder="e.g. 2 cartons Cheese (Emoji), 1 carton Capybara, 1 carton Color-Changing Durian to USA..." class="sm:col-span-2 px-4 py-3 rounded-xl border border-slate-300 text-sm focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
           <button type="submit" class="sm:col-span-2 px-7 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm shadow-md cursor-pointer">Request 24-Hour Quote</button>
         </form>
       </div>
@@ -1022,22 +1074,22 @@
         <div class="p-6 rounded-2xl bg-amber-50/70 border border-amber-200">
           <div class="text-xs font-extrabold uppercase text-amber-700 mb-2"><i class="fa-solid fa-triangle-exclamation mr-1.5"></i>Competitor Trap #1: 500-Pc Per Shape MOQ</div>
           <p class="text-sm text-slate-700 leading-relaxed">Most Jinhua &amp; Yiwu factories force 500 pcs per mold, locking $3,000+ in untested shapes.</p>
-          <div class="mt-4 pt-3 border-t border-amber-200/70 text-xs font-bold text-emerald-700"><i class="fa-solid fa-shield-halved mr-1.5"></i>XEA Shield: Start at 1 full carton (144 pcs; Big White Tooth 192 pcs) per shape.</div>
+          <hr class="my-3 border-slate-200/80" /><div class="text-xs font-bold text-emerald-700"><i class="fa-solid fa-shield-halved mr-1.5"></i>XEA Shield: Start at 1 full carton (144 pcs; Big White Tooth 192 pcs) per shape.</div>
         </div>
         <div class="p-6 rounded-2xl bg-amber-50/70 border border-amber-200">
           <div class="text-xs font-extrabold uppercase text-amber-700 mb-2"><i class="fa-solid fa-triangle-exclamation mr-1.5"></i>Competitor Trap #2: Banned Water-Bead Fillings</div>
           <p class="text-sm text-slate-700 leading-relaxed">Expandable polymer beads trigger US CPSC recalls and instant Amazon ASIN removals.</p>
-          <div class="mt-4 pt-3 border-t border-amber-200/70 text-xs font-bold text-emerald-700"><i class="fa-solid fa-shield-halved mr-1.5"></i>XEA Shield: 100% solid bead-free clay &amp; mini-block core engineered for ASTM F963-23 &amp; CPC.</div>
+          <hr class="my-3 border-slate-200/80" /><div class="text-xs font-bold text-emerald-700"><i class="fa-solid fa-shield-halved mr-1.5"></i>XEA Shield: 100% solid bead-free clay &amp; mini-block core engineered for ASTM F963-23 &amp; CPC.</div>
         </div>
         <div class="p-6 rounded-2xl bg-amber-50/70 border border-amber-200">
           <div class="text-xs font-extrabold uppercase text-amber-700 mb-2"><i class="fa-solid fa-triangle-exclamation mr-1.5"></i>Competitor Trap #3: Thin TPR Seam Blowouts</div>
           <p class="text-sm text-slate-700 leading-relaxed">Cheap thin-wall skins split within 20 squeezes, causing 1-star FBA reviews and refund spikes.</p>
-          <div class="mt-4 pt-3 border-t border-amber-200/70 text-xs font-bold text-emerald-700"><i class="fa-solid fa-shield-halved mr-1.5"></i>XEA Shield: Reinforced wall thickness + AQL 2.5 seam pull testing on every production batch.</div>
+          <hr class="my-3 border-slate-200/80" /><div class="text-xs font-bold text-emerald-700"><i class="fa-solid fa-shield-halved mr-1.5"></i>XEA Shield: Reinforced wall thickness + AQL 2.5 seam pull testing on every production batch.</div>
         </div>
         <div class="p-6 rounded-2xl bg-amber-50/70 border border-amber-200">
           <div class="text-xs font-extrabold uppercase text-amber-700 mb-2"><i class="fa-solid fa-triangle-exclamation mr-1.5"></i>Competitor Trap #4: Sticky Oil Bleeding in Transit</div>
           <p class="text-sm text-slate-700 leading-relaxed">Unstabilized TPR sweats plasticizer oil during warm ocean transit, staining retail boxes.</p>
-          <div class="mt-4 pt-3 border-t border-amber-200/70 text-xs font-bold text-emerald-700"><i class="fa-solid fa-shield-halved mr-1.5"></i>XEA Shield: Matte anti-dust surface finish + sealed crystal OPP bag on every single unit.</div>
+          <hr class="my-3 border-slate-200/80" /><div class="text-xs font-bold text-emerald-700"><i class="fa-solid fa-shield-halved mr-1.5"></i>XEA Shield: Matte anti-dust surface finish + sealed crystal OPP bag on every single unit.</div>
         </div>
       </div>
     </div>
@@ -1094,7 +1146,7 @@
           </ul>
         </div>
         <div class="p-7 rounded-2xl bg-slate-900 text-white border-2 border-blue-600 shadow-xl">
-          <span class="inline-block px-2.5 py-0.5 rounded bg-blue-600 text-[10px] font-extrabold uppercase">Best Value</span>
+          <span class="inline-block px-2.5 py-0.5 rounded bg-blue-600 text-xs font-extrabold uppercase">Best Value</span>
           <h3 class="mt-2 text-xl font-extrabold">5&ndash;20 Cartons + FBA Prep</h3>
           <div class="mt-1 text-xs font-bold text-blue-400">720 &ndash; 2,880 pcs Total</div>
           <ul class="mt-4 space-y-2 text-xs text-slate-300">
@@ -1191,7 +1243,7 @@
       <p class="mt-4 text-xs text-slate-400 leading-relaxed">
         Direct squishy toy factory &amp; B2B export supplier in Jinhua, Zhejiang, China. Serving global toy importers, Amazon FBA sellers, TikTok Shop brands, and promotional agencies with 5 core squishy lines and 1-carton stock MOQs.
       </p>
-      <div class="mt-4 flex flex-wrap gap-2 text-[11px] font-bold">
+      <div class="mt-4 flex flex-wrap gap-2 text-xs font-bold">
         <span class="px-2.5 py-1 rounded bg-slate-800 border border-slate-700 text-emerald-400">100% Bead-Free</span>
         <span class="px-2.5 py-1 rounded bg-slate-800 border border-slate-700 text-slate-200">ASTM F963-23</span>
         <span class="px-2.5 py-1 rounded bg-slate-800 border border-slate-700 text-slate-200">EN71 / CE</span>
@@ -1241,7 +1293,7 @@
       </ul>
     </div>
   </div>
-  <div class="border-t border-slate-800 py-5 px-4 text-center text-xs text-slate-500">
+  <div class="border-t border-slate-800 py-5 px-4 text-center text-xs text-slate-300">
     &copy; 2026 XEAtoy B2B Export Division (Jinhua, Zhejiang, China). All rights reserved.
   </div>
 </footer>
@@ -1250,7 +1302,10 @@
   var btn = document.getElementById('xea-mobile-btn');
   var menu = document.getElementById('xea-mobile-menu');
   if(btn && menu){
-    btn.addEventListener('click', function(){ menu.classList.toggle('hidden'); });
+    btn.addEventListener('click', function(){
+      var hidden = menu.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', hidden ? 'false' : 'true');
+    });
   }
   // Universal B2B RFQ Form Handler -> Dual Delivery: Web3Forms (Primary Inbox) + /api/send-rfq.php (Server Backup Log)
   var WEB3FORMS_KEY = '6474db47-f71b-4c34-afd0-e08d46d94f3c';

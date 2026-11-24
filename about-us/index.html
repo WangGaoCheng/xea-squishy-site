@@ -14,9 +14,57 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is XEA a direct squishy toy factory or a trading intermediary?", "acceptedAnswer": {"@type": "Answer", "text": "XEA operates with direct factory production and warehousing in Jinhua, Zhejiang, giving global importers direct access to 25+ ready-to-ship crunchy block molds, 200+ mini mochi molds, and in-house OEM tooling."}}, {"@type": "Question", "name": "Why do global wholesalers choose XEA over 500-pc minimum factories?", "acceptedAnswer": {"@type": "Answer", "text": "Most competing factories require 500 pcs per individual shape even on stock molds. XEA lowers your entry barrier to 1 master carton (144\u2013192 pcs per shape) so you can test more designs with less inventory risk."}}, {"@type": "Question", "name": "What regions does XEA export to?", "acceptedAnswer": {"@type": "Answer", "text": "XEA regularly ships to toy importers, wholesalers, Amazon FBA sellers, and promotional agencies across the United States, Canada, the United Kingdom, the European Union, and Australia."}}, {"@type": "Question", "name": "How can I verify quality before placing a bulk order?", "acceptedAnswer": {"@type": "Answer", "text": "You can order a mixed stock sample kit (ships in 3\u20135 business days) or schedule an independent SGS/Intertek AQL 2.5 pre-shipment inspection at our Jinhua facility."}}]}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
+  <style id="xea-design-system">
+    :root {
+      --xea-bg: #f8fafc;
+      --xea-surface: #ffffff;
+      --xea-surface-dark: #0f172a;
+      --xea-text: #0f172a;
+      --xea-body: #334155;
+      --xea-muted: #64748b;
+      --xea-primary: #2563eb;
+      --xea-primary-hover: #1d4ed8;
+      --xea-accent: #d97706;
+      --xea-success: #059669;
+      --xea-border: #e2e8f0;
+      --xea-radius-card: 1rem;
+      --xea-font-sans: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --xea-font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+    html { scroll-behavior: smooth; }
+    header.xea-site-header { border-bottom: 1px solid var(--xea-border); }
+    @layer base {
+      body {
+        font-family: var(--xea-font-sans);
+        font-size: 16px;
+        line-height: 1.6;
+        color: var(--xea-body);
+        background-color: var(--xea-surface);
+      }
+      h1 { font-size: 40px; line-height: 1.15; font-weight: 800; letter-spacing: -0.025em; }
+      h2 { font-size: 28px; line-height: 1.25; font-weight: 800; letter-spacing: -0.02em; }
+      h3 { font-size: 20px; line-height: 1.35; font-weight: 700; }
+      h4 { font-size: 16px; line-height: 1.4; font-weight: 700; }
+    }
+    table, .font-mono, .tabular-nums { font-variant-numeric: tabular-nums; }
+    ::selection { background-color: #dbeafe; color: #1e3a8a; }
+    :focus-visible { outline: 2px solid var(--xea-primary); outline-offset: 2px; }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
 </head>
 <body class="bg-white text-slate-600 antialiased">
-<header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
+<a href="#xea-about-us" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:bg-blue-600 focus:text-white focus:px-4 focus:py-2 focus:rounded-lg focus:text-sm focus:font-bold focus:shadow-lg">Skip to main content</a>
+<header class="xea-site-header sticky top-0 z-50 bg-white/95 backdrop-blur">
   <!-- Top B2B Announcement Bar -->
   <div class="bg-slate-900 text-slate-200 text-xs py-2 px-4">
     <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
@@ -40,7 +88,7 @@
         <div class="w-9 h-9 rounded-xl bg-blue-600 text-white font-black text-base flex items-center justify-center shadow-sm group-hover:bg-slate-900 transition-colors">XEA</div>
         <div class="leading-tight">
           <div class="text-sm font-extrabold text-slate-900 tracking-tight">XEA<span class="text-blue-600">toy</span></div>
-          <div class="text-[11px] font-medium text-slate-500">Wholesale &amp; OEM Factory</div>
+          <div class="text-xs font-medium text-slate-500">Wholesale &amp; OEM Factory</div>
         </div>
       </a>
 
@@ -49,14 +97,14 @@
         <!-- MEGA MENU: PRODUCTS -->
         <div class="relative group" data-mega-item>
           <a href="/products/" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-sm font-semibold text-slate-700 hover:text-blue-600 hover:bg-slate-50 transition-colors !no-underline">
-            Products <i class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-hover:text-blue-600 transition-transform group-hover:rotate-180"></i>
+            Products <i class="fa-solid fa-chevron-down text-xs text-slate-500 group-hover:text-blue-600 transition-transform group-hover:rotate-180"></i>
           </a>
           <!-- 3-Column Mega Panel -->
-          <div class="invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-150 absolute left-1/2 -translate-x-1/2 top-full pt-3 w-[820px] z-50">
+          <div class="invisible opacity-0 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 transition-all duration-150 absolute left-1/2 -translate-x-1/2 top-full pt-3 w-[820px] z-50">
             <div class="rounded-2xl bg-white border border-slate-200 shadow-2xl p-6 grid grid-cols-12 gap-6">
               <!-- Col 1: By Material -->
-              <div class="col-span-4 border-r border-slate-100 pr-4">
-                <div class="text-[11px] font-extrabold uppercase tracking-wider text-blue-600 mb-3"><i class="fa-solid fa-flask mr-1.5"></i>By Material (5 Core Lines)</div>
+              <div class="col-span-4">
+                <div class="text-xs font-extrabold uppercase tracking-wider text-blue-600 mb-3"><i class="fa-solid fa-flask mr-1.5"></i>By Material (5 Core Lines)</div>
                 <ul class="space-y-2">
                   <li>
                     <a href="/products/crunchy-building-block-squishies/" class="block p-2 rounded-xl hover:bg-slate-50 !no-underline">
@@ -92,8 +140,8 @@
               </div>
 
               <!-- Col 2: By Shape / Theme -->
-              <div class="col-span-4 border-r border-slate-100 pr-4">
-                <div class="text-[11px] font-extrabold uppercase tracking-wider text-emerald-600 mb-3"><i class="fa-solid fa-shapes mr-1.5"></i>By Shape &amp; Theme</div>
+              <div class="col-span-4">
+                <div class="text-xs font-extrabold uppercase tracking-wider text-emerald-600 mb-3"><i class="fa-solid fa-shapes mr-1.5"></i>By Shape &amp; Theme</div>
                 <ul class="space-y-2">
                   <li>
                     <a href="/products/food-bakery-squishies/" class="block p-2 rounded-xl hover:bg-slate-50 !no-underline">
@@ -115,24 +163,25 @@
                   </li>
                   <li>
                     <a href="/products/fidget-keyboards/" class="block p-2 rounded-xl hover:bg-blue-50/70 !no-underline">
-                      <div class="text-sm font-bold text-blue-700">Fidget Keyboards (26-Key LED) <span class="ml-1 px-1.5 py-0.5 rounded bg-blue-100 text-[10px]">NEW</span></div>
+                      <div class="text-sm font-bold text-blue-700">Fidget Keyboards (26-Key LED) <span class="ml-1 px-1.5 py-0.5 rounded bg-blue-100 text-xs">NEW</span></div>
                       <div class="text-xs text-slate-500">26-LED, 10-LED &amp; Non-LED Clickers</div>
                     </a>
                   </li>
                   <li>
                     <a href="/products/crystal-gel-slushie-stress-balls/" class="block p-2 rounded-xl hover:bg-emerald-50/70 !no-underline">
-                      <div class="text-sm font-bold text-emerald-700">Crystal Gel &amp; Slushie Balls <span class="ml-1 px-1.5 py-0.5 rounded bg-emerald-100 text-[10px]">NEW</span></div>
+                      <div class="text-sm font-bold text-emerald-700">Crystal Gel &amp; Slushie Balls <span class="ml-1 px-1.5 py-0.5 rounded bg-emerald-100 text-xs">NEW</span></div>
                       <div class="text-xs text-slate-500">39 Bead-Free Glitter, Rose &amp; Pearl SKUs</div>
                     </a>
                   </li>
                   <li>
                     <a href="/products/jumbo-dough-squishies/" class="block p-2 rounded-xl hover:bg-amber-50/70 !no-underline">
-                      <div class="text-sm font-bold text-slate-900">Jumbo Dough, Highland Cow &amp; Axolotl <span class="ml-1 px-1.5 py-0.5 rounded bg-amber-100 text-amber-800 text-[10px]">HOT</span></div>
+                      <div class="text-sm font-bold text-slate-900">Jumbo Dough, Highland Cow &amp; Axolotl <span class="ml-1 px-1.5 py-0.5 rounded bg-amber-100 text-amber-800 text-xs">HOT</span></div>
                       <div class="text-xs text-slate-500">350g-400g Giants, Holiday &amp; Blind Boxes</div>
                     </a>
                   </li>
                 </ul>
-                <div class="mt-4 pt-3 border-t border-slate-100">
+                <hr class="my-3 border-slate-100" />
+                <div>
                   <a href="/products/" class="inline-flex items-center text-xs font-bold text-blue-600 hover:text-blue-700 !no-underline">
                     Browse All 150 Stock SKUs &amp; Hub <i class="fa-solid fa-arrow-right ml-1.5"></i>
                   </a>
@@ -140,10 +189,10 @@
               </div>
 
               <!-- Col 3: Featured Factory Spotlight -->
-              <div class="col-span-4 flex flex-col justify-between bg-slate-50 rounded-xl p-4 border border-slate-200">
+              <div class="col-span-4 flex flex-col justify-between pl-2">
                 <div>
-                  <span class="inline-block px-2 py-0.5 rounded bg-emerald-100 text-emerald-700 text-[10px] font-extrabold uppercase">Factory Best-Seller</span>
-                  <img src="/assets/images/color-changing-durian-squishy.webp" alt="Color-changing durian squishy wholesale" class="mt-2.5 w-full aspect-[4/3] object-cover rounded-lg border border-slate-200" />
+                  <span class="inline-block px-2 py-0.5 rounded bg-emerald-100 text-emerald-700 text-xs font-extrabold uppercase">Factory Best-Seller</span>
+                  <img src="/assets/images/color-changing-durian-squishy.webp" alt="Color-changing durian squishy wholesale" class="mt-2.5 w-full aspect-[4/3] object-cover rounded-lg border border-slate-200" / width="899" height="1200" loading="lazy" decoding="async" />
                   <div class="mt-2.5 text-sm font-bold text-slate-900">Color-Changing Durian &amp; 25 Block Shapes</div>
                   <p class="mt-1 text-xs text-slate-600">Mix any 1 carton (144 pcs) per SKU. Ships in 3&ndash;5 days for samples.</p>
                 </div>
@@ -156,9 +205,9 @@
         <!-- DROPDOWN: OEM / ODM -->
         <div class="relative group">
           <a href="/oem-odm/" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-sm font-semibold text-slate-700 hover:text-blue-600 hover:bg-slate-50 transition-colors !no-underline">
-            OEM / ODM <i class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-hover:text-blue-600 transition-transform group-hover:rotate-180"></i>
+            OEM / ODM <i class="fa-solid fa-chevron-down text-xs text-slate-500 group-hover:text-blue-600 transition-transform group-hover:rotate-180"></i>
           </a>
-          <div class="invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-150 absolute left-0 top-full pt-3 w-72 z-50">
+          <div class="invisible opacity-0 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 transition-all duration-150 absolute left-0 top-full pt-3 w-72 z-50">
             <div class="rounded-2xl bg-white border border-slate-200 shadow-xl p-3 space-y-1">
               <a href="/oem-odm/" class="block p-3 rounded-xl hover:bg-slate-50 !no-underline">
                 <div class="text-sm font-bold text-slate-900"><i class="fa-solid fa-cubes text-blue-600 mr-2"></i>Custom 3D Molding &amp; OEM</div>
@@ -168,8 +217,9 @@
                 <div class="text-sm font-bold text-slate-900"><i class="fa-solid fa-box-open text-emerald-600 mr-2"></i>Custom Packaging &amp; Logo</div>
                 <div class="text-xs text-slate-500 mt-0.5">PDQ trays, window boxes &amp; FNSKU (500 pcs)</div>
               </a>
-              <a href="/custom-logo-stress-balls/" class="block p-3 rounded-xl hover:bg-blue-50/70 !no-underline border-t border-slate-100">
-                <div class="text-sm font-bold text-blue-700"><i class="fa-solid fa-stamp text-blue-600 mr-2"></i>Custom Logo Stress Balls <span class="ml-1 px-1.5 py-0.5 rounded bg-blue-100 text-[10px]">PROMO</span></div>
+              <hr class="my-1 border-slate-100" />
+              <a href="/custom-logo-stress-balls/" class="block p-3 rounded-xl hover:bg-blue-50/70 !no-underline">
+                <div class="text-sm font-bold text-blue-700"><i class="fa-solid fa-stamp text-blue-600 mr-2"></i>Custom Logo Stress Balls <span class="ml-1 px-1.5 py-0.5 rounded bg-blue-100 text-xs">PROMO</span></div>
                 <div class="text-xs text-slate-500 mt-0.5">Trade show &amp; corporate logo print (500 pcs)</div>
               </a>
             </div>
@@ -179,9 +229,9 @@
         <!-- DROPDOWN: SOLUTIONS (By Buyer Channel) -->
         <div class="relative group">
           <a href="/solutions/" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-sm font-semibold text-slate-700 hover:text-blue-600 hover:bg-slate-50 transition-colors !no-underline">
-            Solutions <i class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-hover:text-blue-600 transition-transform group-hover:rotate-180"></i>
+            Solutions <i class="fa-solid fa-chevron-down text-xs text-slate-500 group-hover:text-blue-600 transition-transform group-hover:rotate-180"></i>
           </a>
-          <div class="invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-150 absolute left-0 top-full pt-3 w-80 z-50">
+          <div class="invisible opacity-0 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 transition-all duration-150 absolute left-0 top-full pt-3 w-80 z-50">
             <div class="rounded-2xl bg-white border border-slate-200 shadow-xl p-3 space-y-1">
               <a href="/ecommerce-fba/" class="block p-3 rounded-xl hover:bg-slate-50 !no-underline">
                 <div class="text-sm font-bold text-slate-900"><i class="fa-solid fa-truck-fast text-blue-600 mr-2"></i>Amazon FBA &amp; TikTok Shop</div>
@@ -191,7 +241,8 @@
                 <div class="text-sm font-bold text-slate-900"><i class="fa-solid fa-trophy text-emerald-600 mr-2"></i>Claw Machine, Party &amp; Promo</div>
                 <div class="text-xs text-slate-500 mt-0.5">High-volume prizes &amp; logo stress balls</div>
               </a>
-              <a href="/solutions/" class="block p-3 rounded-xl hover:bg-slate-50 !no-underline border-t border-slate-100">
+              <hr class="my-1 border-slate-100" />
+              <a href="/solutions/" class="block p-3 rounded-xl hover:bg-slate-50 !no-underline">
                 <div class="text-xs font-bold text-blue-600">View All Buyer Playbooks &rarr;</div>
               </a>
             </div>
@@ -209,7 +260,7 @@
         <a href="/contact-us/" class="hidden sm:inline-flex items-center px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold shadow-sm transition-colors !no-underline">
           Get Wholesale Quote
         </a>
-        <button id="xea-mobile-btn" type="button" class="lg:hidden inline-flex items-center justify-center w-10 h-10 rounded-xl border border-slate-200 text-slate-700 hover:bg-slate-50" aria-label="Open menu">
+        <button id="xea-mobile-btn" type="button" aria-expanded="false" aria-controls="xea-mobile-menu" class="lg:hidden inline-flex items-center justify-center w-10 h-10 rounded-xl border border-slate-200 text-slate-700 hover:bg-slate-50" aria-label="Open menu">
           <i class="fa-solid fa-bars"></i>
         </button>
       </div>
@@ -229,7 +280,8 @@
       <a href="/products/mochi-mini-squishies/" class="p-2 rounded-lg bg-slate-50 text-slate-800 !no-underline">Mochi Mini Bulk</a>
       <a href="/products/novelty-squishies/" class="p-2 rounded-lg bg-slate-50 text-slate-800 !no-underline">Novelty &amp; ASMR</a>
     </div>
-    <div class="border-t border-slate-100 pt-3 flex flex-wrap gap-2 text-xs font-bold">
+    <hr class="border-slate-100 my-1" />
+    <div class="flex flex-wrap gap-2 text-xs font-bold">
       <a href="/oem-odm/" class="px-3 py-2 rounded-lg bg-slate-100 text-slate-800 !no-underline">OEM / ODM</a>
       <a href="/custom-packaging/" class="px-3 py-2 rounded-lg bg-slate-100 text-slate-800 !no-underline">Custom Packaging</a>
       <a href="/ecommerce-fba/" class="px-3 py-2 rounded-lg bg-slate-100 text-slate-800 !no-underline">Amazon FBA</a>
@@ -265,7 +317,7 @@
       </div>
       <div class="lg:col-span-5">
         <div class="rounded-2xl bg-white border border-slate-200 p-3 shadow-lg">
-          <img src="/assets/images/factory-jinhua-production-floor.webp" alt="XEA Jinhua squishy toy factory production showcase" class="w-full aspect-[4/3] object-cover rounded-xl" />
+          <img src="/assets/images/factory-jinhua-production-floor.webp" alt="XEA Jinhua squishy toy factory production showcase" class="w-full aspect-[4/3] object-cover rounded-xl" / width="1280" height="714" fetchpriority="high" decoding="async" />
           <div class="mt-3 px-2 flex justify-between text-xs font-semibold text-slate-700">
             <span>Port Proximity: Ningbo &amp; Shanghai</span>
             <span class="text-emerald-600">5 Core Material Lines</span>
@@ -307,7 +359,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
       <div class="p-5 rounded-2xl bg-slate-800 border border-slate-700"><div class="text-3xl font-extrabold text-blue-400">Jinhua, CN</div><div class="mt-1 text-xs text-slate-300">Zhejiang Direct Factory Base</div></div>
       <div class="p-5 rounded-2xl bg-slate-800 border border-slate-700"><div class="text-3xl font-extrabold text-emerald-400">5 Lines</div><div class="mt-1 text-xs text-slate-300">Full Squishy Material Coverage</div></div>
-      <div class="p-5 rounded-2xl bg-slate-800 border border-slate-700"><div class="text-3xl font-extrabold text-white">144 pcs</div><div class="mt-1 text-xs text-slate-300">Industry-Leading Stock MOQ</div></div>
+      <div class="p-5 rounded-2xl bg-slate-800 border border-slate-700"><div class="text-3xl font-extrabold text-white">144 pcs</div><div class="mt-1 text-xs text-slate-300">1-Carton Trial Stock MOQ</div></div>
       <div class="p-5 rounded-2xl bg-slate-800 border border-slate-700"><div class="text-3xl font-extrabold text-blue-400">24 Hours</div><div class="mt-1 text-xs text-slate-300">English Export Support SLA</div></div>
     </div>
   </section>
@@ -333,19 +385,19 @@
         <div class="p-6 rounded-2xl bg-amber-50/70 border border-amber-200">
           <div class="text-xs font-extrabold uppercase text-amber-700 mb-2"><i class="fa-solid fa-triangle-exclamation mr-1.5"></i>Promise #1: Honest Carton Weights &amp; Counts</div>
           <p class="text-sm text-slate-700 leading-relaxed">No hidden short-counts or inflated CBM freight estimates.</p>
-          <div class="mt-4 pt-3 border-t border-amber-200/70 text-xs font-bold text-emerald-700"><i class="fa-solid fa-shield-halved mr-1.5"></i>XEA Shield: Exact verified 144/192 pcs carton counts and 16&ndash;28 kg gross weights upfront.</div>
+          <hr class="my-3 border-slate-200/80" /><div class="text-xs font-bold text-emerald-700"><i class="fa-solid fa-shield-halved mr-1.5"></i>XEA Shield: Exact verified 144/192 pcs carton counts and 16&ndash;28 kg gross weights upfront.</div>
         </div>        <div class="p-6 rounded-2xl bg-amber-50/70 border border-amber-200">
           <div class="text-xs font-extrabold uppercase text-amber-700 mb-2"><i class="fa-solid fa-triangle-exclamation mr-1.5"></i>Promise #2: Zero Water-Bead Shortcuts</div>
           <p class="text-sm text-slate-700 leading-relaxed">We never swap in banned expandable beads to shave pennies off unit cost.</p>
-          <div class="mt-4 pt-3 border-t border-amber-200/70 text-xs font-bold text-emerald-700"><i class="fa-solid fa-shield-halved mr-1.5"></i>XEA Shield: 100% bead-free solid block, maltose gel, silicone, and PU across every batch.</div>
+          <hr class="my-3 border-slate-200/80" /><div class="text-xs font-bold text-emerald-700"><i class="fa-solid fa-shield-halved mr-1.5"></i>XEA Shield: 100% bead-free solid block, maltose gel, silicone, and PU across every batch.</div>
         </div>        <div class="p-6 rounded-2xl bg-amber-50/70 border border-amber-200">
           <div class="text-xs font-extrabold uppercase text-amber-700 mb-2"><i class="fa-solid fa-triangle-exclamation mr-1.5"></i>Promise #3: Transparent Pre-Ship QC</div>
           <p class="text-sm text-slate-700 leading-relaxed">No blind shipping of uninspected export cartons.</p>
-          <div class="mt-4 pt-3 border-t border-amber-200/70 text-xs font-bold text-emerald-700"><i class="fa-solid fa-shield-halved mr-1.5"></i>XEA Shield: AQL 2.5 photo/video verification + open doors for SGS/Intertek audits.</div>
+          <hr class="my-3 border-slate-200/80" /><div class="text-xs font-bold text-emerald-700"><i class="fa-solid fa-shield-halved mr-1.5"></i>XEA Shield: AQL 2.5 photo/video verification + open doors for SGS/Intertek audits.</div>
         </div>        <div class="p-6 rounded-2xl bg-amber-50/70 border border-amber-200">
           <div class="text-xs font-extrabold uppercase text-amber-700 mb-2"><i class="fa-solid fa-triangle-exclamation mr-1.5"></i>Promise #4: Long-Term Reorder Stability</div>
           <p class="text-sm text-slate-700 leading-relaxed">Consistent color, softness, and print quality from Order #1 to Order #50.</p>
-          <div class="mt-4 pt-3 border-t border-amber-200/70 text-xs font-bold text-emerald-700"><i class="fa-solid fa-shield-halved mr-1.5"></i>XEA Shield: Retained golden samples and Pantone batch formulas for every client SKU.</div>
+          <hr class="my-3 border-slate-200/80" /><div class="text-xs font-bold text-emerald-700"><i class="fa-solid fa-shield-halved mr-1.5"></i>XEA Shield: Retained golden samples and Pantone batch formulas for every client SKU.</div>
         </div>
       </div>
     </div>
@@ -543,28 +595,28 @@
         <details open class="rounded-2xl bg-white border border-slate-200 p-5">
           <summary class="cursor-pointer font-bold text-slate-900 text-sm sm:text-base flex items-center justify-between gap-4">
             <span>Is XEA a direct squishy toy factory or a trading intermediary?</span>
-            <i class="fa-solid fa-chevron-down text-xs text-slate-400 shrink-0"></i>
+            <i class="fa-solid fa-chevron-down text-xs text-slate-500 shrink-0"></i>
           </summary>
           <p class="mt-3 text-sm text-slate-600 leading-relaxed">XEA operates with direct factory production and warehousing in Jinhua, Zhejiang, giving global importers direct access to 25+ ready-to-ship crunchy block molds, 200+ mini mochi molds, and in-house OEM tooling.</p>
         </details>
         <details class="rounded-2xl bg-white border border-slate-200 p-5">
           <summary class="cursor-pointer font-bold text-slate-900 text-sm sm:text-base flex items-center justify-between gap-4">
             <span>Why do global wholesalers choose XEA over 500-pc minimum factories?</span>
-            <i class="fa-solid fa-chevron-down text-xs text-slate-400 shrink-0"></i>
+            <i class="fa-solid fa-chevron-down text-xs text-slate-500 shrink-0"></i>
           </summary>
           <p class="mt-3 text-sm text-slate-600 leading-relaxed">Most competing factories require 500 pcs per individual shape even on stock molds. XEA lowers your entry barrier to 1 master carton (144&ndash;192 pcs per shape) so you can test more designs with less inventory risk.</p>
         </details>
         <details class="rounded-2xl bg-white border border-slate-200 p-5">
           <summary class="cursor-pointer font-bold text-slate-900 text-sm sm:text-base flex items-center justify-between gap-4">
             <span>What regions does XEA export to?</span>
-            <i class="fa-solid fa-chevron-down text-xs text-slate-400 shrink-0"></i>
+            <i class="fa-solid fa-chevron-down text-xs text-slate-500 shrink-0"></i>
           </summary>
           <p class="mt-3 text-sm text-slate-600 leading-relaxed">XEA regularly ships to toy importers, wholesalers, Amazon FBA sellers, and promotional agencies across the United States, Canada, the United Kingdom, the European Union, and Australia.</p>
         </details>
         <details class="rounded-2xl bg-white border border-slate-200 p-5">
           <summary class="cursor-pointer font-bold text-slate-900 text-sm sm:text-base flex items-center justify-between gap-4">
             <span>How can I verify quality before placing a bulk order?</span>
-            <i class="fa-solid fa-chevron-down text-xs text-slate-400 shrink-0"></i>
+            <i class="fa-solid fa-chevron-down text-xs text-slate-500 shrink-0"></i>
           </summary>
           <p class="mt-3 text-sm text-slate-600 leading-relaxed">You can order a mixed stock sample kit (ships in 3&ndash;5 business days) or schedule an independent SGS/Intertek AQL 2.5 pre-shipment inspection at our Jinhua facility.</p>
         </details>
@@ -587,7 +639,7 @@
       <p class="mt-4 text-xs text-slate-400 leading-relaxed">
         Direct squishy toy factory &amp; B2B export supplier in Jinhua, Zhejiang, China. Serving global toy importers, Amazon FBA sellers, TikTok Shop brands, and promotional agencies with 5 core squishy lines and 1-carton stock MOQs.
       </p>
-      <div class="mt-4 flex flex-wrap gap-2 text-[11px] font-bold">
+      <div class="mt-4 flex flex-wrap gap-2 text-xs font-bold">
         <span class="px-2.5 py-1 rounded bg-slate-800 border border-slate-700 text-emerald-400">100% Bead-Free</span>
         <span class="px-2.5 py-1 rounded bg-slate-800 border border-slate-700 text-slate-200">ASTM F963-23</span>
         <span class="px-2.5 py-1 rounded bg-slate-800 border border-slate-700 text-slate-200">EN71 / CE</span>
@@ -637,7 +689,7 @@
       </ul>
     </div>
   </div>
-  <div class="border-t border-slate-800 py-5 px-4 text-center text-xs text-slate-500">
+  <div class="border-t border-slate-800 py-5 px-4 text-center text-xs text-slate-300">
     &copy; 2026 XEAtoy B2B Export Division (Jinhua, Zhejiang, China). All rights reserved.
   </div>
 </footer>
@@ -646,7 +698,10 @@
   var btn = document.getElementById('xea-mobile-btn');
   var menu = document.getElementById('xea-mobile-menu');
   if(btn && menu){
-    btn.addEventListener('click', function(){ menu.classList.toggle('hidden'); });
+    btn.addEventListener('click', function(){
+      var hidden = menu.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', hidden ? 'false' : 'true');
+    });
   }
   // Universal B2B RFQ Form Handler -> Dual Delivery: Web3Forms (Primary Inbox) + /api/send-rfq.php (Server Backup Log)
   var WEB3FORMS_KEY = '6474db47-f71b-4c34-afd0-e08d46d94f3c';
