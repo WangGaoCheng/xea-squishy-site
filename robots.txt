@@ -14,4 +14,4 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
-Sitemap: https://epic-sienna-wren-23.hostingersite.com/sitemap.xml
+Sitemap: https://xeatoy.com/sitemap.xml
