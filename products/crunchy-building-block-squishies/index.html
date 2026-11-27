@@ -11,8 +11,9 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://xeatoy.com/products/crunchy-building-block-squishies/" />
   <meta property="og:image" content="https://xeatoy.com/assets/images/cheese-block-squishy.webp" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="/assets/css/main.css?v=20261128" />
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /></noscript>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,36 +28,30 @@
       --xea-muted: #64748b;
       --xea-primary: #2563eb;
       --xea-primary-hover: #1d4ed8;
-      --xea-accent: #d97706;
-      --xea-success: #059669;
+      --xea-accent: #92400e;
+      --xea-success: #047857;
       --xea-border: #e2e8f0;
       --xea-radius-card: 1rem;
       --xea-font-sans: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       --xea-font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
     }
-    html { scroll-behavior: smooth; }
+    html { color-scheme: light; scroll-behavior: smooth; }
     header.xea-site-header { border-bottom: 1px solid var(--xea-border); }
-    @layer base {
-      body {
-        font-family: var(--xea-font-sans);
-        font-size: 16px;
-        line-height: 1.6;
-        color: var(--xea-body);
-        background-color: var(--xea-surface);
-      }
-      h1 { font-size: 40px; line-height: 1.15; font-weight: 800; letter-spacing: -0.025em; }
-      h2 { font-size: 28px; line-height: 1.25; font-weight: 800; letter-spacing: -0.02em; }
-      h3 { font-size: 20px; line-height: 1.35; font-weight: 700; }
-      h4 { font-size: 16px; line-height: 1.4; font-weight: 700; }
-    }
     table, .font-mono, .tabular-nums { font-variant-numeric: tabular-nums; }
+    main p, main li, main details > p, main blockquote { max-width: 50ch; text-wrap: pretty; }
+    main .text-center > p, main p.text-center { margin-inline: auto; }
+    h1, h2, h3, h4 { text-wrap: balance; }
+    input::placeholder, textarea::placeholder { color: #64748b; opacity: 1; }
+    .bg-slate-900 input::placeholder, .bg-slate-900 textarea::placeholder,
+    .bg-slate-950 input::placeholder, .bg-slate-950 textarea::placeholder,
+    .bg-slate-800 input::placeholder, .bg-slate-800 textarea::placeholder { color: #cbd5e1; opacity: 1; }
     ::selection { background-color: #dbeafe; color: #1e3a8a; }
     :focus-visible { outline: 2px solid var(--xea-primary); outline-offset: 2px; }
     @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
       *, *::before, *::after {
-        animation-duration: 0.01ms !important;
+        animation-name: none !important;
         animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
       }
     }
@@ -141,7 +136,7 @@
 
               <!-- Col 2: By Shape / Theme -->
               <div class="col-span-4">
-                <div class="text-xs font-extrabold uppercase tracking-wider text-emerald-600 mb-3"><i class="fa-solid fa-shapes mr-1.5"></i>By Shape &amp; Theme</div>
+                <div class="text-xs font-extrabold uppercase tracking-wider text-emerald-700 mb-3"><i class="fa-solid fa-shapes mr-1.5"></i>By Shape &amp; Theme</div>
                 <ul class="space-y-2">
                   <li>
                     <a href="/products/food-bakery-squishies/" class="block p-2 rounded-xl hover:bg-slate-50 !no-underline">
@@ -214,7 +209,7 @@
                 <div class="text-xs text-slate-500 mt-0.5">NDA tooling from 3,000 pcs</div>
               </a>
               <a href="/custom-packaging/" class="block p-3 rounded-xl hover:bg-slate-50 !no-underline">
-                <div class="text-sm font-bold text-slate-900"><i class="fa-solid fa-box-open text-emerald-600 mr-2"></i>Custom Packaging &amp; Logo</div>
+                <div class="text-sm font-bold text-slate-900"><i class="fa-solid fa-box-open text-emerald-700 mr-2"></i>Custom Packaging &amp; Logo</div>
                 <div class="text-xs text-slate-500 mt-0.5">PDQ trays, window boxes &amp; FNSKU (500 pcs)</div>
               </a>
               <hr class="my-1 border-slate-100" />
@@ -238,7 +233,7 @@
                 <div class="text-xs text-slate-500 mt-0.5">1-carton test MOQ, CPC &amp; DDP shipping</div>
               </a>
               <a href="/claw-machine-party-favors/" class="block p-3 rounded-xl hover:bg-slate-50 !no-underline">
-                <div class="text-sm font-bold text-slate-900"><i class="fa-solid fa-trophy text-emerald-600 mr-2"></i>Claw Machine, Party &amp; Promo</div>
+                <div class="text-sm font-bold text-slate-900"><i class="fa-solid fa-trophy text-emerald-700 mr-2"></i>Claw Machine, Party &amp; Promo</div>
                 <div class="text-xs text-slate-500 mt-0.5">High-volume prizes &amp; logo stress balls</div>
               </a>
               <hr class="my-1 border-slate-100" />
@@ -309,10 +304,7 @@
       </nav>
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
         <div class="lg:col-span-7">
-          <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-semibold uppercase tracking-wider">
-            <i class="fa-solid fa-cubes"></i> 25 Stock Shapes (29 Quote Variants) &middot; 1-Carton MOQ
-          </span>
-          <h1 class="mt-4 text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.16] text-balance">
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.16] text-balance">
             Wholesale <span class="text-blue-600">Crunchy Building Block</span> TPR Squishies &amp; ASMR Cube Stress Toys
           </h1>
           <p class="mt-5 text-base md:text-lg text-slate-600 leading-relaxed">
@@ -333,7 +325,7 @@
               <img src="/assets/images/cheese-block-squishy-emoji.webp" alt="Wholesale crunchy building block TPR squishy collection" class="w-full h-full object-cover" / width="899" height="1200" fetchpriority="high" decoding="async" />
             </div>
             <div class="mt-3 flex items-center justify-between px-2 text-xs font-semibold text-slate-600">
-              <span><i class="fa-solid fa-circle-check text-emerald-600 mr-1"></i>EN71 &middot; ASTM F963-23 &middot; CPC</span>
+              <span><i class="fa-solid fa-circle-check text-emerald-700 mr-1"></i>EN71 &middot; ASTM F963-23 &middot; CPC</span>
               <span class="text-slate-900 tabular-nums">144 / 192 pcs / ctn</span>
             </div>
           </div>
@@ -347,8 +339,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-aivb-type="tabs">
       <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
         <div>
-          <span class="text-xs font-bold uppercase tracking-widest text-blue-600">Ready-to-Ship Block Line</span>
-          <h2 class="mt-2 text-3xl font-extrabold text-slate-900 tracking-tight">Browse All 25 Ready-to-Ship Building Block Squishy Shapes</h2>
+          <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Browse All 25 Ready-to-Ship Building Block Squishy Shapes</h2>
           <p class="mt-2 text-sm text-slate-600">Every SKU below is stocked in Jinhua for 3&ndash;5 day sample dispatch and 1-carton squishy wholesale trial orders.</p>
         </div>
         <div role="tablist" aria-label="Block Squishy Categories" class="flex flex-wrap gap-2">
@@ -834,8 +825,7 @@
   <section class="w-full bg-white py-16 md:py-24 border-b border-slate-200">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-3xl mb-10">
-        <span class="text-xs font-bold uppercase tracking-widest text-blue-600">Verified Export Logistics</span>
-        <h2 class="mt-2 text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight text-balance">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight text-balance">
           Standard Export Carton Dimensions, Gross Weights &amp; Dual-Version Options
         </h2>
         <p class="mt-3 text-base text-slate-600">Exact factory packing specs across our 29-row block squishy catalog so importers and FBA sellers can calculate CBM and landed freight upfront.</p>
@@ -845,11 +835,11 @@
           <table class="w-full text-left border-collapse text-sm">
             <thead>
               <tr class="bg-slate-900 text-white">
-                <th class="py-3.5 px-4 font-semibold">Carton Tier</th>
-                <th class="py-3.5 px-4 font-semibold">Representative SKUs</th>
-                <th class="py-3.5 px-4 font-semibold">Qty / Carton</th>
-                <th class="py-3.5 px-4 font-semibold">Carton Size (cm)</th>
-                <th class="py-3.5 px-4 font-semibold">Gross Weight</th>
+                <th scope="col" class="py-3.5 px-4 font-semibold">Carton Tier</th>
+                <th scope="col" class="py-3.5 px-4 font-semibold">Representative SKUs</th>
+                <th scope="col" class="py-3.5 px-4 font-semibold">Qty / Carton</th>
+                <th scope="col" class="py-3.5 px-4 font-semibold">Carton Size (cm)</th>
+                <th scope="col" class="py-3.5 px-4 font-semibold">Gross Weight</th>
               </tr>
             </thead>
             <tbody class="divide-y divide-slate-200">
@@ -897,7 +887,7 @@
           <p class="mt-1 text-sm text-slate-600">Includes Plain vs. Emoji unit tiers, exact CBM per SKU, and mixed-carton trial availability.</p>
         </div>
         <form action="/contact-us" method="get" class="flex-1 flex flex-col sm:flex-row gap-3">
-          <input type="email" name="email" required placeholder="Your work email *" class="flex-1 px-4 py-3 rounded-xl bg-white border border-slate-300 text-sm focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600" />
+          <input type="email" name="email" required placeholder="Your work email *" class="flex-1 px-4 py-3 rounded-xl bg-white border border-slate-300 text-sm focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600" autocomplete="email" />
           <button type="submit" class="px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm shrink-0 cursor-pointer">Send Price Sheet</button>
         </form>
       </div>
@@ -915,8 +905,7 @@
         </div>
       </div>
       <div class="lg:col-span-7">
-        <span class="text-xs font-bold uppercase tracking-widest text-blue-600">Inside the Crunch</span>
-        <h2 class="mt-2 text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-6">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-6">
           4-Layer Anti-Tear &amp; Bead-Free Block Squishy Engineering
         </h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -945,8 +934,7 @@
   <section class="w-full bg-slate-50 py-16 md:py-24 border-b border-slate-200">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-2xl mb-10">
-        <span class="text-xs font-bold uppercase tracking-widest text-blue-600">OEM &amp; Light Customization</span>
-        <h2 class="mt-2 text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
           How to Order Custom Squishy Toys &amp; Custom Squeeze Toys on Existing Block Molds
         </h2>
       </div>
@@ -979,8 +967,7 @@
   <section class="w-full bg-white py-16 md:py-20 border-b border-slate-200">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
       <div class="lg:col-span-6">
-        <span class="text-xs font-bold uppercase tracking-widest text-emerald-600">Quality &amp; Safety</span>
-        <h2 class="mt-2 text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-4">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-4">
           Verified Bead-Free Compliance &amp; Batch Testing
         </h2>
         <p class="text-sm text-slate-600 leading-relaxed mb-5">
@@ -1053,8 +1040,8 @@
       </div>
       <div class="lg:col-span-7 rounded-2xl bg-white border border-slate-200 p-8 shadow-lg">
         <form action="/contact-us" method="get" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <input type="text" name="name" required placeholder="Your Name *" class="px-4 py-3 rounded-xl border border-slate-300 text-sm focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600" />
-          <input type="email" name="email" required placeholder="Work Email *" class="px-4 py-3 rounded-xl border border-slate-300 text-sm focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600" />
+          <input type="text" name="name" required placeholder="Your Name *" class="px-4 py-3 rounded-xl border border-slate-300 text-sm focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600" autocomplete="name" />
+          <input type="email" name="email" required placeholder="Work Email *" class="px-4 py-3 rounded-xl border border-slate-300 text-sm focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600" autocomplete="email" />
           <textarea name="details" rows="3" required placeholder="e.g. 2 cartons Cheese (Emoji), 1 carton Capybara, 1 carton Color-Changing Durian to USA..." class="sm:col-span-2 px-4 py-3 rounded-xl border border-slate-300 text-sm focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
           <button type="submit" class="sm:col-span-2 px-7 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm shadow-md cursor-pointer">Request 24-Hour Quote</button>
         </form>
@@ -1067,27 +1054,26 @@
   <section class="w-full bg-slate-50 py-16 border-t border-slate-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-3xl mb-10">
-        <span class="text-xs font-bold uppercase tracking-widest text-blue-600">Risk Elimination for Importers</span>
-        <h2 class="mt-2 text-2xl sm:text-3xl font-extrabold text-slate-900">4 Common Crunchy Squishy Sourcing Traps &mdash; And How XEA Solves Them</h2>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">4 Common Crunchy Squishy Sourcing Traps &mdash; And How XEA Solves Them</h2>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div class="p-6 rounded-2xl bg-amber-50/70 border border-amber-200">
-          <div class="text-xs font-extrabold uppercase text-amber-700 mb-2"><i class="fa-solid fa-triangle-exclamation mr-1.5"></i>Competitor Trap #1: 500-Pc Per Shape MOQ</div>
+          <div class="text-xs font-extrabold uppercase text-amber-800 mb-2"><i class="fa-solid fa-triangle-exclamation mr-1.5"></i>Competitor Trap #1: 500-Pc Per Shape MOQ</div>
           <p class="text-sm text-slate-700 leading-relaxed">Most Jinhua &amp; Yiwu factories force 500 pcs per mold, locking $3,000+ in untested shapes.</p>
           <hr class="my-3 border-slate-200/80" /><div class="text-xs font-bold text-emerald-700"><i class="fa-solid fa-shield-halved mr-1.5"></i>XEA Shield: Start at 1 full carton (144 pcs; Big White Tooth 192 pcs) per shape.</div>
         </div>
         <div class="p-6 rounded-2xl bg-amber-50/70 border border-amber-200">
-          <div class="text-xs font-extrabold uppercase text-amber-700 mb-2"><i class="fa-solid fa-triangle-exclamation mr-1.5"></i>Competitor Trap #2: Banned Water-Bead Fillings</div>
+          <div class="text-xs font-extrabold uppercase text-amber-800 mb-2"><i class="fa-solid fa-triangle-exclamation mr-1.5"></i>Competitor Trap #2: Banned Water-Bead Fillings</div>
           <p class="text-sm text-slate-700 leading-relaxed">Expandable polymer beads trigger US CPSC recalls and instant Amazon ASIN removals.</p>
           <hr class="my-3 border-slate-200/80" /><div class="text-xs font-bold text-emerald-700"><i class="fa-solid fa-shield-halved mr-1.5"></i>XEA Shield: 100% solid bead-free clay &amp; mini-block core engineered for ASTM F963-23 &amp; CPC.</div>
         </div>
         <div class="p-6 rounded-2xl bg-amber-50/70 border border-amber-200">
-          <div class="text-xs font-extrabold uppercase text-amber-700 mb-2"><i class="fa-solid fa-triangle-exclamation mr-1.5"></i>Competitor Trap #3: Thin TPR Seam Blowouts</div>
+          <div class="text-xs font-extrabold uppercase text-amber-800 mb-2"><i class="fa-solid fa-triangle-exclamation mr-1.5"></i>Competitor Trap #3: Thin TPR Seam Blowouts</div>
           <p class="text-sm text-slate-700 leading-relaxed">Cheap thin-wall skins split within 20 squeezes, causing 1-star FBA reviews and refund spikes.</p>
           <hr class="my-3 border-slate-200/80" /><div class="text-xs font-bold text-emerald-700"><i class="fa-solid fa-shield-halved mr-1.5"></i>XEA Shield: Reinforced wall thickness + AQL 2.5 seam pull testing on every production batch.</div>
         </div>
         <div class="p-6 rounded-2xl bg-amber-50/70 border border-amber-200">
-          <div class="text-xs font-extrabold uppercase text-amber-700 mb-2"><i class="fa-solid fa-triangle-exclamation mr-1.5"></i>Competitor Trap #4: Sticky Oil Bleeding in Transit</div>
+          <div class="text-xs font-extrabold uppercase text-amber-800 mb-2"><i class="fa-solid fa-triangle-exclamation mr-1.5"></i>Competitor Trap #4: Sticky Oil Bleeding in Transit</div>
           <p class="text-sm text-slate-700 leading-relaxed">Unstabilized TPR sweats plasticizer oil during warm ocean transit, staining retail boxes.</p>
           <hr class="my-3 border-slate-200/80" /><div class="text-xs font-bold text-emerald-700"><i class="fa-solid fa-shield-halved mr-1.5"></i>XEA Shield: Matte anti-dust surface finish + sealed crystal OPP bag on every single unit.</div>
         </div>
@@ -1099,26 +1085,25 @@
   <section class="w-full bg-white py-16 border-t border-slate-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-2xl mx-auto mb-10">
-        <span class="text-xs font-bold uppercase tracking-widest text-emerald-600">ASMR Acoustic Engineering</span>
-        <h2 class="mt-2 text-2xl sm:text-3xl font-extrabold text-slate-900">Inside XEA&rsquo;s 4-Layer Crunchy Building Block Construction</h2>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Inside XEA&rsquo;s 4-Layer Crunchy Building Block Construction</h2>
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 border-t-4 border-t-blue-600">
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
           <span class="text-xs font-extrabold text-blue-600">LAYER 01</span>
           <h3 class="mt-2 text-base font-bold text-slate-900">Matte Anti-Dust Outer Coat</h3>
           <p class="mt-2 text-xs text-slate-600 leading-relaxed">Dry-touch food-grade talc treatment keeps cheese, fruit, and animal exteriors lint-free on retail shelves.</p>
         </div>
-        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 border-t-4 border-t-blue-600">
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
           <span class="text-xs font-extrabold text-blue-600">LAYER 02</span>
           <h3 class="mt-2 text-base font-bold text-slate-900">High-Elasticity TPR Shell</h3>
           <p class="mt-2 text-xs text-slate-600 leading-relaxed">Phthalate-free thermoplastic rubber stretches cleanly around internal cubes without micro-tearing.</p>
         </div>
-        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 border-t-4 border-t-emerald-600">
-          <span class="text-xs font-extrabold text-emerald-600">LAYER 03</span>
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+          <span class="text-xs font-extrabold text-emerald-700">LAYER 03</span>
           <h3 class="mt-2 text-base font-bold text-slate-900">Crisp Mini-Block Clay Core</h3>
           <p class="mt-2 text-xs text-slate-600 leading-relaxed">100% water-bead-free solid micro-blocks suspended in soft clay deliver signature TikTok ASMR crunch.</p>
         </div>
-        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 border-t-4 border-t-slate-900">
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
           <span class="text-xs font-extrabold text-slate-700">LAYER 04</span>
           <h3 class="mt-2 text-base font-bold text-slate-900">Heat-Sealed Bottom Plug</h3>
           <p class="mt-2 text-xs text-slate-600 leading-relaxed">Flush ultrasonic/thermal seal prevents leaks and passes ASTM F963-23 tension &amp; drop inspection.</p>
@@ -1131,8 +1116,7 @@
   <section class="w-full bg-slate-50 py-16 border-t border-slate-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-2xl mx-auto mb-10">
-        <span class="text-xs font-bold uppercase tracking-widest text-blue-600">Wholesale Volume Pricing Tiers</span>
-        <h2 class="mt-2 text-2xl sm:text-3xl font-extrabold text-slate-900">3 Ways Importers Order Our 25+ Crunchy Block Shapes</h2>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">3 Ways Importers Order Our 25+ Crunchy Block Shapes</h2>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div class="p-7 rounded-2xl bg-white border border-slate-200">
@@ -1140,9 +1124,9 @@
           <h3 class="mt-2 text-xl font-extrabold text-slate-900">1&ndash;3 Mixed Cartons</h3>
           <div class="mt-1 text-xs font-bold text-blue-600">144 &ndash; 432 pcs Total</div>
           <ul class="mt-4 space-y-2 text-xs text-slate-600">
-            <li><i class="fa-solid fa-check text-emerald-600 mr-2"></i>Any stock shape (144 pcs/ctn)</li>
-            <li><i class="fa-solid fa-check text-emerald-600 mr-2"></i>Choose Plain or Emoji Face</li>
-            <li><i class="fa-solid fa-check text-emerald-600 mr-2"></i>Fast DDP Air to US/EU (7&ndash;10d)</li>
+            <li><i class="fa-solid fa-check text-emerald-700 mr-2"></i>Any stock shape (144 pcs/ctn)</li>
+            <li><i class="fa-solid fa-check text-emerald-700 mr-2"></i>Choose Plain or Emoji Face</li>
+            <li><i class="fa-solid fa-check text-emerald-700 mr-2"></i>Fast DDP Air to US/EU (7&ndash;10d)</li>
           </ul>
         </div>
         <div class="p-7 rounded-2xl bg-slate-900 text-white border-2 border-blue-600 shadow-xl">
@@ -1160,9 +1144,9 @@
           <h3 class="mt-2 text-xl font-extrabold text-slate-900">20GP / 40HQ Consolidation</h3>
           <div class="mt-1 text-xs font-bold text-blue-600">3,000+ pcs / Custom Mold</div>
           <ul class="mt-4 space-y-2 text-xs text-slate-600">
-            <li><i class="fa-solid fa-check text-emerald-600 mr-2"></i>FOB Ningbo / Shanghai container load</li>
-            <li><i class="fa-solid fa-check text-emerald-600 mr-2"></i>Exclusive custom shape tooling under NDA</li>
-            <li><i class="fa-solid fa-check text-emerald-600 mr-2"></i>SGS / Intertek AQL 2.5 pre-ship QC</li>
+            <li><i class="fa-solid fa-check text-emerald-700 mr-2"></i>FOB Ningbo / Shanghai container load</li>
+            <li><i class="fa-solid fa-check text-emerald-700 mr-2"></i>Exclusive custom shape tooling under NDA</li>
+            <li><i class="fa-solid fa-check text-emerald-700 mr-2"></i>SGS / Intertek AQL 2.5 pre-ship QC</li>
           </ul>
         </div>
       </div>
@@ -1201,7 +1185,7 @@
       <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-8">4 Ready-to-Download Buyer Files for Crunchy Block Orders</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
         <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200"><i class="fa-solid fa-table text-blue-600 text-xl mb-3"></i><h3 class="text-sm font-bold text-slate-900">29-Row Factory Quote Excel</h3><p class="mt-1.5 text-xs text-slate-600">Plain &amp; emoji tiered pricing, carton dims, and 16&ndash;28 kg gross weights.</p></div>
-        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200"><i class="fa-solid fa-file-shield text-emerald-600 text-xl mb-3"></i><h3 class="text-sm font-bold text-slate-900">ASTM / EN71 Compliance Brief</h3><p class="mt-1.5 text-xs text-slate-600">100% water-bead-free declaration and Amazon CPC documentation guide.</p></div>
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200"><i class="fa-solid fa-file-shield text-emerald-700 text-xl mb-3"></i><h3 class="text-sm font-bold text-slate-900">ASTM / EN71 Compliance Brief</h3><p class="mt-1.5 text-xs text-slate-600">100% water-bead-free declaration and Amazon CPC documentation guide.</p></div>
         <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200"><i class="fa-solid fa-box-open text-blue-600 text-xl mb-3"></i><h3 class="text-sm font-bold text-slate-900">Custom Box &amp; PDQ Dielines</h3><p class="mt-1.5 text-xs text-slate-600">Print-ready AI/PDF templates for 4-pack, 6-pack, and 12-pc counter trays.</p></div>
         <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200"><i class="fa-solid fa-camera text-slate-900 text-xl mb-3"></i><h3 class="text-sm font-bold text-slate-900">Studio WebP Asset Pack</h3><p class="mt-1.5 text-xs text-slate-600">High-resolution clean product photos ready for wholesale catalogs &amp; listings.</p></div>
       </div>
@@ -1254,42 +1238,42 @@
     <!-- Col 2: Products by Material & Theme -->
     <div class="lg:col-span-3">
       <div class="text-xs font-extrabold uppercase tracking-wider text-white mb-4">Product Collections</div>
-      <ul class="space-y-2 text-xs">
-        <li><a href="/products/crunchy-building-block-squishies/" class="hover:text-white !no-underline">Crunchy Building Block TPR</a></li>
-        <li><a href="/products/taba-silicone-squishies/" class="hover:text-white !no-underline">Taba &amp; Platinum Silicone</a></li>
-        <li><a href="/products/food-bakery-squishies/" class="hover:text-white !no-underline">Food &amp; Bakery Squishies</a></li>
-        <li><a href="/products/fruit-squishies/" class="hover:text-white !no-underline">Orchard &amp; Tropical Fruit</a></li>
-        <li><a href="/products/animal-kawaii-squishies/" class="hover:text-white !no-underline">Animal &amp; Kawaii Squishies</a></li>
-        <li><a href="/products/slow-rising-stress-balls/" class="hover:text-white !no-underline">Slow-Rising PU &amp; Gel Balls</a></li>
-        <li><a href="/products/mochi-mini-squishies/" class="hover:text-white !no-underline">Mochi Mini TPR Bulk</a></li>
-        <li><a href="/products/novelty-squishies/" class="hover:text-white !no-underline">Novelty &amp; Color-Changing</a></li>
+      <ul class="space-y-1.5 text-xs">
+        <li><a href="/products/crunchy-building-block-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Crunchy Building Block TPR</a></li>
+        <li><a href="/products/taba-silicone-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Taba &amp; Platinum Silicone</a></li>
+        <li><a href="/products/food-bakery-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Food &amp; Bakery Squishies</a></li>
+        <li><a href="/products/fruit-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Orchard &amp; Tropical Fruit</a></li>
+        <li><a href="/products/animal-kawaii-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Animal &amp; Kawaii Squishies</a></li>
+        <li><a href="/products/slow-rising-stress-balls/" class="inline-block py-0.5 hover:text-white !no-underline">Slow-Rising PU &amp; Gel Balls</a></li>
+        <li><a href="/products/mochi-mini-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Mochi Mini TPR Bulk</a></li>
+        <li><a href="/products/novelty-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Novelty &amp; Color-Changing</a></li>
       </ul>
     </div>
 
     <!-- Col 3: OEM & Buyer Solutions -->
     <div class="lg:col-span-3">
       <div class="text-xs font-extrabold uppercase tracking-wider text-white mb-4">OEM &amp; Buyer Solutions</div>
-      <ul class="space-y-2 text-xs">
-        <li><a href="/oem-odm/" class="hover:text-white !no-underline">OEM &amp; ODM Custom Molding</a></li>
-        <li><a href="/custom-packaging/" class="hover:text-white !no-underline">Custom Packaging &amp; Logo</a></li>
-        <li><a href="/ecommerce-fba/" class="hover:text-white !no-underline">Amazon FBA &amp; TikTok Shop</a></li>
-        <li><a href="/claw-machine-party-favors/" class="hover:text-white !no-underline">Claw Machine, Party &amp; Promo</a></li>
-        <li><a href="/solutions/" class="hover:text-white !no-underline">All B2B Buyer Solutions</a></li>
-        <li><a href="/products/" class="hover:text-white !no-underline">Full 150-SKU Catalog Hub</a></li>
+      <ul class="space-y-1.5 text-xs">
+        <li><a href="/oem-odm/" class="inline-block py-0.5 hover:text-white !no-underline">OEM &amp; ODM Custom Molding</a></li>
+        <li><a href="/custom-packaging/" class="inline-block py-0.5 hover:text-white !no-underline">Custom Packaging &amp; Logo</a></li>
+        <li><a href="/ecommerce-fba/" class="inline-block py-0.5 hover:text-white !no-underline">Amazon FBA &amp; TikTok Shop</a></li>
+        <li><a href="/claw-machine-party-favors/" class="inline-block py-0.5 hover:text-white !no-underline">Claw Machine, Party &amp; Promo</a></li>
+        <li><a href="/solutions/" class="inline-block py-0.5 hover:text-white !no-underline">All B2B Buyer Solutions</a></li>
+        <li><a href="/products/" class="inline-block py-0.5 hover:text-white !no-underline">Full 150-SKU Catalog Hub</a></li>
       </ul>
     </div>
 
     <!-- Col 4: Factory & Legal -->
     <div class="lg:col-span-2">
       <div class="text-xs font-extrabold uppercase tracking-wider text-white mb-4">Company</div>
-      <ul class="space-y-2 text-xs">
-        <li><a href="/factory-quality/" class="hover:text-white !no-underline">Factory &amp; QA Lab</a></li>
-        <li><a href="/faq/" class="hover:text-white !no-underline">Procurement &amp; CPSC FAQ</a></li>
-        <li><a href="/blog/" class="hover:text-white !no-underline">Sourcing Blog &amp; Guides</a></li>
-        <li><a href="/about-us/" class="hover:text-white !no-underline">About XEAtoy</a></li>
-        <li><a href="/contact-us/" class="hover:text-white !no-underline font-bold text-blue-400">Contact &amp; RFQ</a></li>
-        <li><a href="/privacy-policy/" class="hover:text-white !no-underline">Privacy Policy</a></li>
-        <li><a href="/terms-of-service/" class="hover:text-white !no-underline">Terms of Service</a></li>
+      <ul class="space-y-1.5 text-xs">
+        <li><a href="/factory-quality/" class="inline-block py-0.5 hover:text-white !no-underline">Factory &amp; QA Lab</a></li>
+        <li><a href="/faq/" class="inline-block py-0.5 hover:text-white !no-underline">Procurement &amp; CPSC FAQ</a></li>
+        <li><a href="/blog/" class="inline-block py-0.5 hover:text-white !no-underline">Sourcing Blog &amp; Guides</a></li>
+        <li><a href="/about-us/" class="inline-block py-0.5 hover:text-white !no-underline">About XEAtoy</a></li>
+        <li><a href="/contact-us/" class="inline-block py-0.5 hover:text-white !no-underline font-bold text-blue-400">Contact &amp; RFQ</a></li>
+        <li><a href="/privacy-policy/" class="inline-block py-0.5 hover:text-white !no-underline">Privacy Policy</a></li>
+        <li><a href="/terms-of-service/" class="inline-block py-0.5 hover:text-white !no-underline">Terms of Service</a></li>
       </ul>
     </div>
   </div>

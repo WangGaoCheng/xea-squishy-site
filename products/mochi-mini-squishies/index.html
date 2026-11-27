@@ -11,8 +11,9 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://xeatoy.com/products/mochi-mini-squishies/" />
   <meta property="og:image" content="https://xeatoy.com/assets/images/cheese-block-squishy.webp" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="/assets/css/main.css?v=20261128" />
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /></noscript>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Animal & Kawaii Character Molds (83 Styles) Click to toggle", "acceptedAnswer": {"@type": "Answer", "text": "Send us your target pack count and theme list\u2014we ship stock sample kits in 3\u20135 days."}}, {"@type": "Question", "name": "Are XEA mini mochi squishies individually wrapped to prevent sticking?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Every mini mochi squishy receives a light food-grade anti-tack coating and is sealed in an individual OPP bag before being packed into PDQ boxes, FBA value bags, or master cartons."}}, {"@type": "Question", "name": "What safety certifications apply to XEA bulk mochi squishies?", "acceptedAnswer": {"@type": "Answer", "text": "Manufactured in Jinhua, Zhejiang, all XEA mochi squishies are 100% water-bead-free, phthalate-free, and support ASTM F963-23, CPSIA, CPC, and EN71 Parts 1\u20133 compliance."}}, {"@type": "Question", "name": "What is the lead time for seasonal Christmas or Easter mochi packs?", "acceptedAnswer": {"@type": "Answer", "text": "Custom seasonal assortment packs typically require 7\u201312 days for pre-production samples and 15\u201325 days for mass production."}}]}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,36 +28,30 @@
       --xea-muted: #64748b;
       --xea-primary: #2563eb;
       --xea-primary-hover: #1d4ed8;
-      --xea-accent: #d97706;
-      --xea-success: #059669;
+      --xea-accent: #92400e;
+      --xea-success: #047857;
       --xea-border: #e2e8f0;
       --xea-radius-card: 1rem;
       --xea-font-sans: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       --xea-font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
     }
-    html { scroll-behavior: smooth; }
+    html { color-scheme: light; scroll-behavior: smooth; }
     header.xea-site-header { border-bottom: 1px solid var(--xea-border); }
-    @layer base {
-      body {
-        font-family: var(--xea-font-sans);
-        font-size: 16px;
-        line-height: 1.6;
-        color: var(--xea-body);
-        background-color: var(--xea-surface);
-      }
-      h1 { font-size: 40px; line-height: 1.15; font-weight: 800; letter-spacing: -0.025em; }
-      h2 { font-size: 28px; line-height: 1.25; font-weight: 800; letter-spacing: -0.02em; }
-      h3 { font-size: 20px; line-height: 1.35; font-weight: 700; }
-      h4 { font-size: 16px; line-height: 1.4; font-weight: 700; }
-    }
     table, .font-mono, .tabular-nums { font-variant-numeric: tabular-nums; }
+    main p, main li, main details > p, main blockquote { max-width: 50ch; text-wrap: pretty; }
+    main .text-center > p, main p.text-center { margin-inline: auto; }
+    h1, h2, h3, h4 { text-wrap: balance; }
+    input::placeholder, textarea::placeholder { color: #64748b; opacity: 1; }
+    .bg-slate-900 input::placeholder, .bg-slate-900 textarea::placeholder,
+    .bg-slate-950 input::placeholder, .bg-slate-950 textarea::placeholder,
+    .bg-slate-800 input::placeholder, .bg-slate-800 textarea::placeholder { color: #cbd5e1; opacity: 1; }
     ::selection { background-color: #dbeafe; color: #1e3a8a; }
     :focus-visible { outline: 2px solid var(--xea-primary); outline-offset: 2px; }
     @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
       *, *::before, *::after {
-        animation-duration: 0.01ms !important;
+        animation-name: none !important;
         animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
       }
     }
@@ -141,7 +136,7 @@
 
               <!-- Col 2: By Shape / Theme -->
               <div class="col-span-4">
-                <div class="text-xs font-extrabold uppercase tracking-wider text-emerald-600 mb-3"><i class="fa-solid fa-shapes mr-1.5"></i>By Shape &amp; Theme</div>
+                <div class="text-xs font-extrabold uppercase tracking-wider text-emerald-700 mb-3"><i class="fa-solid fa-shapes mr-1.5"></i>By Shape &amp; Theme</div>
                 <ul class="space-y-2">
                   <li>
                     <a href="/products/food-bakery-squishies/" class="block p-2 rounded-xl hover:bg-slate-50 !no-underline">
@@ -214,7 +209,7 @@
                 <div class="text-xs text-slate-500 mt-0.5">NDA tooling from 3,000 pcs</div>
               </a>
               <a href="/custom-packaging/" class="block p-3 rounded-xl hover:bg-slate-50 !no-underline">
-                <div class="text-sm font-bold text-slate-900"><i class="fa-solid fa-box-open text-emerald-600 mr-2"></i>Custom Packaging &amp; Logo</div>
+                <div class="text-sm font-bold text-slate-900"><i class="fa-solid fa-box-open text-emerald-700 mr-2"></i>Custom Packaging &amp; Logo</div>
                 <div class="text-xs text-slate-500 mt-0.5">PDQ trays, window boxes &amp; FNSKU (500 pcs)</div>
               </a>
               <hr class="my-1 border-slate-100" />
@@ -238,7 +233,7 @@
                 <div class="text-xs text-slate-500 mt-0.5">1-carton test MOQ, CPC &amp; DDP shipping</div>
               </a>
               <a href="/claw-machine-party-favors/" class="block p-3 rounded-xl hover:bg-slate-50 !no-underline">
-                <div class="text-sm font-bold text-slate-900"><i class="fa-solid fa-trophy text-emerald-600 mr-2"></i>Claw Machine, Party &amp; Promo</div>
+                <div class="text-sm font-bold text-slate-900"><i class="fa-solid fa-trophy text-emerald-700 mr-2"></i>Claw Machine, Party &amp; Promo</div>
                 <div class="text-xs text-slate-500 mt-0.5">High-volume prizes &amp; logo stress balls</div>
               </a>
               <hr class="my-1 border-slate-100" />
@@ -301,10 +296,7 @@
   <section class="w-full bg-slate-50 py-14 md:py-20 border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
       <div class="lg:col-span-7">
-        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-bold uppercase tracking-wider">
-          <i class="fa-solid fa-boxes-stacked"></i> 200+ Mini Mochi Molds &middot; High-Volume Export
-        </span>
-        <h1 class="mt-4 text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.16]">
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.16]">
           Wholesale <span class="text-blue-600">Mochi Squishy</span> &amp; Mini TPR Squishies in Bulk
         </h1>
         <p class="mt-5 text-base md:text-lg text-slate-600 leading-relaxed">
@@ -320,7 +312,7 @@
           <img src="/assets/images/capybara-block-squishy.webp" alt="Wholesale mini mochi squishy animals bulk pack" class="w-full aspect-[4/3] object-cover rounded-xl" / width="900" height="1200" fetchpriority="high" decoding="async" />
           <div class="mt-3 px-2 flex justify-between text-xs font-semibold text-slate-700">
             <span>Unit Weight: 12g&ndash;25g (Mini) / 80g+ (Jumbo)</span>
-            <span class="text-emerald-600">EN71 &amp; CPC Ready</span>
+            <span class="text-emerald-700">EN71 &amp; CPC Ready</span>
           </div>
         </div>
       </div>
@@ -338,7 +330,7 @@
           <p class="mt-2 text-xs text-slate-600">24 or 36 individually bagged mini mochi squishies in tear-top retail display trays.</p>
         </div>
         <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
-          <div class="text-emerald-600 text-xl mb-3"><i class="fa-solid fa-bag-shopping"></i></div>
+          <div class="text-emerald-700 text-xl mb-3"><i class="fa-solid fa-bag-shopping"></i></div>
           <h3 class="text-base font-bold text-slate-900">FBA 50/100-Pc Value Bags</h3>
           <p class="mt-2 text-xs text-slate-600">Random or curated no-duplicate assortments with pre-applied FNSKU &amp; suffocation warnings.</p>
         </div>
@@ -360,8 +352,7 @@
   <section id="mochi-directory" class="w-full bg-slate-50 py-16 border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-3xl mb-8">
-        <span class="text-xs font-bold uppercase tracking-widest text-blue-600">B2B SKU &amp; Mold Index</span>
-        <h2 class="mt-2 text-2xl sm:text-3xl font-extrabold text-slate-900">Complete Wholesale Mochi Character, Size &amp; Theme Mold Directory</h2>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Complete Wholesale Mochi Character, Size &amp; Theme Mold Directory</h2>
         <p class="mt-2 text-sm text-slate-600">Select any combination of our existing stock molds below to build your private-label assortment without paying new tooling fees.</p>
       </div>
       <div class="space-y-4">
@@ -374,7 +365,7 @@
         </details>
         <details open class="rounded-2xl bg-white border border-slate-200 p-6">
           <summary class="cursor-pointer font-bold text-slate-900 text-base flex items-center justify-between">
-            <span><i class="fa-solid fa-sparkles text-emerald-600 mr-2"></i>Sizes, Colors, Glitter &amp; Rare Editions (53 Styles)</span>
+            <span><i class="fa-solid fa-sparkles text-emerald-700 mr-2"></i>Sizes, Colors, Glitter &amp; Rare Editions (53 Styles)</span>
             <span class="text-xs text-slate-500">Click to toggle</span>
           </summary>
           <div class="mt-4 flex flex-wrap gap-2"><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">mini mochi squishies</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">mini squishy toys</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">jumbo mochi squishy</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">green mochi squishy</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">mochi squishy jumbo</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">rare mochi squishies</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">rarest mochi squishy in the world</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">glitter mochi squishies</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">giant mochi squishy</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">pink mochi squishy</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">mini squishies bulk</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">giggle zone mini mochi squishies</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">big mochi squishy</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">big mochi toy</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">big mochis toys</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">biggest mochi squishy in the world</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">mochi food squishy</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">mochi squishy food</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">mini mochi squishies toys</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">strawberry mochi squishy</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">yellow mochi squishy</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">jumbo mochi</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">cute mini squishies</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">giant mochi toy</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">glitter mochi</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">mini squishy food</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">mini squishy kawaii</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">large mochi squishy</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">fruit mochi squishies</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">mini mochi toy</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">mochi jumbo</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">mochi squishy big</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">mochi squishy glitter</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">mochi mini squishies</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">glitter mochi squishy toys</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">kawaii mini squishies</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">fruity squishy mochi</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">100 mini squishies</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">big mochi fidget</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">big mochi fidget toy</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">biggest mochi toy in the world</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">fruit squishy mochi</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">giant mochi fidget</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">glitter mochi toy</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">jumbo mochi fidget</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">jumbo mochi fidget toy</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">jumbo mochi pack</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">jumbo mochi toy</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">mini squishy mochi</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">mochi squishy fruit</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">peach mochi squishy</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">pink mochi toy</span><span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs border border-slate-200">giant mochi fidget toy</span></div>
@@ -426,7 +417,7 @@
       <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-6">Seasonal &amp; Channel Mochi Assortment Engineering</h2>
       <div class="overflow-x-auto rounded-2xl border border-slate-200 shadow-sm">
         <table class="w-full text-left border-collapse text-sm">
-          <thead><tr class="bg-slate-900 text-white"><th class="py-3.5 px-4 font-semibold">Mochi Program</th><th class="py-3.5 px-4 font-semibold">Mold Mix Strategy</th><th class="py-3.5 px-4 font-semibold">Packaging Format</th><th class="py-3.5 px-4 font-semibold">Peak Buying Window</th></tr></thead>
+          <thead><tr class="bg-slate-900 text-white"><th scope="col" class="py-3.5 px-4 font-semibold">Mochi Program</th><th scope="col" class="py-3.5 px-4 font-semibold">Mold Mix Strategy</th><th scope="col" class="py-3.5 px-4 font-semibold">Packaging Format</th><th scope="col" class="py-3.5 px-4 font-semibold">Peak Buying Window</th></tr></thead>
           <tbody class="divide-y divide-slate-200"><tr class="bg-white"><td class="py-3.5 px-4 font-bold text-slate-900">Everyday FBA Value Bag</td><td class="py-3.5 px-4 ">50 or 100 No-Duplicate Animals</td><td class="py-3.5 px-4 ">Frosted Zip Bag / Bucket + FNSKU</td><td class="py-3.5 px-4 ">Year-Round Evergreen</td></tr><tr class="bg-slate-50"><td class="py-3.5 px-4 font-bold text-slate-900">Easter Egg Pre-Filled</td><td class="py-3.5 px-4 ">24/36/50 Mini Bunnies &amp; Chicks</td><td class="py-3.5 px-4 ">Pre-Stuffed 6cm Hinged Plastic Eggs</td><td class="py-3.5 px-4 ">Nov &ndash; Feb (For Spring)</td></tr><tr class="bg-white"><td class="py-3.5 px-4 font-bold text-slate-900">Halloween &amp; Xmas Advent</td><td class="py-3.5 px-4 ">24 Glow Ghosts or Santa/Reindeer</td><td class="py-3.5 px-4 ">24-Window Countdown Gift Box</td><td class="py-3.5 px-4 ">Jun &ndash; Sep (For Q4)</td></tr><tr class="bg-slate-50"><td class="py-3.5 px-4 font-bold text-slate-900">Claw &amp; Vending Bulk</td><td class="py-3.5 px-4 ">1,000+ Loose or 50mm Capsules</td><td class="py-3.5 px-4 ">Master Export Carton (18&ndash;22 kg)</td><td class="py-3.5 px-4 ">Continuous Monthly Restock</td></tr></tbody>
         </table>
       </div>
@@ -439,19 +430,19 @@
       <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-8">4 Bulk Mochi Sourcing Traps &mdash; Prevented by XEA</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div class="p-6 rounded-2xl bg-amber-50/70 border border-amber-200">
-          <div class="text-xs font-extrabold uppercase text-amber-700 mb-2"><i class="fa-solid fa-triangle-exclamation mr-1.5"></i>Trap #1: High Duplicate Rate in 50-Pc Packs</div>
+          <div class="text-xs font-extrabold uppercase text-amber-800 mb-2"><i class="fa-solid fa-triangle-exclamation mr-1.5"></i>Trap #1: High Duplicate Rate in 50-Pc Packs</div>
           <p class="text-sm text-slate-700 leading-relaxed">Cheap suppliers pack only 8 molds repeated 6 times, causing angry 1-star FBA reviews.</p>
           <hr class="my-3 border-slate-200/80" /><div class="text-xs font-bold text-emerald-700"><i class="fa-solid fa-shield-halved mr-1.5"></i>XEA Shield: 200+ active Jinhua molds guarantee true no-duplicate 24, 36, and 50-pc assortments.</div>
         </div>        <div class="p-6 rounded-2xl bg-amber-50/70 border border-amber-200">
-          <div class="text-xs font-extrabold uppercase text-amber-700 mb-2"><i class="fa-solid fa-triangle-exclamation mr-1.5"></i>Trap #2: Sticky Clumped Mochi Balls</div>
+          <div class="text-xs font-extrabold uppercase text-amber-800 mb-2"><i class="fa-solid fa-triangle-exclamation mr-1.5"></i>Trap #2: Sticky Clumped Mochi Balls</div>
           <p class="text-sm text-slate-700 leading-relaxed">Unpowdered mini TPR fuses together in warm containers.</p>
           <hr class="my-3 border-slate-200/80" /><div class="text-xs font-bold text-emerald-700"><i class="fa-solid fa-shield-halved mr-1.5"></i>XEA Shield: Light food-grade anti-tack coating + individual OPP bag on every piece.</div>
         </div>        <div class="p-6 rounded-2xl bg-amber-50/70 border border-amber-200">
-          <div class="text-xs font-extrabold uppercase text-amber-700 mb-2"><i class="fa-solid fa-triangle-exclamation mr-1.5"></i>Trap #3: Missing Small-Parts Warnings</div>
+          <div class="text-xs font-extrabold uppercase text-amber-800 mb-2"><i class="fa-solid fa-triangle-exclamation mr-1.5"></i>Trap #3: Missing Small-Parts Warnings</div>
           <p class="text-sm text-slate-700 leading-relaxed">Mini mochi toys require mandatory US/EU choking-hazard labeling for ages 3+.</p>
           <hr class="my-3 border-slate-200/80" /><div class="text-xs font-bold text-emerald-700"><i class="fa-solid fa-shield-halved mr-1.5"></i>XEA Shield: Factory-printed ASTM F963-23 / EN71 age warnings on outer bags &amp; PDQ boxes.</div>
         </div>        <div class="p-6 rounded-2xl bg-amber-50/70 border border-amber-200">
-          <div class="text-xs font-extrabold uppercase text-amber-700 mb-2"><i class="fa-solid fa-triangle-exclamation mr-1.5"></i>Trap #4: Late Seasonal Delivery</div>
+          <div class="text-xs font-extrabold uppercase text-amber-800 mb-2"><i class="fa-solid fa-triangle-exclamation mr-1.5"></i>Trap #4: Late Seasonal Delivery</div>
           <p class="text-sm text-slate-700 leading-relaxed">Missing Easter or Christmas FBA check-in dates destroys seasonal inventory ROI.</p>
           <hr class="my-3 border-slate-200/80" /><div class="text-xs font-bold text-emerald-700"><i class="fa-solid fa-shield-halved mr-1.5"></i>XEA Shield: Dedicated seasonal production slots with 15&ndash;25 day turnaround.</div>
         </div>
@@ -464,19 +455,19 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-8">4 Quality Benchmarks of XEA Mini Mochi TPR</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 border-t-4 border-t-blue-600">
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
           <span class="text-xs font-extrabold text-blue-600">BENCHMARK 01</span>
           <h3 class="mt-2 text-base font-bold text-slate-900">Zero-Duplicate Curations</h3>
           <p class="mt-2 text-xs text-slate-600 leading-relaxed">Select exact animal, ocean, dinosaur, or holiday mold lists before packing.</p>
-        </div>        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 border-t-4 border-t-blue-600">
+        </div>        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
           <span class="text-xs font-extrabold text-blue-600">BENCHMARK 02</span>
           <h3 class="mt-2 text-base font-bold text-slate-900">Crisp Mini Eye Printing</h3>
           <p class="mt-2 text-xs text-slate-600 leading-relaxed">Clean micro-pad printing even on 4 cm pocket-sized cats, seals, and bunnies.</p>
-        </div>        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 border-t-4 border-t-blue-600">
+        </div>        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
           <span class="text-xs font-extrabold text-blue-600">BENCHMARK 03</span>
           <h3 class="mt-2 text-base font-bold text-slate-900">Washable Durable TPR</h3>
           <p class="mt-2 text-xs text-slate-600 leading-relaxed">Rinses clean with mild soap and water without tearing or fading.</p>
-        </div>        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 border-t-4 border-t-blue-600">
+        </div>        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
           <span class="text-xs font-extrabold text-blue-600">BENCHMARK 04</span>
           <h3 class="mt-2 text-base font-bold text-slate-900">Hygienic Single-Bag Seal</h3>
           <p class="mt-2 text-xs text-slate-600 leading-relaxed">Each mini mochi is sealed individually for party bags and classroom prizes.</p>
@@ -488,7 +479,7 @@
   <!-- TANK-MC-05: H3-A Mid-Page Sample & Quote Capture Bar (bg-slate-50 | Low) -->
   <section class="w-full bg-slate-50 py-10 border-t border-slate-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="rounded-2xl bg-white border border-slate-200 border-l-4 border-l-blue-600 p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+      <div class="rounded-2xl bg-white border border-slate-200 p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
         <div>
           <h2 class="text-xl font-extrabold text-slate-900">Build Your No-Duplicate 50-Pc FBA Pack or Seasonal Advent Box</h2>
           <p class="mt-1 text-sm text-slate-600">Tell us your target pack size (24/36/50/100 pcs) and theme&mdash;receive a mold photo sheet and quote in 24 hours.</p>
@@ -616,12 +607,11 @@
   <section class="w-full bg-white py-14 border-t border-slate-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="mb-6">
-        <span class="text-xs font-bold uppercase tracking-widest text-blue-600">Verified 2026 Export Specifications</span>
-        <h2 class="mt-2 text-2xl sm:text-3xl font-extrabold text-slate-900">Wholesale Mini Mochi Squishy Bulk Packing &amp; Safety Matrix (2026)</h2>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Wholesale Mini Mochi Squishy Bulk Packing &amp; Safety Matrix (2026)</h2>
       </div>
       <div class="overflow-x-auto rounded-2xl border border-slate-200 shadow-sm">
         <table class="w-full text-left border-collapse text-sm">
-          <thead><tr class="bg-slate-900 text-white"><th class="py-3.5 px-4 font-semibold">Bulk Format</th><th class="py-3.5 px-4 font-semibold">Pack Configuration</th><th class="py-3.5 px-4 font-semibold">MOQ</th><th class="py-3.5 px-4 font-semibold">Compliance &amp; Origin</th></tr></thead>
+          <thead><tr class="bg-slate-900 text-white"><th scope="col" class="py-3.5 px-4 font-semibold">Bulk Format</th><th scope="col" class="py-3.5 px-4 font-semibold">Pack Configuration</th><th scope="col" class="py-3.5 px-4 font-semibold">MOQ</th><th scope="col" class="py-3.5 px-4 font-semibold">Compliance &amp; Origin</th></tr></thead>
           <tbody class="divide-y divide-slate-200"><tr class="bg-white"><td class="py-3.5 px-4 font-bold text-slate-900">PDQ Counter Display Box</td><td class="py-3.5 px-4 ">24 or 36 Individually Bagged Mochi</td><td class="py-3.5 px-4 ">500 Boxes</td><td class="py-3.5 px-4 ">ASTM F963-23 / EN71 &middot; Jinhua Factory</td></tr><tr class="bg-slate-50"><td class="py-3.5 px-4 font-bold text-slate-900">Amazon FBA Value Assortment</td><td class="py-3.5 px-4 ">50-Pc or 100-Pc No-Duplicate Bags</td><td class="py-3.5 px-4 ">500 Packs</td><td class="py-3.5 px-4 ">100% Bead-Free + FNSKU &amp; Warning</td></tr><tr class="bg-white"><td class="py-3.5 px-4 font-bold text-slate-900">Holiday Advent / Easter Eggs</td><td class="py-3.5 px-4 ">24-Day Calendar or Pre-Filled Eggs</td><td class="py-3.5 px-4 ">1,000 Sets</td><td class="py-3.5 px-4 ">CPSIA / CPC &amp; CE Compliant</td></tr><tr class="bg-slate-50"><td class="py-3.5 px-4 font-bold text-slate-900">Claw &amp; Vending Capsule Bulk</td><td class="py-3.5 px-4 ">1,000+ Loose or 50mm Capsules</td><td class="py-3.5 px-4 ">3,000 pcs</td><td class="py-3.5 px-4 ">AQL 2.5 Inspected &middot; FOB / DDP</td></tr></tbody>
         </table>
       </div>
@@ -633,8 +623,7 @@
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3 mb-8">
         <div>
-          <span class="text-xs font-bold uppercase tracking-widest text-emerald-600">Buyer FAQ &amp; Direct Answers</span>
-          <h2 class="mt-2 text-2xl sm:text-3xl font-extrabold text-slate-900">Frequently Asked Wholesale Questions</h2>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Frequently Asked Wholesale Questions</h2>
         </div>
         <span class="text-xs font-semibold text-slate-500"><i class="fa-regular fa-calendar-check text-blue-600 mr-1"></i>Last reviewed: November 2026 &middot; XEA Jinhua Factory</span>
       </div>
@@ -697,42 +686,42 @@
     <!-- Col 2: Products by Material & Theme -->
     <div class="lg:col-span-3">
       <div class="text-xs font-extrabold uppercase tracking-wider text-white mb-4">Product Collections</div>
-      <ul class="space-y-2 text-xs">
-        <li><a href="/products/crunchy-building-block-squishies/" class="hover:text-white !no-underline">Crunchy Building Block TPR</a></li>
-        <li><a href="/products/taba-silicone-squishies/" class="hover:text-white !no-underline">Taba &amp; Platinum Silicone</a></li>
-        <li><a href="/products/food-bakery-squishies/" class="hover:text-white !no-underline">Food &amp; Bakery Squishies</a></li>
-        <li><a href="/products/fruit-squishies/" class="hover:text-white !no-underline">Orchard &amp; Tropical Fruit</a></li>
-        <li><a href="/products/animal-kawaii-squishies/" class="hover:text-white !no-underline">Animal &amp; Kawaii Squishies</a></li>
-        <li><a href="/products/slow-rising-stress-balls/" class="hover:text-white !no-underline">Slow-Rising PU &amp; Gel Balls</a></li>
-        <li><a href="/products/mochi-mini-squishies/" class="hover:text-white !no-underline">Mochi Mini TPR Bulk</a></li>
-        <li><a href="/products/novelty-squishies/" class="hover:text-white !no-underline">Novelty &amp; Color-Changing</a></li>
+      <ul class="space-y-1.5 text-xs">
+        <li><a href="/products/crunchy-building-block-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Crunchy Building Block TPR</a></li>
+        <li><a href="/products/taba-silicone-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Taba &amp; Platinum Silicone</a></li>
+        <li><a href="/products/food-bakery-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Food &amp; Bakery Squishies</a></li>
+        <li><a href="/products/fruit-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Orchard &amp; Tropical Fruit</a></li>
+        <li><a href="/products/animal-kawaii-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Animal &amp; Kawaii Squishies</a></li>
+        <li><a href="/products/slow-rising-stress-balls/" class="inline-block py-0.5 hover:text-white !no-underline">Slow-Rising PU &amp; Gel Balls</a></li>
+        <li><a href="/products/mochi-mini-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Mochi Mini TPR Bulk</a></li>
+        <li><a href="/products/novelty-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Novelty &amp; Color-Changing</a></li>
       </ul>
     </div>
 
     <!-- Col 3: OEM & Buyer Solutions -->
     <div class="lg:col-span-3">
       <div class="text-xs font-extrabold uppercase tracking-wider text-white mb-4">OEM &amp; Buyer Solutions</div>
-      <ul class="space-y-2 text-xs">
-        <li><a href="/oem-odm/" class="hover:text-white !no-underline">OEM &amp; ODM Custom Molding</a></li>
-        <li><a href="/custom-packaging/" class="hover:text-white !no-underline">Custom Packaging &amp; Logo</a></li>
-        <li><a href="/ecommerce-fba/" class="hover:text-white !no-underline">Amazon FBA &amp; TikTok Shop</a></li>
-        <li><a href="/claw-machine-party-favors/" class="hover:text-white !no-underline">Claw Machine, Party &amp; Promo</a></li>
-        <li><a href="/solutions/" class="hover:text-white !no-underline">All B2B Buyer Solutions</a></li>
-        <li><a href="/products/" class="hover:text-white !no-underline">Full 150-SKU Catalog Hub</a></li>
+      <ul class="space-y-1.5 text-xs">
+        <li><a href="/oem-odm/" class="inline-block py-0.5 hover:text-white !no-underline">OEM &amp; ODM Custom Molding</a></li>
+        <li><a href="/custom-packaging/" class="inline-block py-0.5 hover:text-white !no-underline">Custom Packaging &amp; Logo</a></li>
+        <li><a href="/ecommerce-fba/" class="inline-block py-0.5 hover:text-white !no-underline">Amazon FBA &amp; TikTok Shop</a></li>
+        <li><a href="/claw-machine-party-favors/" class="inline-block py-0.5 hover:text-white !no-underline">Claw Machine, Party &amp; Promo</a></li>
+        <li><a href="/solutions/" class="inline-block py-0.5 hover:text-white !no-underline">All B2B Buyer Solutions</a></li>
+        <li><a href="/products/" class="inline-block py-0.5 hover:text-white !no-underline">Full 150-SKU Catalog Hub</a></li>
       </ul>
     </div>
 
     <!-- Col 4: Factory & Legal -->
     <div class="lg:col-span-2">
       <div class="text-xs font-extrabold uppercase tracking-wider text-white mb-4">Company</div>
-      <ul class="space-y-2 text-xs">
-        <li><a href="/factory-quality/" class="hover:text-white !no-underline">Factory &amp; QA Lab</a></li>
-        <li><a href="/faq/" class="hover:text-white !no-underline">Procurement &amp; CPSC FAQ</a></li>
-        <li><a href="/blog/" class="hover:text-white !no-underline">Sourcing Blog &amp; Guides</a></li>
-        <li><a href="/about-us/" class="hover:text-white !no-underline">About XEAtoy</a></li>
-        <li><a href="/contact-us/" class="hover:text-white !no-underline font-bold text-blue-400">Contact &amp; RFQ</a></li>
-        <li><a href="/privacy-policy/" class="hover:text-white !no-underline">Privacy Policy</a></li>
-        <li><a href="/terms-of-service/" class="hover:text-white !no-underline">Terms of Service</a></li>
+      <ul class="space-y-1.5 text-xs">
+        <li><a href="/factory-quality/" class="inline-block py-0.5 hover:text-white !no-underline">Factory &amp; QA Lab</a></li>
+        <li><a href="/faq/" class="inline-block py-0.5 hover:text-white !no-underline">Procurement &amp; CPSC FAQ</a></li>
+        <li><a href="/blog/" class="inline-block py-0.5 hover:text-white !no-underline">Sourcing Blog &amp; Guides</a></li>
+        <li><a href="/about-us/" class="inline-block py-0.5 hover:text-white !no-underline">About XEAtoy</a></li>
+        <li><a href="/contact-us/" class="inline-block py-0.5 hover:text-white !no-underline font-bold text-blue-400">Contact &amp; RFQ</a></li>
+        <li><a href="/privacy-policy/" class="inline-block py-0.5 hover:text-white !no-underline">Privacy Policy</a></li>
+        <li><a href="/terms-of-service/" class="inline-block py-0.5 hover:text-white !no-underline">Terms of Service</a></li>
       </ul>
     </div>
   </div>

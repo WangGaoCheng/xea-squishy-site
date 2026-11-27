@@ -11,8 +11,9 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://xeatoy.com/products/26-led-fidget-keyboard/" />
   <meta property="og:image" content="https://xeatoy.com/assets/images/cheese-block-squishy.webp" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="/assets/css/main.css?v=20261128" />
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /></noscript>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "Wholesale 26-LED Light-Up Fidget Keyboard Clicker", "description": "Factory-direct 26-key LED light-up fidget keyboard clicker (XEA-V2-120). Crisp mechanical click, 144 pcs/ctn 1-carton trial MOQ, ASTM F963-23 & CPC ready.", "brand": {"@type": "Brand", "name": "XEA"}, "url": "https://xeatoy.com/products/26-led-fidget-keyboard/"}</script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the MOQ for the 26-LED Light-Up Fidget Keyboard?", "acceptedAnswer": {"@type": "Answer", "text": "Stock trial MOQ is 1 master carton (144 pcs for XEA-V2-120; 120 pcs for XEA-V2-121 and XEA-V2-122)."}}, {"@type": "Question", "name": "Can LED fidget keyboards ship by air DDP to US Amazon FBA?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We supply MSDS and UN38.3 documentation for smooth air-freight DDP clearance, or you can pair with our Non-LED XEA-V2-122 for zero-battery shipping."}}, {"@type": "Question", "name": "Can we print our brand logo or custom keycap colors?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Custom Pantone keycap palettes (pastel macaron, neon gamer, translucent) and spacebar/back-shell pad printing start at 1,000 units."}}, {"@type": "Question", "name": "How long do the LED batteries last?", "acceptedAnswer": {"@type": "Answer", "text": "Standard factory cells support thousands of illumination presses and come with an insulating pull-tab (where applicable) so shelf stock arrives at 100% charge."}}, {"@type": "Question", "name": "Do you offer retail frosted boxes or PDQ counter displays?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Individual frosted gift boxes, hang-tab retail cards, FNSKU labels, and 12-unit 'Try Me' counter PDQs are available from 500-1,000 pcs."}}, {"@type": "Question", "name": "What is the sample lead time?", "acceptedAnswer": {"@type": "Answer", "text": "Stock samples of all 3 tiers ship via DHL/FedEx within 3 days so your team can compare click sound and LED brightness firsthand."}}]}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,36 +29,30 @@
       --xea-muted: #64748b;
       --xea-primary: #2563eb;
       --xea-primary-hover: #1d4ed8;
-      --xea-accent: #d97706;
-      --xea-success: #059669;
+      --xea-accent: #92400e;
+      --xea-success: #047857;
       --xea-border: #e2e8f0;
       --xea-radius-card: 1rem;
       --xea-font-sans: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       --xea-font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
     }
-    html { scroll-behavior: smooth; }
+    html { color-scheme: light; scroll-behavior: smooth; }
     header.xea-site-header { border-bottom: 1px solid var(--xea-border); }
-    @layer base {
-      body {
-        font-family: var(--xea-font-sans);
-        font-size: 16px;
-        line-height: 1.6;
-        color: var(--xea-body);
-        background-color: var(--xea-surface);
-      }
-      h1 { font-size: 40px; line-height: 1.15; font-weight: 800; letter-spacing: -0.025em; }
-      h2 { font-size: 28px; line-height: 1.25; font-weight: 800; letter-spacing: -0.02em; }
-      h3 { font-size: 20px; line-height: 1.35; font-weight: 700; }
-      h4 { font-size: 16px; line-height: 1.4; font-weight: 700; }
-    }
     table, .font-mono, .tabular-nums { font-variant-numeric: tabular-nums; }
+    main p, main li, main details > p, main blockquote { max-width: 50ch; text-wrap: pretty; }
+    main .text-center > p, main p.text-center { margin-inline: auto; }
+    h1, h2, h3, h4 { text-wrap: balance; }
+    input::placeholder, textarea::placeholder { color: #64748b; opacity: 1; }
+    .bg-slate-900 input::placeholder, .bg-slate-900 textarea::placeholder,
+    .bg-slate-950 input::placeholder, .bg-slate-950 textarea::placeholder,
+    .bg-slate-800 input::placeholder, .bg-slate-800 textarea::placeholder { color: #cbd5e1; opacity: 1; }
     ::selection { background-color: #dbeafe; color: #1e3a8a; }
     :focus-visible { outline: 2px solid var(--xea-primary); outline-offset: 2px; }
     @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
       *, *::before, *::after {
-        animation-duration: 0.01ms !important;
+        animation-name: none !important;
         animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
       }
     }
@@ -142,7 +137,7 @@
 
               <!-- Col 2: By Shape / Theme -->
               <div class="col-span-4">
-                <div class="text-xs font-extrabold uppercase tracking-wider text-emerald-600 mb-3"><i class="fa-solid fa-shapes mr-1.5"></i>By Shape &amp; Theme</div>
+                <div class="text-xs font-extrabold uppercase tracking-wider text-emerald-700 mb-3"><i class="fa-solid fa-shapes mr-1.5"></i>By Shape &amp; Theme</div>
                 <ul class="space-y-2">
                   <li>
                     <a href="/products/food-bakery-squishies/" class="block p-2 rounded-xl hover:bg-slate-50 !no-underline">
@@ -215,7 +210,7 @@
                 <div class="text-xs text-slate-500 mt-0.5">NDA tooling from 3,000 pcs</div>
               </a>
               <a href="/custom-packaging/" class="block p-3 rounded-xl hover:bg-slate-50 !no-underline">
-                <div class="text-sm font-bold text-slate-900"><i class="fa-solid fa-box-open text-emerald-600 mr-2"></i>Custom Packaging &amp; Logo</div>
+                <div class="text-sm font-bold text-slate-900"><i class="fa-solid fa-box-open text-emerald-700 mr-2"></i>Custom Packaging &amp; Logo</div>
                 <div class="text-xs text-slate-500 mt-0.5">PDQ trays, window boxes &amp; FNSKU (500 pcs)</div>
               </a>
               <hr class="my-1 border-slate-100" />
@@ -239,7 +234,7 @@
                 <div class="text-xs text-slate-500 mt-0.5">1-carton test MOQ, CPC &amp; DDP shipping</div>
               </a>
               <a href="/claw-machine-party-favors/" class="block p-3 rounded-xl hover:bg-slate-50 !no-underline">
-                <div class="text-sm font-bold text-slate-900"><i class="fa-solid fa-trophy text-emerald-600 mr-2"></i>Claw Machine, Party &amp; Promo</div>
+                <div class="text-sm font-bold text-slate-900"><i class="fa-solid fa-trophy text-emerald-700 mr-2"></i>Claw Machine, Party &amp; Promo</div>
                 <div class="text-xs text-slate-500 mt-0.5">High-volume prizes &amp; logo stress balls</div>
               </a>
               <hr class="my-1 border-slate-100" />
@@ -331,10 +326,7 @@
       </div>
     </div>
     <div class="lg:col-span-7">
-      <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-600/20 border border-blue-500/40 text-blue-300 text-xs font-extrabold uppercase tracking-wider">
-        <i class="fa-solid fa-fire"></i> 47,270+ Monthly US Cluster · Flagship 26-LED Hero Model
-      </span>
-      <h1 class="mt-4 text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight">Wholesale 26-LED Light-Up Fidget Keyboard Clicker</h1>
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight">Wholesale 26-LED Light-Up Fidget Keyboard Clicker</h1>
       <p class="mt-4 text-base text-slate-300 leading-relaxed">Our highest-margin <strong>keyboard fidget toy</strong> for Amazon FBA and TikTok Shop. Every press on all 26 keys triggers both crisp mechanical-style tactile click and vivid LED illumination&mdash;backed by 10-LED and Non-LED sister tiers from the same Jinhua line.</p>
       <div class="mt-7 flex flex-wrap gap-3">
         <a href="#pd-rfq" class="px-6 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-sm font-extrabold shadow-lg !no-underline">Request Wholesale FOB Quote &rarr;</a>
@@ -369,14 +361,13 @@
 <section id="pd-specs" class="w-full bg-white py-14 border-b border-slate-200">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center max-w-3xl mx-auto mb-8">
-      <span class="text-xs font-extrabold uppercase tracking-widest text-blue-600">Export Carton Specifications</span>
-      <h2 class="mt-2 text-2xl sm:text-3xl font-extrabold text-slate-900">Stock SKU Matrix, Unit Weights &amp; Carton Packing</h2>
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Stock SKU Matrix, Unit Weights &amp; Carton Packing</h2>
     </div>
     <div class="overflow-x-auto rounded-2xl border border-slate-200 shadow-sm">
       <table class="w-full text-left border-collapse text-sm">
         <thead>
           <tr class="bg-slate-900 text-white text-xs uppercase">
-            <th class="py-3 px-4">SKU</th><th class="py-3 px-4">Variant Name</th><th class="py-3 px-4">Size</th><th class="py-3 px-4">Unit Wt</th><th class="py-3 px-4">Pcs / Ctn</th><th class="py-3 px-4">Carton Size / GW</th><th class="py-3 px-4">Filling / Build</th>
+            <th scope="col" class="py-3 px-4">SKU</th><th scope="col" class="py-3 px-4">Variant Name</th><th scope="col" class="py-3 px-4">Size</th><th scope="col" class="py-3 px-4">Unit Wt</th><th scope="col" class="py-3 px-4">Pcs / Ctn</th><th scope="col" class="py-3 px-4">Carton Size / GW</th><th scope="col" class="py-3 px-4">Filling / Build</th>
           </tr>
         </thead>
         <tbody class="divide-y divide-slate-200 text-slate-700">
@@ -392,7 +383,7 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <h2 class="text-2xl font-extrabold text-slate-900 text-center mb-8">Factory Engineering, Compliance &amp; Retail Advantage</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="rounded-2xl bg-white border border-slate-200 p-6"><h3 class="text-base font-extrabold text-slate-900"><i class="fa-solid fa-circle-check text-emerald-600 mr-2"></i>100% Pre-Shipment LED &amp; Switch Test</h3><p class="mt-2 text-sm text-slate-600 leading-relaxed">Every single 26-LED board is function-tested key-by-key prior to polybagging so dead-on-arrival returns stay near zero.</p></div><div class="rounded-2xl bg-white border border-slate-200 p-6"><h3 class="text-base font-extrabold text-slate-900"><i class="fa-solid fa-circle-check text-emerald-600 mr-2"></i>Crisp 55-60gf Audible Click</h3><p class="mt-2 text-sm text-slate-600 leading-relaxed">Engineered for addictive ASMR sound on short-form video ads while resisting keycap pop-off during drop tests.</p></div><div class="rounded-2xl bg-white border border-slate-200 p-6"><h3 class="text-base font-extrabold text-slate-900"><i class="fa-solid fa-circle-check text-emerald-600 mr-2"></i>Reese&#x27;s Law / CPC Compliant Enclosure</h3><p class="mt-2 text-sm text-slate-600 leading-relaxed">Screw-secured battery cover and virgin ABS keycaps pass US Amazon children&#x27;s toy compliance audits.</p></div>
+      <div class="rounded-2xl bg-white border border-slate-200 p-6"><h3 class="text-base font-extrabold text-slate-900"><i class="fa-solid fa-circle-check text-emerald-700 mr-2"></i>100% Pre-Shipment LED &amp; Switch Test</h3><p class="mt-2 text-sm text-slate-600 leading-relaxed">Every single 26-LED board is function-tested key-by-key prior to polybagging so dead-on-arrival returns stay near zero.</p></div><div class="rounded-2xl bg-white border border-slate-200 p-6"><h3 class="text-base font-extrabold text-slate-900"><i class="fa-solid fa-circle-check text-emerald-700 mr-2"></i>Crisp 55-60gf Audible Click</h3><p class="mt-2 text-sm text-slate-600 leading-relaxed">Engineered for addictive ASMR sound on short-form video ads while resisting keycap pop-off during drop tests.</p></div><div class="rounded-2xl bg-white border border-slate-200 p-6"><h3 class="text-base font-extrabold text-slate-900"><i class="fa-solid fa-circle-check text-emerald-700 mr-2"></i>Reese&#x27;s Law / CPC Compliant Enclosure</h3><p class="mt-2 text-sm text-slate-600 leading-relaxed">Screw-secured battery cover and virgin ABS keycaps pass US Amazon children&#x27;s toy compliance audits.</p></div>
     </div>
     <div class="mt-8 rounded-2xl bg-white border border-slate-200 p-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
       <div>
@@ -417,10 +408,7 @@
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
       <div class="lg:col-span-5 rounded-2xl bg-slate-900 text-white p-7 flex flex-col justify-between shadow-lg">
         <div>
-          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-600/20 border border-blue-500/40 text-blue-300 text-xs font-extrabold uppercase tracking-wider">
-            <i class="fa-solid fa-gears"></i> XEAtoy Jinhua Engineering Spec
-          </span>
-          <h2 class="mt-3 text-2xl font-extrabold text-white leading-snug">Direct Factory Standards for 26 Led Fidget Keyboard Wholesale</h2>
+          <h2 class="text-2xl font-extrabold text-white leading-snug">Direct Factory Standards for 26 Led Fidget Keyboard Wholesale</h2>
           <p class="mt-3 text-sm text-slate-300 leading-relaxed">Every production run is molded from sealed 25 kg sacks of virgin phthalate-free compound—never mixed regrind—and verified under ISO 2859-1 AQL 2.5 before export.</p>
           <ul class="mt-5 space-y-2.5 text-xs text-slate-200">
             <li class="flex items-start gap-2"><i class="fa-solid fa-check text-emerald-400 mt-0.5"></i><span><strong>2.3 mm Minimum Shell Wall:</strong> Prevents transit seam blowouts under 16 kg stacked carton loads.</span></li>
@@ -448,7 +436,7 @@
               <p class="mt-3 text-xs text-slate-600 leading-relaxed">Ready-to-ship CPC stock via Air DDP (7&ndash;11d) or Sea LCL. Mix SKUs freely.</p>
             </div>
             <div class="rounded-2xl bg-white border-2 border-blue-600 p-5 shadow-sm">
-              <div class="text-xs font-extrabold uppercase text-emerald-600">Tier 2 &middot; Private Label</div>
+              <div class="text-xs font-extrabold uppercase text-emerald-700">Tier 2 &middot; Private Label</div>
               <div class="mt-1 text-lg font-black text-slate-900">500 Pcs MOQ</div>
               <div class="text-xs text-slate-500 mt-0.5">$0 mold fee &middot; 10&ndash;15d lead</div>
               <p class="mt-3 text-xs text-slate-600 leading-relaxed">Custom window boxes, 12-pc PDQ trays, pad-printed logos &amp; FNSKU labeling.</p>
@@ -518,36 +506,35 @@
 <section id="pd-rfq" class="w-full bg-slate-900 text-white py-14">
   <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-8">
-      <span class="text-xs font-extrabold uppercase tracking-widest text-blue-400">24-Hour Jinhua Factory Response</span>
-      <h2 class="mt-2 text-2xl sm:text-3xl font-extrabold text-white">Request FOB Pricing &amp; CPC Report for Wholesale 26-LED Light-Up Fidget Keyboard Clicker</h2>
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Request FOB Pricing &amp; CPC Report for Wholesale 26-LED Light-Up Fidget Keyboard Clicker</h2>
     </div>
     <form action="/api/send-rfq.php" method="POST" class="xea-rfq-form rounded-2xl bg-white text-slate-800 p-6 sm:p-8 shadow-2xl space-y-4">
       <input type="hidden" name="product_line" value="Wholesale 26-LED Light-Up Fidget Keyboard Clicker Toy | XEAtoy Factory" />
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
           <label for="xea-fld-1" class="block text-xs font-bold text-slate-700 mb-1">Your Name *</label>
-          <input id="xea-fld-1" type="text" name="name" required placeholder="Alex Morgan" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm" />
+          <input id="xea-fld-1" type="text" name="name" required placeholder="Alex Morgan" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm" autocomplete="name" />
         </div>
         <div>
           <label for="xea-fld-2" class="block text-xs font-bold text-slate-700 mb-1">Business Email *</label>
-          <input id="xea-fld-2" type="email" name="email" required placeholder="buyer@company.com" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm" />
+          <input id="xea-fld-2" type="email" name="email" required placeholder="buyer@company.com" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm" autocomplete="email" />
         </div>
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
           <label for="xea-fld-3" class="block text-xs font-bold text-slate-700 mb-1">Order Quantity (Cartons / Pcs)</label>
-          <input id="xea-fld-3" type="text" name="quantity" placeholder="e.g. 2 cartons trial / 2,000 pcs OEM" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm" />
+          <input id="xea-fld-3" type="text" name="quantity" placeholder="e.g. 2 cartons trial / 2,000 pcs OEM" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm" autocomplete="off" />
         </div>
         <div>
           <label for="xea-fld-4" class="block text-xs font-bold text-slate-700 mb-1">Destination Country / Channel</label>
-          <input id="xea-fld-4" type="text" name="destination" placeholder="e.g. USA Amazon FBA / UK Gift Retail" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm" />
+          <input id="xea-fld-4" type="text" name="destination" placeholder="e.g. USA Amazon FBA / UK Gift Retail" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm" autocomplete="country-name" />
         </div>
       </div>
       <div>
         <label for="xea-fld-5" class="block text-xs font-bold text-slate-700 mb-1">Inquiry Details *</label>
         <textarea id="xea-fld-5" name="message" rows="3" required class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm">Please send FOB Ningbo/Yiwu pricing, carton CBM, and CPC report for: 26-led-fidget-keyboard.</textarea>
       </div>
-      <button type="submit" class="w-full py-3.5 rounded-xl bg-blue-600 hover:bg-slate-900 text-white text-sm font-extrabold transition-colors">Get Factory Quote Within 24h &rarr;</button>
+      <button type="submit" class="w-full py-3.5 rounded-xl bg-blue-600 hover:bg-slate-900 text-white text-sm font-extrabold transition-colors px-5">Get Factory Quote Within 24h &rarr;</button>
     </form>
   </div>
 </section>
@@ -574,42 +561,42 @@
     <!-- Col 2: Products by Material & Theme -->
     <div class="lg:col-span-3">
       <div class="text-xs font-extrabold uppercase tracking-wider text-white mb-4">Product Collections</div>
-      <ul class="space-y-2 text-xs">
-        <li><a href="/products/crunchy-building-block-squishies/" class="hover:text-white !no-underline">Crunchy Building Block TPR</a></li>
-        <li><a href="/products/taba-silicone-squishies/" class="hover:text-white !no-underline">Taba &amp; Platinum Silicone</a></li>
-        <li><a href="/products/food-bakery-squishies/" class="hover:text-white !no-underline">Food &amp; Bakery Squishies</a></li>
-        <li><a href="/products/fruit-squishies/" class="hover:text-white !no-underline">Orchard &amp; Tropical Fruit</a></li>
-        <li><a href="/products/animal-kawaii-squishies/" class="hover:text-white !no-underline">Animal &amp; Kawaii Squishies</a></li>
-        <li><a href="/products/slow-rising-stress-balls/" class="hover:text-white !no-underline">Slow-Rising PU &amp; Gel Balls</a></li>
-        <li><a href="/products/mochi-mini-squishies/" class="hover:text-white !no-underline">Mochi Mini TPR Bulk</a></li>
-        <li><a href="/products/novelty-squishies/" class="hover:text-white !no-underline">Novelty &amp; Color-Changing</a></li>
+      <ul class="space-y-1.5 text-xs">
+        <li><a href="/products/crunchy-building-block-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Crunchy Building Block TPR</a></li>
+        <li><a href="/products/taba-silicone-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Taba &amp; Platinum Silicone</a></li>
+        <li><a href="/products/food-bakery-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Food &amp; Bakery Squishies</a></li>
+        <li><a href="/products/fruit-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Orchard &amp; Tropical Fruit</a></li>
+        <li><a href="/products/animal-kawaii-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Animal &amp; Kawaii Squishies</a></li>
+        <li><a href="/products/slow-rising-stress-balls/" class="inline-block py-0.5 hover:text-white !no-underline">Slow-Rising PU &amp; Gel Balls</a></li>
+        <li><a href="/products/mochi-mini-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Mochi Mini TPR Bulk</a></li>
+        <li><a href="/products/novelty-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Novelty &amp; Color-Changing</a></li>
       </ul>
     </div>
 
     <!-- Col 3: OEM & Buyer Solutions -->
     <div class="lg:col-span-3">
       <div class="text-xs font-extrabold uppercase tracking-wider text-white mb-4">OEM &amp; Buyer Solutions</div>
-      <ul class="space-y-2 text-xs">
-        <li><a href="/oem-odm/" class="hover:text-white !no-underline">OEM &amp; ODM Custom Molding</a></li>
-        <li><a href="/custom-packaging/" class="hover:text-white !no-underline">Custom Packaging &amp; Logo</a></li>
-        <li><a href="/ecommerce-fba/" class="hover:text-white !no-underline">Amazon FBA &amp; TikTok Shop</a></li>
-        <li><a href="/claw-machine-party-favors/" class="hover:text-white !no-underline">Claw Machine, Party &amp; Promo</a></li>
-        <li><a href="/solutions/" class="hover:text-white !no-underline">All B2B Buyer Solutions</a></li>
-        <li><a href="/products/" class="hover:text-white !no-underline">Full 150-SKU Catalog Hub</a></li>
+      <ul class="space-y-1.5 text-xs">
+        <li><a href="/oem-odm/" class="inline-block py-0.5 hover:text-white !no-underline">OEM &amp; ODM Custom Molding</a></li>
+        <li><a href="/custom-packaging/" class="inline-block py-0.5 hover:text-white !no-underline">Custom Packaging &amp; Logo</a></li>
+        <li><a href="/ecommerce-fba/" class="inline-block py-0.5 hover:text-white !no-underline">Amazon FBA &amp; TikTok Shop</a></li>
+        <li><a href="/claw-machine-party-favors/" class="inline-block py-0.5 hover:text-white !no-underline">Claw Machine, Party &amp; Promo</a></li>
+        <li><a href="/solutions/" class="inline-block py-0.5 hover:text-white !no-underline">All B2B Buyer Solutions</a></li>
+        <li><a href="/products/" class="inline-block py-0.5 hover:text-white !no-underline">Full 150-SKU Catalog Hub</a></li>
       </ul>
     </div>
 
     <!-- Col 4: Factory & Legal -->
     <div class="lg:col-span-2">
       <div class="text-xs font-extrabold uppercase tracking-wider text-white mb-4">Company</div>
-      <ul class="space-y-2 text-xs">
-        <li><a href="/factory-quality/" class="hover:text-white !no-underline">Factory &amp; QA Lab</a></li>
-        <li><a href="/faq/" class="hover:text-white !no-underline">Procurement &amp; CPSC FAQ</a></li>
-        <li><a href="/blog/" class="hover:text-white !no-underline">Sourcing Blog &amp; Guides</a></li>
-        <li><a href="/about-us/" class="hover:text-white !no-underline">About XEAtoy</a></li>
-        <li><a href="/contact-us/" class="hover:text-white !no-underline font-bold text-blue-400">Contact &amp; RFQ</a></li>
-        <li><a href="/privacy-policy/" class="hover:text-white !no-underline">Privacy Policy</a></li>
-        <li><a href="/terms-of-service/" class="hover:text-white !no-underline">Terms of Service</a></li>
+      <ul class="space-y-1.5 text-xs">
+        <li><a href="/factory-quality/" class="inline-block py-0.5 hover:text-white !no-underline">Factory &amp; QA Lab</a></li>
+        <li><a href="/faq/" class="inline-block py-0.5 hover:text-white !no-underline">Procurement &amp; CPSC FAQ</a></li>
+        <li><a href="/blog/" class="inline-block py-0.5 hover:text-white !no-underline">Sourcing Blog &amp; Guides</a></li>
+        <li><a href="/about-us/" class="inline-block py-0.5 hover:text-white !no-underline">About XEAtoy</a></li>
+        <li><a href="/contact-us/" class="inline-block py-0.5 hover:text-white !no-underline font-bold text-blue-400">Contact &amp; RFQ</a></li>
+        <li><a href="/privacy-policy/" class="inline-block py-0.5 hover:text-white !no-underline">Privacy Policy</a></li>
+        <li><a href="/terms-of-service/" class="inline-block py-0.5 hover:text-white !no-underline">Terms of Service</a></li>
       </ul>
     </div>
   </div>

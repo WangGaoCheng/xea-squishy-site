@@ -11,8 +11,9 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://xeatoy.com/custom-logo-stress-balls/" />
   <meta property="og:image" content="https://xeatoy.com/assets/images/cheese-block-squishy.webp" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="/assets/css/main.css?v=20261128" />
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /></noscript>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What printing method lasts longest on squeezable stress balls without cracking?", "acceptedAnswer": {"@type": "Answer", "text": "Elastic two-part polyurethane pad printing cured through a 65\u00b0C infrared drying tunnel achieves over 180% elongation recovery and resists cracking across 2,000+ squeezes on PU foam, sugar gel TPR, and silicone shapes. For flat surfaces like cubes or 26-key keyboards, we use flexible full-color UV digital printing."}}, {"@type": "Question", "name": "What artwork file format and Pantone specs do you need for a free 2-hour virtual proof?", "acceptedAnswer": {"@type": "Answer", "text": "Send vector artwork in AI, EPS, PDF, or editable SVG format with fonts converted to outlines, plus your exact Pantone (PMS Solid Coated) color codes. Our Jinhua graphics team checks imprint sizing and returns a scaled digital mockup within 2 working hours at $0 charge."}}, {"@type": "Question", "name": "What is the minimum order quantity (MOQ), and can I mix shell colors?", "acceptedAnswer": {"@type": "Answer", "text": "Custom logo pad printing starts at 500 pieces per design using any of our 150+ ready-to-ship stock shapes ($0 custom mold fee). If your logo plate prints cleanly across multiple stock body colors in the same size, you can split 500 pieces across 2 stock colors."}}, {"@type": "Question", "name": "How fast can XEAtoy deliver custom printed stress balls to a US or EU trade show?", "acceptedAnswer": {"@type": "Answer", "text": "For rush booth orders of 500 to 3,000 pieces in clear OPP pouches, production wraps in 5 to 6 days and Express Air DDP reaches your US or EU exhibition address in 5 to 7 days, giving you reliable 10 to 14-day door-to-door turnaround after artwork sign-off."}}, {"@type": "Question", "name": "Are physical pre-production samples available, and is the sample fee credited back?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. For standard orders, we shoot HD photo and squeeze-video proofs of your first printed piece off the press at no delay. If your marketing team requires physical DHL samples before bulk run approval, sample setup costs are 100% credited toward orders of 1,000+ pieces."}}, {"@type": "Question", "name": "Do you support neutral blind drop-shipping and NDA protection for promo agencies?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. XEAtoy routinely partners with ASI, PPAI, and European promotional distributors under strict mutual NDA. All blind-shipped orders use plain unbranded master cartons with your agency shipper details on packing lists, and we never contact your end corporate client."}}]}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,36 +28,30 @@
       --xea-muted: #64748b;
       --xea-primary: #2563eb;
       --xea-primary-hover: #1d4ed8;
-      --xea-accent: #d97706;
-      --xea-success: #059669;
+      --xea-accent: #92400e;
+      --xea-success: #047857;
       --xea-border: #e2e8f0;
       --xea-radius-card: 1rem;
       --xea-font-sans: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       --xea-font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
     }
-    html { scroll-behavior: smooth; }
+    html { color-scheme: light; scroll-behavior: smooth; }
     header.xea-site-header { border-bottom: 1px solid var(--xea-border); }
-    @layer base {
-      body {
-        font-family: var(--xea-font-sans);
-        font-size: 16px;
-        line-height: 1.6;
-        color: var(--xea-body);
-        background-color: var(--xea-surface);
-      }
-      h1 { font-size: 40px; line-height: 1.15; font-weight: 800; letter-spacing: -0.025em; }
-      h2 { font-size: 28px; line-height: 1.25; font-weight: 800; letter-spacing: -0.02em; }
-      h3 { font-size: 20px; line-height: 1.35; font-weight: 700; }
-      h4 { font-size: 16px; line-height: 1.4; font-weight: 700; }
-    }
     table, .font-mono, .tabular-nums { font-variant-numeric: tabular-nums; }
+    main p, main li, main details > p, main blockquote { max-width: 50ch; text-wrap: pretty; }
+    main .text-center > p, main p.text-center { margin-inline: auto; }
+    h1, h2, h3, h4 { text-wrap: balance; }
+    input::placeholder, textarea::placeholder { color: #64748b; opacity: 1; }
+    .bg-slate-900 input::placeholder, .bg-slate-900 textarea::placeholder,
+    .bg-slate-950 input::placeholder, .bg-slate-950 textarea::placeholder,
+    .bg-slate-800 input::placeholder, .bg-slate-800 textarea::placeholder { color: #cbd5e1; opacity: 1; }
     ::selection { background-color: #dbeafe; color: #1e3a8a; }
     :focus-visible { outline: 2px solid var(--xea-primary); outline-offset: 2px; }
     @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
       *, *::before, *::after {
-        animation-duration: 0.01ms !important;
+        animation-name: none !important;
         animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
       }
     }
@@ -141,7 +136,7 @@
 
               <!-- Col 2: By Shape / Theme -->
               <div class="col-span-4">
-                <div class="text-xs font-extrabold uppercase tracking-wider text-emerald-600 mb-3"><i class="fa-solid fa-shapes mr-1.5"></i>By Shape &amp; Theme</div>
+                <div class="text-xs font-extrabold uppercase tracking-wider text-emerald-700 mb-3"><i class="fa-solid fa-shapes mr-1.5"></i>By Shape &amp; Theme</div>
                 <ul class="space-y-2">
                   <li>
                     <a href="/products/food-bakery-squishies/" class="block p-2 rounded-xl hover:bg-slate-50 !no-underline">
@@ -214,7 +209,7 @@
                 <div class="text-xs text-slate-500 mt-0.5">NDA tooling from 3,000 pcs</div>
               </a>
               <a href="/custom-packaging/" class="block p-3 rounded-xl hover:bg-slate-50 !no-underline">
-                <div class="text-sm font-bold text-slate-900"><i class="fa-solid fa-box-open text-emerald-600 mr-2"></i>Custom Packaging &amp; Logo</div>
+                <div class="text-sm font-bold text-slate-900"><i class="fa-solid fa-box-open text-emerald-700 mr-2"></i>Custom Packaging &amp; Logo</div>
                 <div class="text-xs text-slate-500 mt-0.5">PDQ trays, window boxes &amp; FNSKU (500 pcs)</div>
               </a>
               <hr class="my-1 border-slate-100" />
@@ -238,7 +233,7 @@
                 <div class="text-xs text-slate-500 mt-0.5">1-carton test MOQ, CPC &amp; DDP shipping</div>
               </a>
               <a href="/claw-machine-party-favors/" class="block p-3 rounded-xl hover:bg-slate-50 !no-underline">
-                <div class="text-sm font-bold text-slate-900"><i class="fa-solid fa-trophy text-emerald-600 mr-2"></i>Claw Machine, Party &amp; Promo</div>
+                <div class="text-sm font-bold text-slate-900"><i class="fa-solid fa-trophy text-emerald-700 mr-2"></i>Claw Machine, Party &amp; Promo</div>
                 <div class="text-xs text-slate-500 mt-0.5">High-volume prizes &amp; logo stress balls</div>
               </a>
               <hr class="my-1 border-slate-100" />
@@ -308,10 +303,7 @@
 <section class="w-full bg-slate-900 text-white py-14 lg:py-20 border-b border-slate-800">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
     <div class="lg:col-span-7">
-      <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-600/20 border border-blue-500/40 text-blue-300 text-xs font-extrabold uppercase tracking-wider">
-        <i class="fa-solid fa-stamp"></i> Direct China Promotional Factory &middot; $0 Mold Fee on 150+ Shapes
-      </span>
-      <h1 class="mt-4 text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
         Custom Logo &amp; Promotional Stress Balls Wholesale <span class="text-blue-400">(500 Pcs MOQ)</span>
       </h1>
       <p class="mt-4 text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl">
@@ -365,17 +357,17 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
       <div class="rounded-2xl bg-white border border-slate-200 p-5 shadow-sm">
-        <div class="text-3xl font-black text-rose-600">2.4x</div>
+        <div class="text-3xl font-black text-rose-700">2.4x</div>
         <div class="mt-1 text-sm font-extrabold text-slate-900">Typical US Distributor Markup</div>
         <p class="mt-1 text-xs text-slate-600 leading-relaxed">Domestic promo brokers resell imported 70 mm blanks with heavy tier markups and hidden freight fees.</p>
       </div>
       <div class="rounded-2xl bg-white border border-slate-200 p-5 shadow-sm">
-        <div class="text-3xl font-black text-rose-600">38%</div>
+        <div class="text-3xl font-black text-rose-700">38%</div>
         <div class="mt-1 text-sm font-extrabold text-slate-900">7-Day Rigid-Ink Peeling Rate</div>
         <p class="mt-1 text-xs text-slate-600 leading-relaxed">Standard acrylic promo ink splits and flakes off cheap porous foam after a single week of desk squeezing.</p>
       </div>
       <div class="rounded-2xl bg-white border border-slate-200 p-5 shadow-sm">
-        <div class="text-3xl font-black text-emerald-600">0%</div>
+        <div class="text-3xl font-black text-emerald-700">0%</div>
         <div class="mt-1 text-sm font-extrabold text-slate-900">Water-Bead Recall Exposure</div>
         <p class="mt-1 text-xs text-slate-600 leading-relaxed">Every XEAtoy dough, sugar gel, TPR, and PU promo base is 100% water-bead-free for family-safe events.</p>
       </div>
@@ -392,10 +384,7 @@
 <section class="w-full bg-white py-14 border-b border-slate-200">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="max-w-3xl mb-8">
-      <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-rose-50 border border-rose-200 text-rose-700 text-xs font-extrabold uppercase tracking-wider">
-        <i class="fa-solid fa-triangle-exclamation"></i> Buyer Risk Audit
-      </span>
-      <h2 class="mt-3 text-2xl sm:text-3xl font-extrabold text-slate-900">Why Cheap Promotional Stress Balls Crack&mdash;And How Direct Factory Printing Fixes It</h2>
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Why Cheap Promotional Stress Balls Crack&mdash;And How Direct Factory Printing Fixes It</h2>
       <p class="mt-2 text-sm sm:text-base text-slate-600 leading-relaxed">Rigid solvent ink cannot stretch when a stress ball compresses by 40%, causing immediate flaking that embarrasses your brand logo. Comparing low-tier wholesale stock against XEAtoy Jinhua production shows six decisive differences.</p>
     </div>
 
@@ -403,9 +392,9 @@
       <table class="w-full text-left border-collapse text-xs sm:text-sm">
         <thead>
           <tr class="bg-slate-900 text-white">
-            <th class="py-3.5 px-4 font-extrabold">Procurement Checkpoint</th>
-            <th class="py-3.5 px-4 font-extrabold text-rose-300">Low-Tier Promo Broker / Cheap Blanks</th>
-            <th class="py-3.5 px-4 font-extrabold text-emerald-300">XEAtoy Jinhua Direct Factory Printing</th>
+            <th scope="col" class="py-3.5 px-4 font-extrabold">Procurement Checkpoint</th>
+            <th scope="col" class="py-3.5 px-4 font-extrabold text-rose-300">Low-Tier Promo Broker / Cheap Blanks</th>
+            <th scope="col" class="py-3.5 px-4 font-extrabold text-emerald-300">XEAtoy Jinhua Direct Factory Printing</th>
           </tr>
         </thead>
         <tbody class="divide-y divide-slate-200">
@@ -458,8 +447,7 @@
     </div>
 
     <div class="lg:col-span-7">
-      <span class="text-xs font-extrabold uppercase tracking-wider text-blue-600">Ink Bonding &amp; Curing Mechanism</span>
-      <h2 class="mt-2 text-2xl sm:text-3xl font-extrabold text-slate-900">The Chemistry Behind Crack-Free Flexible Pad Printing on TPR &amp; PU</h2>
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">The Chemistry Behind Crack-Free Flexible Pad Printing on TPR &amp; PU</h2>
       <p class="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
         Logos stick permanently to squeezable surfaces only when the ink formulation matches the substrate's shore elasticity and undergoes controlled thermal cross-linking. Rigid screen inks sit stiffly on top like dried paint and shatter the first time a trade show attendee crushes the ball in their palm.
       </p>
@@ -471,7 +459,7 @@
           <p class="text-xs text-slate-600 mt-1">Two-part polyurethane elastomeric pigments stretch smoothly with TPR and PU skin.</p>
         </div>
         <div class="rounded-xl bg-white border border-slate-200 p-4">
-          <div class="text-lg font-black text-emerald-600">65&deg;C / 8m</div>
+          <div class="text-lg font-black text-emerald-700">65&deg;C / 8m</div>
           <div class="text-xs font-bold text-slate-900 mt-0.5">IR Tunnel Cure Cycle</div>
           <p class="text-xs text-slate-600 mt-1">Infrared baking drives polymer cross-linking deep into outer micro-pores.</p>
         </div>
@@ -482,7 +470,7 @@
         </div>
       </div>
 
-      <blockquote class="mt-6 rounded-xl bg-white border-l-4 border-blue-600 p-4 text-xs sm:text-sm text-slate-700 leading-relaxed shadow-sm">
+      <blockquote class="mt-6 rounded-xl bg-white p-4 text-xs sm:text-sm text-slate-700 leading-relaxed shadow-sm border border-slate-200">
         "For crystal-clear TPR sugar gel cubes, we always clean mold release residue before pad printing and match a TPR-specific catalyst. Skip surface prep and your logo wipes clean off with a thumb after transit." &mdash; <strong>Zhou Mei, QA &amp; Print Process Lead, XEAtoy Jinhua Plant</strong>
       </blockquote>
     </div>
@@ -493,8 +481,7 @@
 <section id="print-comparison" class="w-full bg-white py-14 border-b border-slate-200">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="max-w-3xl mb-8">
-      <span class="text-xs font-extrabold uppercase tracking-wider text-blue-600">Method Selection Matrix</span>
-      <h2 class="mt-2 text-2xl sm:text-3xl font-extrabold text-slate-900">Pad Printing vs. Full-Color UV vs. Debossed Mold Logos: Engineering Comparison</h2>
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Pad Printing vs. Full-Color UV vs. Debossed Mold Logos: Engineering Comparison</h2>
       <p class="mt-2 text-sm sm:text-base text-slate-600 leading-relaxed">Pick <strong>flexible pad printing</strong> for crisp 1 to 4 Pantone corporate logos at 500 pcs, <strong>flexible UV digital</strong> for multi-color gradients on flat cubes or fidget keyboards, and <strong>debossed tooling</strong> when you want a permanent molded brand mark above 3,000 pcs.</p>
     </div>
 
@@ -502,12 +489,12 @@
       <table class="w-full text-left border-collapse text-xs sm:text-sm">
         <thead>
           <tr class="bg-slate-900 text-white uppercase text-xs">
-            <th class="py-3.5 px-4">Imprint Method</th>
-            <th class="py-3.5 px-4">Promo MOQ</th>
-            <th class="py-3.5 px-4">Setup / Plate Fee</th>
-            <th class="py-3.5 px-4">Best Stress Ball Surface</th>
-            <th class="py-3.5 px-4">Typical Imprint Zone</th>
-            <th class="py-3.5 px-4">Abrasion Durability</th>
+            <th scope="col" class="py-3.5 px-4">Imprint Method</th>
+            <th scope="col" class="py-3.5 px-4">Promo MOQ</th>
+            <th scope="col" class="py-3.5 px-4">Setup / Plate Fee</th>
+            <th scope="col" class="py-3.5 px-4">Best Stress Ball Surface</th>
+            <th scope="col" class="py-3.5 px-4">Typical Imprint Zone</th>
+            <th scope="col" class="py-3.5 px-4">Abrasion Durability</th>
           </tr>
         </thead>
         <tbody class="divide-y divide-slate-200 text-slate-700">
@@ -554,8 +541,7 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
       <div class="max-w-2xl">
-        <span class="text-xs font-extrabold uppercase tracking-wider text-blue-600">Beyond Basic Sponge Balls</span>
-        <h2 class="mt-2 text-2xl sm:text-3xl font-extrabold text-slate-900">4 High-Impact Stress Ball &amp; Fidget Bases Ready for Your Brand Logo</h2>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">4 High-Impact Stress Ball &amp; Fidget Bases Ready for Your Brand Logo</h2>
         <p class="mt-2 text-sm text-slate-600">Stand out at crowded expos. Attendees keep dense 135g sugar gel cubes and mechanical fidget keyboards on their desks for months instead of tossing cheap round foam balls.</p>
       </div>
       <a href="/products/" class="shrink-0 text-xs font-extrabold text-blue-600 hover:underline !no-underline">Browse All 150 Stock Shapes &rarr;</a>
@@ -620,7 +606,7 @@
         <div>
           <img src="/assets/images/v2/26-led-light-up-26-key-fidget-keyboard.webp" alt="26-key mechanical fidget keyboard customizable with Pantone keycaps and brand logo" loading="lazy" class="w-full aspect-square object-cover bg-slate-100" / width="800" height="800" decoding="async" />
           <div class="p-5">
-            <span class="inline-block px-2 py-0.5 rounded bg-amber-50 text-amber-700 text-xs font-extrabold uppercase">Tech Conference Hit</span>
+            <span class="inline-block px-2 py-0.5 rounded bg-amber-50 text-amber-800 text-xs font-extrabold uppercase">Tech Conference Hit</span>
             <h3 class="mt-2 text-base font-extrabold text-slate-900">26-Key Fidget Keyboard</h3>
             <p class="mt-1.5 text-xs text-slate-600 leading-relaxed">Custom Pantone keycap palettes with full-color logo print on the spacebar or backing frame (LED or zero-battery).</p>
           </div>
@@ -642,10 +628,7 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-6">
       <div>
-        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-extrabold uppercase tracking-wider">
-          <i class="fa-solid fa-sliders"></i> Interactive Campaign Configurator
-        </span>
-        <h2 class="mt-2 text-2xl sm:text-3xl font-extrabold text-slate-900">Match Your Printing Spec &amp; Lead Time to Your Campaign Type</h2>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Match Your Printing Spec &amp; Lead Time to Your Campaign Type</h2>
       </div>
       <div class="flex flex-wrap gap-2" id="logo-cfg-tabs">
         <button type="button" data-cfg-tab="tradeshow" class="px-4 py-2.5 rounded-xl bg-slate-900 text-white text-xs font-bold transition-colors cursor-pointer">Trade Show Rush (500&ndash;3K)</button>
@@ -682,17 +665,17 @@
 
       <div data-cfg-panel="wellness" class="hidden grid grid-cols-1 md:grid-cols-4 gap-5">
         <div class="rounded-2xl bg-slate-50 border border-slate-200 p-5 shadow-sm">
-          <div class="text-xs font-extrabold uppercase text-emerald-600">Recommended Base</div>
+          <div class="text-xs font-extrabold uppercase text-emerald-700">Recommended Base</div>
           <div class="mt-1 text-sm font-extrabold text-slate-900">135g Sugar Gel + Keyboard</div>
           <p class="mt-1.5 text-xs text-slate-600">High desk-keep-rate gift combo with full PMS color matching on shells and keycaps.</p>
         </div>
         <div class="rounded-2xl bg-slate-50 border border-slate-200 p-5 shadow-sm">
-          <div class="text-xs font-extrabold uppercase text-emerald-600">Unboxing Polish</div>
+          <div class="text-xs font-extrabold uppercase text-emerald-700">Unboxing Polish</div>
           <div class="mt-1 text-sm font-extrabold text-slate-900">Custom Window Box / Insert</div>
           <p class="mt-1.5 text-xs text-slate-600">Printed brand story sleeve + wellness care card starting at just 500 pcs per box art.</p>
         </div>
         <div class="rounded-2xl bg-slate-50 border border-slate-200 p-5 shadow-sm">
-          <div class="text-xs font-extrabold uppercase text-emerald-600">Logistics Plan</div>
+          <div class="text-xs font-extrabold uppercase text-emerald-700">Logistics Plan</div>
           <div class="mt-1 text-sm font-extrabold text-slate-900">18&ndash;25d Fast Sea / Air Mix</div>
           <p class="mt-1.5 text-xs text-slate-600">Split 10% Air DDP for kickoff week and 90% Fast Sea DDP to slash landed cost by 48%.</p>
         </div>
@@ -701,7 +684,7 @@
             <div class="text-xs font-extrabold uppercase text-emerald-400">Next Step</div>
             <div class="mt-1 text-sm font-extrabold">Request Box Dieline</div>
           </div>
-          <a href="#logo-rfq" class="mt-3 inline-flex items-center justify-center px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold !no-underline">Quote Wellness Kit &rarr;</a>
+          <a href="#logo-rfq" class="mt-3 inline-flex items-center justify-center px-4 py-2 rounded-lg bg-emerald-700 hover:bg-emerald-500 text-white text-xs font-bold !no-underline">Quote Wellness Kit &rarr;</a>
         </div>
       </div>
 
@@ -756,8 +739,7 @@
 <section class="w-full bg-slate-50 py-14 border-b border-slate-200">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="max-w-3xl mb-8">
-      <span class="text-xs font-extrabold uppercase tracking-wider text-blue-600">Volume Economics &amp; Honest Fit</span>
-      <h2 class="mt-2 text-2xl sm:text-3xl font-extrabold text-slate-900">Transparent 2026 Volume Tiers: Plus Honest Advice on Micro-Orders</h2>
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Transparent 2026 Volume Tiers: Plus Honest Advice on Micro-Orders</h2>
       <p class="mt-2 text-sm text-slate-600 leading-relaxed">Factory-direct custom printing unlocks steep per-unit savings starting at 500 pieces. Below 300 units with a tight local deadline, we tell buyers upfront when domestic screen printers make better financial sense.</p>
     </div>
 
@@ -768,20 +750,20 @@
           <div class="mt-1 text-xl font-black text-slate-900">500&ndash;999 pcs</div>
           <div class="text-xs text-slate-500 mt-0.5">$35/color plate &middot; $0 mold fee</div>
           <ul class="mt-4 space-y-2 text-xs text-slate-600">
-            <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i>Up to 2 stock shapes mixed</li>
-            <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i>1&ndash;2 Pantone pad print</li>
-            <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i>Air DDP 10&ndash;14d delivery</li>
+            <li><i class="fa-solid fa-check text-emerald-700 mr-1.5"></i>Up to 2 stock shapes mixed</li>
+            <li><i class="fa-solid fa-check text-emerald-700 mr-1.5"></i>1&ndash;2 Pantone pad print</li>
+            <li><i class="fa-solid fa-check text-emerald-700 mr-1.5"></i>Air DDP 10&ndash;14d delivery</li>
           </ul>
         </div>
 
         <div class="rounded-2xl bg-white border-2 border-blue-600 p-5 shadow-md">
-          <div class="text-xs font-extrabold uppercase text-emerald-600">Tier 2 &middot; Most Popular</div>
+          <div class="text-xs font-extrabold uppercase text-emerald-700">Tier 2 &middot; Most Popular</div>
           <div class="mt-1 text-xl font-black text-slate-900">1,000&ndash;4,999 pcs</div>
           <div class="text-xs text-slate-500 mt-0.5">Full Pantone shell colors</div>
           <ul class="mt-4 space-y-2 text-xs text-slate-600">
-            <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i>Custom brand PMS TPR/PU color</li>
-            <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i>Custom window boxes or PDQ</li>
-            <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i>25% lower FOB + Air/Sea split</li>
+            <li><i class="fa-solid fa-check text-emerald-700 mr-1.5"></i>Custom brand PMS TPR/PU color</li>
+            <li><i class="fa-solid fa-check text-emerald-700 mr-1.5"></i>Custom window boxes or PDQ</li>
+            <li><i class="fa-solid fa-check text-emerald-700 mr-1.5"></i>25% lower FOB + Air/Sea split</li>
           </ul>
         </div>
 
@@ -790,14 +772,14 @@
           <div class="mt-1 text-xl font-black text-slate-900">5,000&ndash;50K+ pcs</div>
           <div class="text-xs text-slate-500 mt-0.5">$0 plate setup fee waived</div>
           <ul class="mt-4 space-y-2 text-xs text-slate-600">
-            <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i>Free print plates &amp; pre-prod sample</li>
-            <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i>Custom 3D OEM option from 3K</li>
-            <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i>55%+ landed savings vs US brokers</li>
+            <li><i class="fa-solid fa-check text-emerald-700 mr-1.5"></i>Free print plates &amp; pre-prod sample</li>
+            <li><i class="fa-solid fa-check text-emerald-700 mr-1.5"></i>Custom 3D OEM option from 3K</li>
+            <li><i class="fa-solid fa-check text-emerald-700 mr-1.5"></i>55%+ landed savings vs US brokers</li>
           </ul>
         </div>
 
         <div class="sm:col-span-3 rounded-2xl bg-amber-50 border border-amber-200 p-5 flex items-start gap-3">
-          <i class="fa-solid fa-circle-info text-amber-600 text-lg mt-0.5"></i>
+          <i class="fa-solid fa-circle-info text-amber-800 text-lg mt-0.5"></i>
           <div class="text-xs sm:text-sm text-amber-950 leading-relaxed">
             <strong>Honest Factory Advice (When NOT to Order Custom Logo Stress Balls From China):</strong> If you only need <strong>100 to 250 blank pieces imprinted by next Friday (under 5 business days)</strong>, air courier surcharges per unit make a local US/EU quick-print shop cheaper. Come direct to XEAtoy once your run hits <strong>500+ pieces</strong> with at least 12 days lead time, or pick our unprinted <a href="/products/" class="font-bold underline text-amber-900">1-carton stock SKUs</a> (ships in 3&ndash;5 days) paired with branded sticker inserts.
           </div>
@@ -820,8 +802,7 @@
 <section class="w-full bg-white py-14 border-b border-slate-200">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
     <div class="lg:col-span-6">
-      <span class="text-xs font-extrabold uppercase tracking-wider text-emerald-600">Presentation &amp; Agency Fulfillment</span>
-      <h2 class="mt-2 text-2xl sm:text-3xl font-extrabold text-slate-900">Retail &amp; Event Packaging Upgrades: From Clear OPP to Custom Window Boxes</h2>
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Retail &amp; Event Packaging Upgrades: From Clear OPP to Custom Window Boxes</h2>
       <p class="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
         The right outer pack doubles perceived giveaway value without slowing down booth handoffs. Choose compact dust-proof pouches for rapid event handing or full-color custom boxes for employee onboarding kits and retail counters.
       </p>
@@ -862,10 +843,7 @@
 <section class="w-full bg-slate-900 text-white py-14 border-b border-slate-800">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="max-w-3xl mb-8">
-      <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-600/20 border border-blue-500/40 text-blue-300 text-xs font-extrabold uppercase tracking-wider">
-        <i class="fa-solid fa-clock"></i> Deadline-Locked Fulfillment
-      </span>
-      <h2 class="mt-3 text-2xl sm:text-3xl font-extrabold text-white">Guaranteed Trade Show Timeline: From Vector Artwork to Booth Delivery in 10&ndash;14 Days</h2>
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Guaranteed Trade Show Timeline: From Vector Artwork to Booth Delivery in 10&ndash;14 Days</h2>
       <p class="mt-2 text-sm text-slate-300 leading-relaxed">Fixed expo dates leave zero room for vague estimates. Every confirmed 500 to 3,000-pc rush order follows a locked daily schedule directly on our Jinhua printing line.</p>
     </div>
 
@@ -903,8 +881,7 @@
 <section class="w-full bg-white py-14 border-b border-slate-200">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="max-w-3xl mb-8">
-      <span class="text-xs font-extrabold uppercase tracking-wider text-emerald-600">Child-Safe &amp; Family-Event Verified</span>
-      <h2 class="mt-2 text-2xl sm:text-3xl font-extrabold text-slate-900">ASTM F963-23, CPSIA, Prop 65 &amp; 100% Water-Bead-Free Ink Compliance</h2>
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">ASTM F963-23, CPSIA, Prop 65 &amp; 100% Water-Bead-Free Ink Compliance</h2>
       <p class="mt-2 text-sm text-slate-600 leading-relaxed">Even when ordered for corporate trade shows, employees routinely bring stress balls home to children. XEAtoy formulates both the base shell and decorative pad inks to full US and EU children's toy safety limits.</p>
     </div>
 
@@ -919,9 +896,9 @@
         <table class="w-full text-left border-collapse text-xs sm:text-sm">
           <thead>
             <tr class="bg-slate-900 text-white text-xs uppercase">
-              <th class="py-3 px-4">Standard / Law</th>
-              <th class="py-3 px-4">Scope &amp; Restricted Substances</th>
-              <th class="py-3 px-4">XEAtoy Coverage</th>
+              <th scope="col" class="py-3 px-4">Standard / Law</th>
+              <th scope="col" class="py-3 px-4">Scope &amp; Restricted Substances</th>
+              <th scope="col" class="py-3 px-4">XEAtoy Coverage</th>
             </tr>
           </thead>
           <tbody class="divide-y divide-slate-200 text-slate-700">
@@ -957,10 +934,7 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mb-10">
       <div class="lg:col-span-6">
-        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs font-extrabold uppercase tracking-wider">
-          <i class="fa-solid fa-clipboard-check"></i> Anonymized Production Benchmarks (NDA)
-        </span>
-        <h2 class="mt-3 text-2xl sm:text-3xl font-extrabold text-slate-900">Recent Anonymized Corporate &amp; Trade Show Production Benchmarks</h2>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Recent Anonymized Corporate &amp; Trade Show Production Benchmarks</h2>
         <p class="mt-2 text-sm text-slate-600 leading-relaxed">Instead of inventing fake testimonial quotes, we publish actual verified production structures from our Jinhua export floor (client brands withheld under mutual NDA).</p>
       </div>
       <div class="lg:col-span-6">
@@ -1032,8 +1006,7 @@
 <section class="w-full bg-white py-14 border-b border-slate-200">
   <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-8">
-      <span class="text-xs font-extrabold uppercase tracking-wider text-blue-600">Buyer Objections Answered</span>
-      <h2 class="mt-2 text-2xl sm:text-3xl font-extrabold text-slate-900">Custom Logo Stress Balls Wholesale FAQ</h2>
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Custom Logo Stress Balls Wholesale FAQ</h2>
     </div>
     <div class="space-y-3">
       <details open class="rounded-2xl bg-slate-50 border border-slate-200 p-5">
@@ -1091,22 +1064,19 @@
 <section class="w-full bg-slate-900 text-white py-12 border-b border-slate-800">
   <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
     <div class="lg:col-span-7">
-      <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-600/20 border border-blue-500/40 text-blue-300 text-xs font-bold uppercase tracking-wider">
-        <i class="fa-solid fa-file-pdf"></i> Free 2026 Catalog PDF (5.39 MB)
-      </span>
-      <h2 class="mt-3 text-2xl sm:text-3xl font-extrabold text-white">Not Ready to Pick a Shape? Download Our 2026 150-SKU Printable Catalog PDF</h2>
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Not Ready to Pick a Shape? Download Our 2026 150-SKU Printable Catalog PDF</h2>
       <p class="mt-2 text-sm text-slate-300 leading-relaxed">Compare all 150+ stress ball, sugar gel, dough, and fidget keyboard blanks with exact weights, carton counts, and CPC coverage before selecting shapes for logo printing.</p>
     </div>
     <form class="lg:col-span-5 space-y-3">
       <input type="hidden" name="request_type" value="2026 Wholesale Catalog PDF &amp; FOB Price Sheet (from Custom Logo Stress Balls)" />
-      <input type="email" name="email" required placeholder="Your Business Email *" class="w-full px-4 py-3 rounded-xl bg-slate-800 border border-slate-700 text-white placeholder-slate-400 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      <input type="email" name="email" required placeholder="Your Business Email *" class="w-full px-4 py-3 rounded-xl bg-slate-800 border border-slate-700 text-white placeholder-slate-400 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" autocomplete="email" />
       <select name="buyer_channel" class="w-full px-4 py-3 rounded-xl bg-slate-800 border border-slate-700 text-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
         <option value="Promo Agency / ASI-PPAI">Channel: Promo Agency / Distributor</option>
         <option value="Corporate Marketing / Trade Show">Channel: Corporate Event / Trade Show</option>
         <option value="Healthcare / School / HR">Channel: Healthcare / School / HR</option>
         <option value="Wholesale / Retail Brand">Channel: Wholesale / Retail Brand</option>
       </select>
-      <button type="submit" class="w-full py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-sm font-extrabold shadow-md transition-colors cursor-pointer">
+      <button type="submit" class="w-full py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-sm font-extrabold shadow-md transition-colors cursor-pointer px-5">
         Email &amp; Download 2026 Catalog PDF &rarr;
       </button>
     </form>
@@ -1118,8 +1088,7 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
       <div class="lg:col-span-5">
-        <span class="text-xs font-extrabold uppercase tracking-wider text-blue-600">24-Hour Jinhua Export Desk</span>
-        <h2 class="mt-2 text-2xl sm:text-3xl font-extrabold text-slate-900">Request Your Free 2-Hour Virtual Logo Proof &amp; Tiered FOB/DDP Quote</h2>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Request Your Free 2-Hour Virtual Logo Proof &amp; Tiered FOB/DDP Quote</h2>
         <p class="mt-3 text-sm text-slate-600 leading-relaxed">
           Share your preferred stress ball shape, logo color count, order tier, and event deadline. You receive a scaled digital mockup plus transparent FOB Ningbo and Air/Sea DDP landed options directly from our factory team.
         </p>
@@ -1130,7 +1099,7 @@
             <div><strong class="text-slate-900 block">Zero-Risk 2-Hour Digital Proof</strong><span class="text-slate-600">Confirm exact logo width and Pantone contrast before committing a dime.</span></div>
           </div>
           <div class="rounded-xl bg-white border border-slate-200 p-4 flex items-start gap-3">
-            <i class="fa-solid fa-rotate-left text-emerald-600 mt-0.5"></i>
+            <i class="fa-solid fa-rotate-left text-emerald-700 mt-0.5"></i>
             <div><strong class="text-slate-900 block">100% Sample Cost Credited Back</strong><span class="text-slate-600">Pre-production sample plate fees credit onto production runs of 1,000+ pcs.</span></div>
           </div>
           <div class="rounded-xl bg-white border border-slate-200 p-4 flex items-start gap-3">
@@ -1146,11 +1115,11 @@
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label for="logo-rfq-name" class="block text-xs font-bold text-slate-700 mb-1">Your Name *</label>
-              <input id="logo-rfq-name" type="text" name="name" required placeholder="Jordan Lee" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600" />
+              <input id="logo-rfq-name" type="text" name="name" required placeholder="Jordan Lee" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600" autocomplete="name" />
             </div>
             <div>
               <label for="logo-rfq-email" class="block text-xs font-bold text-slate-700 mb-1">Business Email *</label>
-              <input id="logo-rfq-email" type="email" name="email" required placeholder="marketing@company.com" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600" />
+              <input id="logo-rfq-email" type="email" name="email" required placeholder="marketing@company.com" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600" autocomplete="email" />
             </div>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
@@ -1175,14 +1144,14 @@
             </div>
             <div>
               <label for="logo-rfq-deadline" class="block text-xs font-bold text-slate-700 mb-1">Event / Delivery Deadline</label>
-              <input id="logo-rfq-deadline" type="text" name="event_deadline" placeholder="e.g. Oct 15, USA" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600" />
+              <input id="logo-rfq-deadline" type="text" name="event_deadline" placeholder="e.g. Oct 15, USA" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600" autocomplete="off" />
             </div>
           </div>
           <div>
             <label for="logo-rfq-msg" class="block text-xs font-bold text-slate-700 mb-1">Logo Colors, Packaging &amp; Shipping Destination *</label>
             <textarea id="logo-rfq-msg" name="message" rows="3" required placeholder="Share your Pantone colors, OPP pouch or custom window box preference, and destination country..." class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
           </div>
-          <button type="submit" class="w-full py-3.5 rounded-xl bg-blue-600 hover:bg-slate-900 text-white text-sm font-extrabold shadow-md transition-colors cursor-pointer">
+          <button type="submit" class="w-full py-3.5 rounded-xl bg-blue-600 hover:bg-slate-900 text-white text-sm font-extrabold shadow-md transition-colors cursor-pointer px-5">
             Get Free 2h Virtual Logo Proof &amp; 24h Quote &rarr;
           </button>
         </form>
@@ -1223,42 +1192,42 @@
     <!-- Col 2: Products by Material & Theme -->
     <div class="lg:col-span-3">
       <div class="text-xs font-extrabold uppercase tracking-wider text-white mb-4">Product Collections</div>
-      <ul class="space-y-2 text-xs">
-        <li><a href="/products/crunchy-building-block-squishies/" class="hover:text-white !no-underline">Crunchy Building Block TPR</a></li>
-        <li><a href="/products/taba-silicone-squishies/" class="hover:text-white !no-underline">Taba &amp; Platinum Silicone</a></li>
-        <li><a href="/products/food-bakery-squishies/" class="hover:text-white !no-underline">Food &amp; Bakery Squishies</a></li>
-        <li><a href="/products/fruit-squishies/" class="hover:text-white !no-underline">Orchard &amp; Tropical Fruit</a></li>
-        <li><a href="/products/animal-kawaii-squishies/" class="hover:text-white !no-underline">Animal &amp; Kawaii Squishies</a></li>
-        <li><a href="/products/slow-rising-stress-balls/" class="hover:text-white !no-underline">Slow-Rising PU &amp; Gel Balls</a></li>
-        <li><a href="/products/mochi-mini-squishies/" class="hover:text-white !no-underline">Mochi Mini TPR Bulk</a></li>
-        <li><a href="/products/novelty-squishies/" class="hover:text-white !no-underline">Novelty &amp; Color-Changing</a></li>
+      <ul class="space-y-1.5 text-xs">
+        <li><a href="/products/crunchy-building-block-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Crunchy Building Block TPR</a></li>
+        <li><a href="/products/taba-silicone-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Taba &amp; Platinum Silicone</a></li>
+        <li><a href="/products/food-bakery-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Food &amp; Bakery Squishies</a></li>
+        <li><a href="/products/fruit-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Orchard &amp; Tropical Fruit</a></li>
+        <li><a href="/products/animal-kawaii-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Animal &amp; Kawaii Squishies</a></li>
+        <li><a href="/products/slow-rising-stress-balls/" class="inline-block py-0.5 hover:text-white !no-underline">Slow-Rising PU &amp; Gel Balls</a></li>
+        <li><a href="/products/mochi-mini-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Mochi Mini TPR Bulk</a></li>
+        <li><a href="/products/novelty-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Novelty &amp; Color-Changing</a></li>
       </ul>
     </div>
 
     <!-- Col 3: OEM & Buyer Solutions -->
     <div class="lg:col-span-3">
       <div class="text-xs font-extrabold uppercase tracking-wider text-white mb-4">OEM &amp; Buyer Solutions</div>
-      <ul class="space-y-2 text-xs">
-        <li><a href="/oem-odm/" class="hover:text-white !no-underline">OEM &amp; ODM Custom Molding</a></li>
-        <li><a href="/custom-packaging/" class="hover:text-white !no-underline">Custom Packaging &amp; Logo</a></li>
-        <li><a href="/ecommerce-fba/" class="hover:text-white !no-underline">Amazon FBA &amp; TikTok Shop</a></li>
-        <li><a href="/claw-machine-party-favors/" class="hover:text-white !no-underline">Claw Machine, Party &amp; Promo</a></li>
-        <li><a href="/solutions/" class="hover:text-white !no-underline">All B2B Buyer Solutions</a></li>
-        <li><a href="/products/" class="hover:text-white !no-underline">Full 150-SKU Catalog Hub</a></li>
+      <ul class="space-y-1.5 text-xs">
+        <li><a href="/oem-odm/" class="inline-block py-0.5 hover:text-white !no-underline">OEM &amp; ODM Custom Molding</a></li>
+        <li><a href="/custom-packaging/" class="inline-block py-0.5 hover:text-white !no-underline">Custom Packaging &amp; Logo</a></li>
+        <li><a href="/ecommerce-fba/" class="inline-block py-0.5 hover:text-white !no-underline">Amazon FBA &amp; TikTok Shop</a></li>
+        <li><a href="/claw-machine-party-favors/" class="inline-block py-0.5 hover:text-white !no-underline">Claw Machine, Party &amp; Promo</a></li>
+        <li><a href="/solutions/" class="inline-block py-0.5 hover:text-white !no-underline">All B2B Buyer Solutions</a></li>
+        <li><a href="/products/" class="inline-block py-0.5 hover:text-white !no-underline">Full 150-SKU Catalog Hub</a></li>
       </ul>
     </div>
 
     <!-- Col 4: Factory & Legal -->
     <div class="lg:col-span-2">
       <div class="text-xs font-extrabold uppercase tracking-wider text-white mb-4">Company</div>
-      <ul class="space-y-2 text-xs">
-        <li><a href="/factory-quality/" class="hover:text-white !no-underline">Factory &amp; QA Lab</a></li>
-        <li><a href="/faq/" class="hover:text-white !no-underline">Procurement &amp; CPSC FAQ</a></li>
-        <li><a href="/blog/" class="hover:text-white !no-underline">Sourcing Blog &amp; Guides</a></li>
-        <li><a href="/about-us/" class="hover:text-white !no-underline">About XEAtoy</a></li>
-        <li><a href="/contact-us/" class="hover:text-white !no-underline font-bold text-blue-400">Contact &amp; RFQ</a></li>
-        <li><a href="/privacy-policy/" class="hover:text-white !no-underline">Privacy Policy</a></li>
-        <li><a href="/terms-of-service/" class="hover:text-white !no-underline">Terms of Service</a></li>
+      <ul class="space-y-1.5 text-xs">
+        <li><a href="/factory-quality/" class="inline-block py-0.5 hover:text-white !no-underline">Factory &amp; QA Lab</a></li>
+        <li><a href="/faq/" class="inline-block py-0.5 hover:text-white !no-underline">Procurement &amp; CPSC FAQ</a></li>
+        <li><a href="/blog/" class="inline-block py-0.5 hover:text-white !no-underline">Sourcing Blog &amp; Guides</a></li>
+        <li><a href="/about-us/" class="inline-block py-0.5 hover:text-white !no-underline">About XEAtoy</a></li>
+        <li><a href="/contact-us/" class="inline-block py-0.5 hover:text-white !no-underline font-bold text-blue-400">Contact &amp; RFQ</a></li>
+        <li><a href="/privacy-policy/" class="inline-block py-0.5 hover:text-white !no-underline">Privacy Policy</a></li>
+        <li><a href="/terms-of-service/" class="inline-block py-0.5 hover:text-white !no-underline">Terms of Service</a></li>
       </ul>
     </div>
   </div>

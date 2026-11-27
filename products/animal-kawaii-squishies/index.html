@@ -11,8 +11,9 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://xeatoy.com/products/animal-kawaii-squishies/" />
   <meta property="og:image" content="https://xeatoy.com/assets/images/cheese-block-squishy.webp" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="/assets/css/main.css?v=20261128" />
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /></noscript>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why is the capybara squishy one of the top-performing animal SKUs?", "acceptedAnswer": {"@type": "Answer", "text": "Capybara squishy searches exceed 12,100 monthly queries in the US alone, driven by viral kawaii gift trends. XEA stocks capybara crunchy block squishies at 144 pcs/ctn for immediate wholesale fulfillment."}}, {"@type": "Question", "name": "Can XEA produce custom animal mascots or licensed characters?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Our Jinhua, Zhejiang engineering team converts 2D sketches or 3D STP files into exclusive custom animal squishy molds starting at 3,000 pcs, with 7\u201312 day prototyping under NDA."}}, {"@type": "Question", "name": "Are XEA animal squishies suitable for claw machines and kids' party favors?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Our 144-pc crunchy block animals have consistent 140g\u2013180g weights ideal for medium claw machines, while our individually bagged mini mochi animals fit party goodie bags and capsule vending."}}, {"@type": "Question", "name": "What toy safety certifications cover your animal squishy toys?", "acceptedAnswer": {"@type": "Answer", "text": "All XEA animal squishies are 100% water-bead-free and engineered for ASTM F963-23, CPSIA, CPC, EN71 (Parts 1\u20133), and CE compliance."}}]}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,36 +28,30 @@
       --xea-muted: #64748b;
       --xea-primary: #2563eb;
       --xea-primary-hover: #1d4ed8;
-      --xea-accent: #d97706;
-      --xea-success: #059669;
+      --xea-accent: #92400e;
+      --xea-success: #047857;
       --xea-border: #e2e8f0;
       --xea-radius-card: 1rem;
       --xea-font-sans: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       --xea-font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
     }
-    html { scroll-behavior: smooth; }
+    html { color-scheme: light; scroll-behavior: smooth; }
     header.xea-site-header { border-bottom: 1px solid var(--xea-border); }
-    @layer base {
-      body {
-        font-family: var(--xea-font-sans);
-        font-size: 16px;
-        line-height: 1.6;
-        color: var(--xea-body);
-        background-color: var(--xea-surface);
-      }
-      h1 { font-size: 40px; line-height: 1.15; font-weight: 800; letter-spacing: -0.025em; }
-      h2 { font-size: 28px; line-height: 1.25; font-weight: 800; letter-spacing: -0.02em; }
-      h3 { font-size: 20px; line-height: 1.35; font-weight: 700; }
-      h4 { font-size: 16px; line-height: 1.4; font-weight: 700; }
-    }
     table, .font-mono, .tabular-nums { font-variant-numeric: tabular-nums; }
+    main p, main li, main details > p, main blockquote { max-width: 50ch; text-wrap: pretty; }
+    main .text-center > p, main p.text-center { margin-inline: auto; }
+    h1, h2, h3, h4 { text-wrap: balance; }
+    input::placeholder, textarea::placeholder { color: #64748b; opacity: 1; }
+    .bg-slate-900 input::placeholder, .bg-slate-900 textarea::placeholder,
+    .bg-slate-950 input::placeholder, .bg-slate-950 textarea::placeholder,
+    .bg-slate-800 input::placeholder, .bg-slate-800 textarea::placeholder { color: #cbd5e1; opacity: 1; }
     ::selection { background-color: #dbeafe; color: #1e3a8a; }
     :focus-visible { outline: 2px solid var(--xea-primary); outline-offset: 2px; }
     @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
       *, *::before, *::after {
-        animation-duration: 0.01ms !important;
+        animation-name: none !important;
         animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
       }
     }
@@ -141,7 +136,7 @@
 
               <!-- Col 2: By Shape / Theme -->
               <div class="col-span-4">
-                <div class="text-xs font-extrabold uppercase tracking-wider text-emerald-600 mb-3"><i class="fa-solid fa-shapes mr-1.5"></i>By Shape &amp; Theme</div>
+                <div class="text-xs font-extrabold uppercase tracking-wider text-emerald-700 mb-3"><i class="fa-solid fa-shapes mr-1.5"></i>By Shape &amp; Theme</div>
                 <ul class="space-y-2">
                   <li>
                     <a href="/products/food-bakery-squishies/" class="block p-2 rounded-xl hover:bg-slate-50 !no-underline">
@@ -214,7 +209,7 @@
                 <div class="text-xs text-slate-500 mt-0.5">NDA tooling from 3,000 pcs</div>
               </a>
               <a href="/custom-packaging/" class="block p-3 rounded-xl hover:bg-slate-50 !no-underline">
-                <div class="text-sm font-bold text-slate-900"><i class="fa-solid fa-box-open text-emerald-600 mr-2"></i>Custom Packaging &amp; Logo</div>
+                <div class="text-sm font-bold text-slate-900"><i class="fa-solid fa-box-open text-emerald-700 mr-2"></i>Custom Packaging &amp; Logo</div>
                 <div class="text-xs text-slate-500 mt-0.5">PDQ trays, window boxes &amp; FNSKU (500 pcs)</div>
               </a>
               <hr class="my-1 border-slate-100" />
@@ -238,7 +233,7 @@
                 <div class="text-xs text-slate-500 mt-0.5">1-carton test MOQ, CPC &amp; DDP shipping</div>
               </a>
               <a href="/claw-machine-party-favors/" class="block p-3 rounded-xl hover:bg-slate-50 !no-underline">
-                <div class="text-sm font-bold text-slate-900"><i class="fa-solid fa-trophy text-emerald-600 mr-2"></i>Claw Machine, Party &amp; Promo</div>
+                <div class="text-sm font-bold text-slate-900"><i class="fa-solid fa-trophy text-emerald-700 mr-2"></i>Claw Machine, Party &amp; Promo</div>
                 <div class="text-xs text-slate-500 mt-0.5">High-volume prizes &amp; logo stress balls</div>
               </a>
               <hr class="my-1 border-slate-100" />
@@ -301,10 +296,7 @@
   <section class="w-full bg-slate-50 py-14 md:py-20 border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
       <div class="lg:col-span-6">
-        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-bold uppercase tracking-wider">
-          <i class="fa-solid fa-hippo"></i> Viral Character &amp; Pet Designs
-        </span>
-        <h1 class="mt-4 text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.16]">
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.16]">
           <span class="text-blue-600">Animal Squishy</span> &amp; Kawaii Squishy Wholesale
         </h1>
         <p class="mt-5 text-base md:text-lg text-slate-600 leading-relaxed">
@@ -383,7 +375,7 @@
       <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-6">Animal &amp; Kawaii Squishy Multi-Material Comparison</h2>
       <div class="overflow-x-auto rounded-2xl border border-slate-200 shadow-sm">
         <table class="w-full text-left border-collapse text-sm">
-          <thead><tr class="bg-slate-900 text-white"><th class="py-3.5 px-4 font-semibold">Animal Product Type</th><th class="py-3.5 px-4 font-semibold">Signature Characters</th><th class="py-3.5 px-4 font-semibold">Unit Weight &amp; Size</th><th class="py-3.5 px-4 font-semibold">Ideal Retail Channel</th></tr></thead>
+          <thead><tr class="bg-slate-900 text-white"><th scope="col" class="py-3.5 px-4 font-semibold">Animal Product Type</th><th scope="col" class="py-3.5 px-4 font-semibold">Signature Characters</th><th scope="col" class="py-3.5 px-4 font-semibold">Unit Weight &amp; Size</th><th scope="col" class="py-3.5 px-4 font-semibold">Ideal Retail Channel</th></tr></thead>
           <tbody class="divide-y divide-slate-200"><tr class="bg-white"><td class="py-3.5 px-4 font-bold text-slate-900">Crunchy Block Animals</td><td class="py-3.5 px-4 ">Capybara, Teddy Bear Dog</td><td class="py-3.5 px-4 ">140&ndash;180g (8&ndash;10 cm)</td><td class="py-3.5 px-4 ">Amazon FBA, Claw Machines, Gift Shops</td></tr><tr class="bg-slate-50"><td class="py-3.5 px-4 font-bold text-slate-900">Platinum Taba Silicone Pets</td><td class="py-3.5 px-4 ">Cat Paw, Hamster, Chick</td><td class="py-3.5 px-4 ">70&ndash;120g (Soft Pour)</td><td class="py-3.5 px-4 ">TikTok Viral &amp; Kawaii Boutiques</td></tr><tr class="bg-white"><td class="py-3.5 px-4 font-bold text-slate-900">Mini Mochi Kawaii Animals</td><td class="py-3.5 px-4 ">Cat, Bunny, Seal, Dino, Axolotl</td><td class="py-3.5 px-4 ">15&ndash;25g (4&ndash;5 cm)</td><td class="py-3.5 px-4 ">Party Favors, Easter Eggs, Vending</td></tr><tr class="bg-slate-50"><td class="py-3.5 px-4 font-bold text-slate-900">Custom Brand Mascot OEM</td><td class="py-3.5 px-4 ">Your IP / Licensed Character</td><td class="py-3.5 px-4 ">Custom 3D Dimensions</td><td class="py-3.5 px-4 ">Licensed Retail, Zoos &amp; Theme Parks</td></tr></tbody>
         </table>
       </div>
@@ -396,19 +388,19 @@
       <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-8">4 Animal Squishy Sourcing Risks &mdash; Eliminated by XEA</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div class="p-6 rounded-2xl bg-amber-50/70 border border-amber-200">
-          <div class="text-xs font-extrabold uppercase text-amber-700 mb-2"><i class="fa-solid fa-triangle-exclamation mr-1.5"></i>Trap #1: Smudged Kawaii Eye Prints</div>
+          <div class="text-xs font-extrabold uppercase text-amber-800 mb-2"><i class="fa-solid fa-triangle-exclamation mr-1.5"></i>Trap #1: Smudged Kawaii Eye Prints</div>
           <p class="text-sm text-slate-700 leading-relaxed">Misaligned pad printing ruins cute animal faces and spikes defect rates.</p>
           <hr class="my-3 border-slate-200/80" /><div class="text-xs font-bold text-emerald-700"><i class="fa-solid fa-shield-halved mr-1.5"></i>XEA Shield: Precision jig alignment + AQL 2.5 visual inspection on every face print.</div>
         </div>        <div class="p-6 rounded-2xl bg-amber-50/70 border border-amber-200">
-          <div class="text-xs font-extrabold uppercase text-amber-700 mb-2"><i class="fa-solid fa-triangle-exclamation mr-1.5"></i>Trap #2: IP &amp; Custom Mascot Leaks</div>
+          <div class="text-xs font-extrabold uppercase text-amber-800 mb-2"><i class="fa-solid fa-triangle-exclamation mr-1.5"></i>Trap #2: IP &amp; Custom Mascot Leaks</div>
           <p class="text-sm text-slate-700 leading-relaxed">Unprotected factories list client mascot molds on open marketplaces.</p>
           <hr class="my-3 border-slate-200/80" /><div class="text-xs font-bold text-emerald-700"><i class="fa-solid fa-shield-halved mr-1.5"></i>XEA Shield: Written mutual NDA &amp; locked mold storage inside our Jinhua facility.</div>
         </div>        <div class="p-6 rounded-2xl bg-amber-50/70 border border-amber-200">
-          <div class="text-xs font-extrabold uppercase text-amber-700 mb-2"><i class="fa-solid fa-triangle-exclamation mr-1.5"></i>Trap #3: Missing Age-Grading Warnings</div>
+          <div class="text-xs font-extrabold uppercase text-amber-800 mb-2"><i class="fa-solid fa-triangle-exclamation mr-1.5"></i>Trap #3: Missing Age-Grading Warnings</div>
           <p class="text-sm text-slate-700 leading-relaxed">Small mini animal squishies shipped without 3+ warnings fail EU/US customs.</p>
           <hr class="my-3 border-slate-200/80" /><div class="text-xs font-bold text-emerald-700"><i class="fa-solid fa-shield-halved mr-1.5"></i>XEA Shield: Factory-printed choking hazard, CE/UKCA, and CPSIA lot labels.</div>
         </div>        <div class="p-6 rounded-2xl bg-amber-50/70 border border-amber-200">
-          <div class="text-xs font-extrabold uppercase text-amber-700 mb-2"><i class="fa-solid fa-triangle-exclamation mr-1.5"></i>Trap #4: Slow Trend Chasing</div>
+          <div class="text-xs font-extrabold uppercase text-amber-800 mb-2"><i class="fa-solid fa-triangle-exclamation mr-1.5"></i>Trap #4: Slow Trend Chasing</div>
           <p class="text-sm text-slate-700 leading-relaxed">Waiting 60 days for trending capybara or cat-paw stock misses peak demand.</p>
           <hr class="my-3 border-slate-200/80" /><div class="text-xs font-bold text-emerald-700"><i class="fa-solid fa-shield-halved mr-1.5"></i>XEA Shield: Ready-to-ship stock cartons dispatch in 3&ndash;5 days for samples, 15&ndash;20d bulk.</div>
         </div>
@@ -421,19 +413,19 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-8">4 Craft Details Behind High-Converting Kawaii Animals</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 border-t-4 border-t-blue-600">
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
           <span class="text-xs font-extrabold text-blue-600">CRAFT 01</span>
           <h3 class="mt-2 text-base font-bold text-slate-900">Crisp Facial Pad Printing</h3>
           <p class="mt-2 text-xs text-slate-600 leading-relaxed">Cute blush cheeks and smiling eyes printed with crack-resistant flexible ink.</p>
-        </div>        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 border-t-4 border-t-blue-600">
+        </div>        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
           <span class="text-xs font-extrabold text-blue-600">CRAFT 02</span>
           <h3 class="mt-2 text-base font-bold text-slate-900">Balanced Claw-Grip Weight</h3>
           <p class="mt-2 text-xs text-slate-600 leading-relaxed">140&ndash;180g crunchy capybara &amp; puppy molds grab cleanly in commercial claw machines.</p>
-        </div>        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 border-t-4 border-t-blue-600">
+        </div>        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
           <span class="text-xs font-extrabold text-blue-600">CRAFT 03</span>
           <h3 class="mt-2 text-base font-bold text-slate-900">100% Bead-Free Safety</h3>
           <p class="mt-2 text-xs text-slate-600 leading-relaxed">Zero expandable water beads across all animal TPR, silicone, and mochi lines.</p>
-        </div>        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 border-t-4 border-t-blue-600">
+        </div>        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
           <span class="text-xs font-extrabold text-blue-600">CRAFT 04</span>
           <h3 class="mt-2 text-base font-bold text-slate-900">Gift-Ready Blind &amp; PDQ</h3>
           <p class="mt-2 text-xs text-slate-600 leading-relaxed">Available in mystery collectible foil pouches or 12-pc counter displays.</p>
@@ -445,7 +437,7 @@
   <!-- TANK-AN-05: H3-A Mid-Page Sample & Quote Capture Bar (bg-slate-50 | Low) -->
   <section class="w-full bg-slate-50 py-10 border-t border-slate-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="rounded-2xl bg-white border border-slate-200 border-l-4 border-l-blue-600 p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+      <div class="rounded-2xl bg-white border border-slate-200 p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
         <div>
           <h2 class="text-xl font-extrabold text-slate-900">Stock Trending Capybara &amp; Cat Paw SKUs or Mold Your Own Mascot</h2>
           <p class="mt-1 text-sm text-slate-600">Order 1 carton (144 pcs) of stocked animal shapes or send a 2D character sketch for a 24-hour custom mold quote.</p>
@@ -573,12 +565,11 @@
   <section class="w-full bg-white py-14 border-t border-slate-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="mb-6">
-        <span class="text-xs font-bold uppercase tracking-widest text-blue-600">Verified 2026 Export Specifications</span>
-        <h2 class="mt-2 text-2xl sm:text-3xl font-extrabold text-slate-900">Animal &amp; Kawaii Squishy Wholesale Lineup Specifications</h2>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Animal &amp; Kawaii Squishy Wholesale Lineup Specifications</h2>
       </div>
       <div class="overflow-x-auto rounded-2xl border border-slate-200 shadow-sm">
         <table class="w-full text-left border-collapse text-sm">
-          <thead><tr class="bg-slate-900 text-white"><th class="py-3.5 px-4 font-semibold">Animal Series</th><th class="py-3.5 px-4 font-semibold">Material System</th><th class="py-3.5 px-4 font-semibold">Stock / OEM MOQ</th><th class="py-3.5 px-4 font-semibold">Best Retail Fit</th></tr></thead>
+          <thead><tr class="bg-slate-900 text-white"><th scope="col" class="py-3.5 px-4 font-semibold">Animal Series</th><th scope="col" class="py-3.5 px-4 font-semibold">Material System</th><th scope="col" class="py-3.5 px-4 font-semibold">Stock / OEM MOQ</th><th scope="col" class="py-3.5 px-4 font-semibold">Best Retail Fit</th></tr></thead>
           <tbody class="divide-y divide-slate-200"><tr class="bg-white"><td class="py-3.5 px-4 font-bold text-slate-900">Capybara &amp; Teddy Bear Dog</td><td class="py-3.5 px-4 ">Crunchy Building Block TPR</td><td class="py-3.5 px-4 ">144 pcs / Carton</td><td class="py-3.5 px-4 ">FBA, Gift Shops, Toy Stores</td></tr><tr class="bg-slate-50"><td class="py-3.5 px-4 font-bold text-slate-900">Cat Paw Taba &amp; Silicone Pets</td><td class="py-3.5 px-4 ">Food-Grade Platinum Silicone</td><td class="py-3.5 px-4 ">500 pcs</td><td class="py-3.5 px-4 ">TikTok Viral &amp; Kawaii Boutiques</td></tr><tr class="bg-white"><td class="py-3.5 px-4 font-bold text-slate-900">Mini Mochi Kawaii Animals</td><td class="py-3.5 px-4 ">Soft Mini TPR (200+ Molds)</td><td class="py-3.5 px-4 ">1,000 pcs</td><td class="py-3.5 px-4 ">Claw Machines &amp; Party Favors</td></tr><tr class="bg-slate-50"><td class="py-3.5 px-4 font-bold text-slate-900">Custom Brand Mascot / IP</td><td class="py-3.5 px-4 ">TPR / Silicone / PU Foam</td><td class="py-3.5 px-4 ">3,000 pcs (New Mold)</td><td class="py-3.5 px-4 ">Licensed Retail &amp; Promo</td></tr></tbody>
         </table>
       </div>
@@ -590,8 +581,7 @@
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3 mb-8">
         <div>
-          <span class="text-xs font-bold uppercase tracking-widest text-emerald-600">Buyer FAQ &amp; Direct Answers</span>
-          <h2 class="mt-2 text-2xl sm:text-3xl font-extrabold text-slate-900">Frequently Asked Wholesale Questions</h2>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Frequently Asked Wholesale Questions</h2>
         </div>
         <span class="text-xs font-semibold text-slate-500"><i class="fa-regular fa-calendar-check text-blue-600 mr-1"></i>Last reviewed: November 2026 &middot; XEA Jinhua Factory</span>
       </div>
@@ -654,42 +644,42 @@
     <!-- Col 2: Products by Material & Theme -->
     <div class="lg:col-span-3">
       <div class="text-xs font-extrabold uppercase tracking-wider text-white mb-4">Product Collections</div>
-      <ul class="space-y-2 text-xs">
-        <li><a href="/products/crunchy-building-block-squishies/" class="hover:text-white !no-underline">Crunchy Building Block TPR</a></li>
-        <li><a href="/products/taba-silicone-squishies/" class="hover:text-white !no-underline">Taba &amp; Platinum Silicone</a></li>
-        <li><a href="/products/food-bakery-squishies/" class="hover:text-white !no-underline">Food &amp; Bakery Squishies</a></li>
-        <li><a href="/products/fruit-squishies/" class="hover:text-white !no-underline">Orchard &amp; Tropical Fruit</a></li>
-        <li><a href="/products/animal-kawaii-squishies/" class="hover:text-white !no-underline">Animal &amp; Kawaii Squishies</a></li>
-        <li><a href="/products/slow-rising-stress-balls/" class="hover:text-white !no-underline">Slow-Rising PU &amp; Gel Balls</a></li>
-        <li><a href="/products/mochi-mini-squishies/" class="hover:text-white !no-underline">Mochi Mini TPR Bulk</a></li>
-        <li><a href="/products/novelty-squishies/" class="hover:text-white !no-underline">Novelty &amp; Color-Changing</a></li>
+      <ul class="space-y-1.5 text-xs">
+        <li><a href="/products/crunchy-building-block-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Crunchy Building Block TPR</a></li>
+        <li><a href="/products/taba-silicone-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Taba &amp; Platinum Silicone</a></li>
+        <li><a href="/products/food-bakery-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Food &amp; Bakery Squishies</a></li>
+        <li><a href="/products/fruit-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Orchard &amp; Tropical Fruit</a></li>
+        <li><a href="/products/animal-kawaii-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Animal &amp; Kawaii Squishies</a></li>
+        <li><a href="/products/slow-rising-stress-balls/" class="inline-block py-0.5 hover:text-white !no-underline">Slow-Rising PU &amp; Gel Balls</a></li>
+        <li><a href="/products/mochi-mini-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Mochi Mini TPR Bulk</a></li>
+        <li><a href="/products/novelty-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Novelty &amp; Color-Changing</a></li>
       </ul>
     </div>
 
     <!-- Col 3: OEM & Buyer Solutions -->
     <div class="lg:col-span-3">
       <div class="text-xs font-extrabold uppercase tracking-wider text-white mb-4">OEM &amp; Buyer Solutions</div>
-      <ul class="space-y-2 text-xs">
-        <li><a href="/oem-odm/" class="hover:text-white !no-underline">OEM &amp; ODM Custom Molding</a></li>
-        <li><a href="/custom-packaging/" class="hover:text-white !no-underline">Custom Packaging &amp; Logo</a></li>
-        <li><a href="/ecommerce-fba/" class="hover:text-white !no-underline">Amazon FBA &amp; TikTok Shop</a></li>
-        <li><a href="/claw-machine-party-favors/" class="hover:text-white !no-underline">Claw Machine, Party &amp; Promo</a></li>
-        <li><a href="/solutions/" class="hover:text-white !no-underline">All B2B Buyer Solutions</a></li>
-        <li><a href="/products/" class="hover:text-white !no-underline">Full 150-SKU Catalog Hub</a></li>
+      <ul class="space-y-1.5 text-xs">
+        <li><a href="/oem-odm/" class="inline-block py-0.5 hover:text-white !no-underline">OEM &amp; ODM Custom Molding</a></li>
+        <li><a href="/custom-packaging/" class="inline-block py-0.5 hover:text-white !no-underline">Custom Packaging &amp; Logo</a></li>
+        <li><a href="/ecommerce-fba/" class="inline-block py-0.5 hover:text-white !no-underline">Amazon FBA &amp; TikTok Shop</a></li>
+        <li><a href="/claw-machine-party-favors/" class="inline-block py-0.5 hover:text-white !no-underline">Claw Machine, Party &amp; Promo</a></li>
+        <li><a href="/solutions/" class="inline-block py-0.5 hover:text-white !no-underline">All B2B Buyer Solutions</a></li>
+        <li><a href="/products/" class="inline-block py-0.5 hover:text-white !no-underline">Full 150-SKU Catalog Hub</a></li>
       </ul>
     </div>
 
     <!-- Col 4: Factory & Legal -->
     <div class="lg:col-span-2">
       <div class="text-xs font-extrabold uppercase tracking-wider text-white mb-4">Company</div>
-      <ul class="space-y-2 text-xs">
-        <li><a href="/factory-quality/" class="hover:text-white !no-underline">Factory &amp; QA Lab</a></li>
-        <li><a href="/faq/" class="hover:text-white !no-underline">Procurement &amp; CPSC FAQ</a></li>
-        <li><a href="/blog/" class="hover:text-white !no-underline">Sourcing Blog &amp; Guides</a></li>
-        <li><a href="/about-us/" class="hover:text-white !no-underline">About XEAtoy</a></li>
-        <li><a href="/contact-us/" class="hover:text-white !no-underline font-bold text-blue-400">Contact &amp; RFQ</a></li>
-        <li><a href="/privacy-policy/" class="hover:text-white !no-underline">Privacy Policy</a></li>
-        <li><a href="/terms-of-service/" class="hover:text-white !no-underline">Terms of Service</a></li>
+      <ul class="space-y-1.5 text-xs">
+        <li><a href="/factory-quality/" class="inline-block py-0.5 hover:text-white !no-underline">Factory &amp; QA Lab</a></li>
+        <li><a href="/faq/" class="inline-block py-0.5 hover:text-white !no-underline">Procurement &amp; CPSC FAQ</a></li>
+        <li><a href="/blog/" class="inline-block py-0.5 hover:text-white !no-underline">Sourcing Blog &amp; Guides</a></li>
+        <li><a href="/about-us/" class="inline-block py-0.5 hover:text-white !no-underline">About XEAtoy</a></li>
+        <li><a href="/contact-us/" class="inline-block py-0.5 hover:text-white !no-underline font-bold text-blue-400">Contact &amp; RFQ</a></li>
+        <li><a href="/privacy-policy/" class="inline-block py-0.5 hover:text-white !no-underline">Privacy Policy</a></li>
+        <li><a href="/terms-of-service/" class="inline-block py-0.5 hover:text-white !no-underline">Terms of Service</a></li>
       </ul>
     </div>
   </div>

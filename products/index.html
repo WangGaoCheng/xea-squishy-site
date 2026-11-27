@@ -11,8 +11,9 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://xeatoy.com/products/" />
   <meta property="og:image" content="https://xeatoy.com/assets/images/cheese-block-squishy.webp" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="/assets/css/main.css?v=20261128" />
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /></noscript>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the minimum order quantity to buy squishies in bulk from XEA?", "acceptedAnswer": {"@type": "Answer", "text": "Stock crunchy building block squishies start at just 1 master carton (144 pcs per SKU, or 192 pcs for Big White Tooth). Light OEM logo or packaging customization starts at 500\u20131,000 pcs, and custom 3D molds start at 3,000\u20135,000 pcs."}}, {"@type": "Question", "name": "Can I mix multiple collections in a single squishies bulk buy order?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. You can mix individual stock cartons across fruit, food, animal, and novelty shapes, or consolidate crunchy block TPR, taba silicone, slow-rising PU foam, and mini mochi packs into one shipment from our Jinhua warehouse."}}, {"@type": "Question", "name": "Do you offer cheap bulk squishies for claw machines, schools, and party favors?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Our mini mochi TPR assortments (200+ stock molds) and 192-pc carton Big White Tooth offer the lowest per-unit factory pricing for arcades, vending capsules, Easter eggs, and classroom prize bins."}}, {"@type": "Question", "name": "Are all XEA bulk squishy toys 100% free of expandable water beads?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Every product across all 8 collections is 100% water-bead-free to comply with strict US CPSC enforcement and protect Amazon US sellers from listing removals."}}, {"@type": "Question", "name": "What toy safety certifications cover your wholesale squishy toys?", "acceptedAnswer": {"@type": "Answer", "text": "XEA production supports EN71 (Parts 1\u20133), ASTM F963-23, CPSIA, CPC, and CE compliance, with phthalate-free formulas and AQL 2.5 pre-shipment quality inspection."}}, {"@type": "Question", "name": "How do plain and emoji-face editions affect wholesale pricing and MOQ?", "acceptedAnswer": {"@type": "Answer", "text": "Most of our 25+ stock building block molds are stocked in both realistic plain and kawaii emoji-face editions at 144 pcs/ctn, with only a minimal per-unit print differential."}}]}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,36 +28,30 @@
       --xea-muted: #64748b;
       --xea-primary: #2563eb;
       --xea-primary-hover: #1d4ed8;
-      --xea-accent: #d97706;
-      --xea-success: #059669;
+      --xea-accent: #92400e;
+      --xea-success: #047857;
       --xea-border: #e2e8f0;
       --xea-radius-card: 1rem;
       --xea-font-sans: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       --xea-font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
     }
-    html { scroll-behavior: smooth; }
+    html { color-scheme: light; scroll-behavior: smooth; }
     header.xea-site-header { border-bottom: 1px solid var(--xea-border); }
-    @layer base {
-      body {
-        font-family: var(--xea-font-sans);
-        font-size: 16px;
-        line-height: 1.6;
-        color: var(--xea-body);
-        background-color: var(--xea-surface);
-      }
-      h1 { font-size: 40px; line-height: 1.15; font-weight: 800; letter-spacing: -0.025em; }
-      h2 { font-size: 28px; line-height: 1.25; font-weight: 800; letter-spacing: -0.02em; }
-      h3 { font-size: 20px; line-height: 1.35; font-weight: 700; }
-      h4 { font-size: 16px; line-height: 1.4; font-weight: 700; }
-    }
     table, .font-mono, .tabular-nums { font-variant-numeric: tabular-nums; }
+    main p, main li, main details > p, main blockquote { max-width: 50ch; text-wrap: pretty; }
+    main .text-center > p, main p.text-center { margin-inline: auto; }
+    h1, h2, h3, h4 { text-wrap: balance; }
+    input::placeholder, textarea::placeholder { color: #64748b; opacity: 1; }
+    .bg-slate-900 input::placeholder, .bg-slate-900 textarea::placeholder,
+    .bg-slate-950 input::placeholder, .bg-slate-950 textarea::placeholder,
+    .bg-slate-800 input::placeholder, .bg-slate-800 textarea::placeholder { color: #cbd5e1; opacity: 1; }
     ::selection { background-color: #dbeafe; color: #1e3a8a; }
     :focus-visible { outline: 2px solid var(--xea-primary); outline-offset: 2px; }
     @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
       *, *::before, *::after {
-        animation-duration: 0.01ms !important;
+        animation-name: none !important;
         animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
       }
     }
@@ -141,7 +136,7 @@
 
               <!-- Col 2: By Shape / Theme -->
               <div class="col-span-4">
-                <div class="text-xs font-extrabold uppercase tracking-wider text-emerald-600 mb-3"><i class="fa-solid fa-shapes mr-1.5"></i>By Shape &amp; Theme</div>
+                <div class="text-xs font-extrabold uppercase tracking-wider text-emerald-700 mb-3"><i class="fa-solid fa-shapes mr-1.5"></i>By Shape &amp; Theme</div>
                 <ul class="space-y-2">
                   <li>
                     <a href="/products/food-bakery-squishies/" class="block p-2 rounded-xl hover:bg-slate-50 !no-underline">
@@ -214,7 +209,7 @@
                 <div class="text-xs text-slate-500 mt-0.5">NDA tooling from 3,000 pcs</div>
               </a>
               <a href="/custom-packaging/" class="block p-3 rounded-xl hover:bg-slate-50 !no-underline">
-                <div class="text-sm font-bold text-slate-900"><i class="fa-solid fa-box-open text-emerald-600 mr-2"></i>Custom Packaging &amp; Logo</div>
+                <div class="text-sm font-bold text-slate-900"><i class="fa-solid fa-box-open text-emerald-700 mr-2"></i>Custom Packaging &amp; Logo</div>
                 <div class="text-xs text-slate-500 mt-0.5">PDQ trays, window boxes &amp; FNSKU (500 pcs)</div>
               </a>
               <hr class="my-1 border-slate-100" />
@@ -238,7 +233,7 @@
                 <div class="text-xs text-slate-500 mt-0.5">1-carton test MOQ, CPC &amp; DDP shipping</div>
               </a>
               <a href="/claw-machine-party-favors/" class="block p-3 rounded-xl hover:bg-slate-50 !no-underline">
-                <div class="text-sm font-bold text-slate-900"><i class="fa-solid fa-trophy text-emerald-600 mr-2"></i>Claw Machine, Party &amp; Promo</div>
+                <div class="text-sm font-bold text-slate-900"><i class="fa-solid fa-trophy text-emerald-700 mr-2"></i>Claw Machine, Party &amp; Promo</div>
                 <div class="text-xs text-slate-500 mt-0.5">High-volume prizes &amp; logo stress balls</div>
               </a>
               <hr class="my-1 border-slate-100" />
@@ -301,10 +296,7 @@
   <section class="w-full bg-slate-50 py-14 md:py-22 border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
       <div class="lg:col-span-7">
-        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-bold uppercase tracking-wider">
-          <i class="fa-solid fa-boxes-stacked"></i> 8 Product Collections &middot; 28 Ready-to-Order SKUs &middot; 5 Materials
-        </span>
-        <h1 class="mt-4 text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.14]">
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.14]">
           <span class="text-blue-600">Bulk Squishy Toys</span> &amp; Wholesale Squishies Direct Catalog
         </h1>
         <p class="mt-5 text-base md:text-lg text-slate-600 leading-relaxed">
@@ -319,7 +311,7 @@
         <div class="rounded-2xl bg-white border border-slate-200 p-3 shadow-xl">
           <img src="/assets/images/cheese-block-squishy.webp" alt="Wholesale squishy toys and bulk squishy catalog from XEA Jinhua factory" class="w-full aspect-[4/3] object-cover rounded-xl" / width="900" height="1200" fetchpriority="high" decoding="async" />
           <div class="mt-3 px-2 flex items-center justify-between text-xs font-semibold text-slate-700">
-            <span><i class="fa-solid fa-shield-halved text-emerald-600 mr-1"></i>100% Bead-Free &middot; ASTM &amp; EN71</span>
+            <span><i class="fa-solid fa-shield-halved text-emerald-700 mr-1"></i>100% Bead-Free &middot; ASTM &amp; EN71</span>
             <span class="text-blue-600">1-Carton Trial MOQ</span>
           </div>
         </div>
@@ -366,33 +358,28 @@
   <section class="w-full bg-white py-16 border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-3xl mb-10">
-        <span class="text-xs font-bold uppercase tracking-widest text-blue-600">Dual-Axis Navigation</span>
-        <h2 class="mt-2 text-2xl sm:text-3xl font-extrabold text-slate-900">Shop All 8 Wholesale Collections by Material or Theme</h2>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Shop All 8 Wholesale Collections by Material or Theme</h2>
       </div>
 
       <div class="mb-4 text-xs font-extrabold uppercase tracking-wider text-slate-500">Axis 1: By Material &amp; Texture (4 Core Lines)</div>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-10">
         <a href="/products/crunchy-building-block-squishies/" class="group p-5 rounded-2xl bg-slate-50 border border-slate-200 hover:border-blue-600 hover:bg-white hover:shadow-md transition-all !no-underline">
-          <div class="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center mb-3"><i class="fa-solid fa-cubes"></i></div>
-          <span class="text-xs font-bold text-blue-600 uppercase">25+ Shapes &middot; 144 MOQ</span>
+          <div class="flex items-center gap-2.5 mb-2"><span class="text-blue-600 text-lg shrink-0" aria-hidden="true"><i class="fa-solid fa-cubes"></i></span><span class="text-xs font-bold text-blue-600 uppercase">25+ Shapes &middot; 144 MOQ</span></div>
           <h3 class="mt-1 text-base font-bold text-slate-900 group-hover:text-blue-600">Crunchy Building Block TPR</h3>
           <p class="mt-1.5 text-xs text-slate-600">ASMR crunchy squishy blocks including cheese squishy &amp; capybara squishy.</p>
         </a>
         <a href="/products/taba-silicone-squishies/" class="group p-5 rounded-2xl bg-slate-50 border border-slate-200 hover:border-blue-600 hover:bg-white hover:shadow-md transition-all !no-underline">
-          <div class="w-10 h-10 rounded-xl bg-slate-900 text-white flex items-center justify-center mb-3"><i class="fa-solid fa-paw"></i></div>
-          <span class="text-xs font-bold text-blue-600 uppercase">Platinum Silicone &middot; 500 MOQ</span>
+          <div class="flex items-center gap-2.5 mb-2"><span class="text-slate-900 text-lg shrink-0" aria-hidden="true"><i class="fa-solid fa-paw"></i></span><span class="text-xs font-bold text-blue-600 uppercase">Platinum Silicone &middot; 500 MOQ</span></div>
           <h3 class="mt-1 text-base font-bold text-slate-900 group-hover:text-blue-600">Taba &amp; Silicone Squishies</h3>
           <p class="mt-1.5 text-xs text-slate-600">Viral taba squishy and cat paw squishy with velvet flocking or OPP bag.</p>
         </a>
         <a href="/products/slow-rising-stress-balls/" class="group p-5 rounded-2xl bg-slate-50 border border-slate-200 hover:border-blue-600 hover:bg-white hover:shadow-md transition-all !no-underline">
-          <div class="w-10 h-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center mb-3"><i class="fa-solid fa-droplet"></i></div>
-          <span class="text-xs font-bold text-emerald-600 uppercase">PU Foam &amp; Maltose Gel</span>
+          <div class="flex items-center gap-2.5 mb-2"><span class="text-emerald-700 text-lg shrink-0" aria-hidden="true"><i class="fa-solid fa-droplet"></i></span><span class="text-xs font-bold text-emerald-700 uppercase">PU Foam &amp; Maltose Gel</span></div>
           <h3 class="mt-1 text-base font-bold text-slate-900 group-hover:text-blue-600">Slow-Rising &amp; Gel Stress Balls</h3>
           <p class="mt-1.5 text-xs text-slate-600">Classic slow rising squishy, ice cube squishy, and dumpling squishy balls.</p>
         </a>
         <a href="/products/mochi-mini-squishies/" class="group p-5 rounded-2xl bg-slate-50 border border-slate-200 hover:border-blue-600 hover:bg-white hover:shadow-md transition-all !no-underline">
-          <div class="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center mb-3"><i class="fa-solid fa-bag-shopping"></i></div>
-          <span class="text-xs font-bold text-blue-600 uppercase">200+ Mini Molds</span>
+          <div class="flex items-center gap-2.5 mb-2"><span class="text-blue-600 text-lg shrink-0" aria-hidden="true"><i class="fa-solid fa-bag-shopping"></i></span><span class="text-xs font-bold text-blue-600 uppercase">200+ Mini Molds</span></div>
           <h3 class="mt-1 text-base font-bold text-slate-900 group-hover:text-blue-600">Mochi Mini TPR Bulk</h3>
           <p class="mt-1.5 text-xs text-slate-600">Pocket mochi squishy packs for party favors, Easter eggs &amp; claw machines.</p>
         </a>
@@ -401,23 +388,19 @@
       <div class="mb-4 text-xs font-extrabold uppercase tracking-wider text-slate-500">Axis 2: By Shape &amp; Theme (4 Retail Collections)</div>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
         <a href="/products/food-bakery-squishies/" class="group p-5 rounded-2xl bg-slate-50 border border-slate-200 hover:border-emerald-600 hover:bg-white hover:shadow-md transition-all !no-underline">
-          <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3"><i class="fa-solid fa-utensils"></i></div>
-          <h3 class="text-base font-bold text-slate-900 group-hover:text-emerald-600">Food &amp; Bakery Squishies</h3>
+          <div class="flex items-center gap-2.5 mb-2"><span class="text-emerald-700 text-lg shrink-0" aria-hidden="true"><i class="fa-solid fa-utensils"></i></span><h3 class="text-base font-bold text-slate-900 group-hover:text-emerald-600">Food &amp; Bakery Squishies</h3></div>
           <p class="mt-1.5 text-xs text-slate-600">Top-velocity food squishy line: cheese, dumpling, cake roll, ramen &amp; popcorn.</p>
         </a>
         <a href="/products/fruit-squishies/" class="group p-5 rounded-2xl bg-slate-50 border border-slate-200 hover:border-emerald-600 hover:bg-white hover:shadow-md transition-all !no-underline">
-          <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3"><i class="fa-solid fa-lemon"></i></div>
-          <h3 class="text-base font-bold text-slate-900 group-hover:text-emerald-600">Fruit &amp; Tropical Squishies</h3>
+          <div class="flex items-center gap-2.5 mb-2"><span class="text-emerald-700 text-lg shrink-0" aria-hidden="true"><i class="fa-solid fa-lemon"></i></span><h3 class="text-base font-bold text-slate-900 group-hover:text-emerald-600">Fruit &amp; Tropical Squishies</h3></div>
           <p class="mt-1.5 text-xs text-slate-600">9 ready-to-ship fruit squishy molds including strawberry, banana, mango &amp; durian.</p>
         </a>
         <a href="/products/animal-kawaii-squishies/" class="group p-5 rounded-2xl bg-slate-50 border border-slate-200 hover:border-emerald-600 hover:bg-white hover:shadow-md transition-all !no-underline">
-          <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3"><i class="fa-solid fa-hippo"></i></div>
-          <h3 class="text-base font-bold text-slate-900 group-hover:text-emerald-600">Animal &amp; Kawaii Squishies</h3>
+          <div class="flex items-center gap-2.5 mb-2"><span class="text-emerald-700 text-lg shrink-0" aria-hidden="true"><i class="fa-solid fa-hippo"></i></span><h3 class="text-base font-bold text-slate-900 group-hover:text-emerald-600">Animal &amp; Kawaii Squishies</h3></div>
           <p class="mt-1.5 text-xs text-slate-600">Capybara, teddy bear dog &amp; cat paw animal squishy and kawaii squishy molds.</p>
         </a>
         <a href="/products/novelty-squishies/" class="group p-5 rounded-2xl bg-slate-50 border border-slate-200 hover:border-emerald-600 hover:bg-white hover:shadow-md transition-all !no-underline">
-          <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3"><i class="fa-solid fa-fire"></i></div>
-          <h3 class="text-base font-bold text-slate-900 group-hover:text-emerald-600">Novelty &amp; Color-Changing</h3>
+          <div class="flex items-center gap-2.5 mb-2"><span class="text-emerald-700 text-lg shrink-0" aria-hidden="true"><i class="fa-solid fa-fire"></i></span><h3 class="text-base font-bold text-slate-900 group-hover:text-emerald-600">Novelty &amp; Color-Changing</h3></div>
           <p class="mt-1.5 text-xs text-slate-600">Heat-shift color changing squishy durian, ASMR soap &amp; novelty squishy toys.</p>
         </a>
       </div>
@@ -429,8 +412,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4 mb-8">
         <div>
-          <span class="text-xs font-bold uppercase tracking-widest text-blue-600">Interactive Factory Stock Shelf</span>
-          <h2 class="mt-2 text-2xl sm:text-3xl font-extrabold text-slate-900">Filter &amp; Search All 28 Wholesale Squishy SKUs</h2>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Filter &amp; Search All 28 Wholesale Squishy SKUs</h2>
           <p class="mt-1 text-sm text-slate-600">Click any SKU to inspect exact carton dimensions, gross weight, plain vs. emoji editions, and 24-hour FOB pricing.</p>
         </div>
         <div class="w-full lg:w-72">
@@ -457,7 +439,7 @@
               <h3 class="mt-1 text-sm font-bold text-slate-900 group-hover:text-blue-600 leading-snug">Cheese Building Block Squishy</h3>
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-bold">
-              <span class="text-emerald-600">100% Bead-Free</span>
+              <span class="text-emerald-700">100% Bead-Free</span>
               <span class="text-blue-600">Specs &rarr;</span>
             </div>
           </div>
@@ -473,7 +455,7 @@
               <h3 class="mt-1 text-sm font-bold text-slate-900 group-hover:text-blue-600 leading-snug">Strawberry Building Block Squishy</h3>
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-bold">
-              <span class="text-emerald-600">100% Bead-Free</span>
+              <span class="text-emerald-700">100% Bead-Free</span>
               <span class="text-blue-600">Specs &rarr;</span>
             </div>
           </div>
@@ -489,7 +471,7 @@
               <h3 class="mt-1 text-sm font-bold text-slate-900 group-hover:text-blue-600 leading-snug">Banana Building Block Squishy</h3>
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-bold">
-              <span class="text-emerald-600">100% Bead-Free</span>
+              <span class="text-emerald-700">100% Bead-Free</span>
               <span class="text-blue-600">Specs &rarr;</span>
             </div>
           </div>
@@ -505,7 +487,7 @@
               <h3 class="mt-1 text-sm font-bold text-slate-900 group-hover:text-blue-600 leading-snug">Capybara Building Block Squishy</h3>
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-bold">
-              <span class="text-emerald-600">100% Bead-Free</span>
+              <span class="text-emerald-700">100% Bead-Free</span>
               <span class="text-blue-600">Specs &rarr;</span>
             </div>
           </div>
@@ -521,7 +503,7 @@
               <h3 class="mt-1 text-sm font-bold text-slate-900 group-hover:text-blue-600 leading-snug">Peach Building Block Squishy</h3>
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-bold">
-              <span class="text-emerald-600">100% Bead-Free</span>
+              <span class="text-emerald-700">100% Bead-Free</span>
               <span class="text-blue-600">Specs &rarr;</span>
             </div>
           </div>
@@ -537,7 +519,7 @@
               <h3 class="mt-1 text-sm font-bold text-slate-900 group-hover:text-blue-600 leading-snug">Peanut Building Block Squishy</h3>
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-bold">
-              <span class="text-emerald-600">100% Bead-Free</span>
+              <span class="text-emerald-700">100% Bead-Free</span>
               <span class="text-blue-600">Specs &rarr;</span>
             </div>
           </div>
@@ -553,7 +535,7 @@
               <h3 class="mt-1 text-sm font-bold text-slate-900 group-hover:text-blue-600 leading-snug">Carrot Building Block Squishy</h3>
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-bold">
-              <span class="text-emerald-600">100% Bead-Free</span>
+              <span class="text-emerald-700">100% Bead-Free</span>
               <span class="text-blue-600">Specs &rarr;</span>
             </div>
           </div>
@@ -569,7 +551,7 @@
               <h3 class="mt-1 text-sm font-bold text-slate-900 group-hover:text-blue-600 leading-snug">Dragon Fruit Building Block Squishy</h3>
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-bold">
-              <span class="text-emerald-600">100% Bead-Free</span>
+              <span class="text-emerald-700">100% Bead-Free</span>
               <span class="text-blue-600">Specs &rarr;</span>
             </div>
           </div>
@@ -585,7 +567,7 @@
               <h3 class="mt-1 text-sm font-bold text-slate-900 group-hover:text-blue-600 leading-snug">Pineapple Bun &amp; Bread Block Squishy</h3>
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-bold">
-              <span class="text-emerald-600">100% Bead-Free</span>
+              <span class="text-emerald-700">100% Bead-Free</span>
               <span class="text-blue-600">Specs &rarr;</span>
             </div>
           </div>
@@ -601,7 +583,7 @@
               <h3 class="mt-1 text-sm font-bold text-slate-900 group-hover:text-blue-600 leading-snug">Potato Building Block Squishy</h3>
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-bold">
-              <span class="text-emerald-600">100% Bead-Free</span>
+              <span class="text-emerald-700">100% Bead-Free</span>
               <span class="text-blue-600">Specs &rarr;</span>
             </div>
           </div>
@@ -617,7 +599,7 @@
               <h3 class="mt-1 text-sm font-bold text-slate-900 group-hover:text-blue-600 leading-snug">Soap Building Block Squishy</h3>
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-bold">
-              <span class="text-emerald-600">100% Bead-Free</span>
+              <span class="text-emerald-700">100% Bead-Free</span>
               <span class="text-blue-600">Specs &rarr;</span>
             </div>
           </div>
@@ -633,7 +615,7 @@
               <h3 class="mt-1 text-sm font-bold text-slate-900 group-hover:text-blue-600 leading-snug">Mango Building Block Squishy</h3>
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-bold">
-              <span class="text-emerald-600">100% Bead-Free</span>
+              <span class="text-emerald-700">100% Bead-Free</span>
               <span class="text-blue-600">Specs &rarr;</span>
             </div>
           </div>
@@ -649,7 +631,7 @@
               <h3 class="mt-1 text-sm font-bold text-slate-900 group-hover:text-blue-600 leading-snug">Corn Building Block Squishy</h3>
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-bold">
-              <span class="text-emerald-600">100% Bead-Free</span>
+              <span class="text-emerald-700">100% Bead-Free</span>
               <span class="text-blue-600">Specs &rarr;</span>
             </div>
           </div>
@@ -665,7 +647,7 @@
               <h3 class="mt-1 text-sm font-bold text-slate-900 group-hover:text-blue-600 leading-snug">Durian Building Block Squishy</h3>
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-bold">
-              <span class="text-emerald-600">100% Bead-Free</span>
+              <span class="text-emerald-700">100% Bead-Free</span>
               <span class="text-blue-600">Specs &rarr;</span>
             </div>
           </div>
@@ -681,7 +663,7 @@
               <h3 class="mt-1 text-sm font-bold text-slate-900 group-hover:text-blue-600 leading-snug">Color-Changing Thermochromic Durian Squishy</h3>
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-bold">
-              <span class="text-emerald-600">100% Bead-Free</span>
+              <span class="text-emerald-700">100% Bead-Free</span>
               <span class="text-blue-600">Specs &rarr;</span>
             </div>
           </div>
@@ -697,7 +679,7 @@
               <h3 class="mt-1 text-sm font-bold text-slate-900 group-hover:text-blue-600 leading-snug">Orange Building Block Squishy</h3>
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-bold">
-              <span class="text-emerald-600">100% Bead-Free</span>
+              <span class="text-emerald-700">100% Bead-Free</span>
               <span class="text-blue-600">Specs &rarr;</span>
             </div>
           </div>
@@ -713,7 +695,7 @@
               <h3 class="mt-1 text-sm font-bold text-slate-900 group-hover:text-blue-600 leading-snug">Teddy Bear &amp; Puppy Building Block Squishy</h3>
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-bold">
-              <span class="text-emerald-600">100% Bead-Free</span>
+              <span class="text-emerald-700">100% Bead-Free</span>
               <span class="text-blue-600">Specs &rarr;</span>
             </div>
           </div>
@@ -729,7 +711,7 @@
               <h3 class="mt-1 text-sm font-bold text-slate-900 group-hover:text-blue-600 leading-snug">Caramel Pudding Building Block Squishy</h3>
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-bold">
-              <span class="text-emerald-600">100% Bead-Free</span>
+              <span class="text-emerald-700">100% Bead-Free</span>
               <span class="text-blue-600">Specs &rarr;</span>
             </div>
           </div>
@@ -745,7 +727,7 @@
               <h3 class="mt-1 text-sm font-bold text-slate-900 group-hover:text-blue-600 leading-snug">Big White Tooth Building Block Squishy</h3>
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-bold">
-              <span class="text-emerald-600">100% Bead-Free</span>
+              <span class="text-emerald-700">100% Bead-Free</span>
               <span class="text-blue-600">Specs &rarr;</span>
             </div>
           </div>
@@ -761,7 +743,7 @@
               <h3 class="mt-1 text-sm font-bold text-slate-900 group-hover:text-blue-600 leading-snug">Ramen &amp; Instant Noodle Block Squishy</h3>
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-bold">
-              <span class="text-emerald-600">100% Bead-Free</span>
+              <span class="text-emerald-700">100% Bead-Free</span>
               <span class="text-blue-600">Specs &rarr;</span>
             </div>
           </div>
@@ -777,7 +759,7 @@
               <h3 class="mt-1 text-sm font-bold text-slate-900 group-hover:text-blue-600 leading-snug">Popcorn Building Block Squishy</h3>
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-bold">
-              <span class="text-emerald-600">100% Bead-Free</span>
+              <span class="text-emerald-700">100% Bead-Free</span>
               <span class="text-blue-600">Specs &rarr;</span>
             </div>
           </div>
@@ -793,7 +775,7 @@
               <h3 class="mt-1 text-sm font-bold text-slate-900 group-hover:text-blue-600 leading-snug">Sunflower Building Block Squishy</h3>
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-bold">
-              <span class="text-emerald-600">100% Bead-Free</span>
+              <span class="text-emerald-700">100% Bead-Free</span>
               <span class="text-blue-600">Specs &rarr;</span>
             </div>
           </div>
@@ -809,7 +791,7 @@
               <h3 class="mt-1 text-sm font-bold text-slate-900 group-hover:text-blue-600 leading-snug">Mangosteen Building Block Squishy</h3>
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-bold">
-              <span class="text-emerald-600">100% Bead-Free</span>
+              <span class="text-emerald-700">100% Bead-Free</span>
               <span class="text-blue-600">Specs &rarr;</span>
             </div>
           </div>
@@ -825,7 +807,7 @@
               <h3 class="mt-1 text-sm font-bold text-slate-900 group-hover:text-blue-600 leading-snug">Cream Cake Roll Building Block Squishy</h3>
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-bold">
-              <span class="text-emerald-600">100% Bead-Free</span>
+              <span class="text-emerald-700">100% Bead-Free</span>
               <span class="text-blue-600">Specs &rarr;</span>
             </div>
           </div>
@@ -841,7 +823,7 @@
               <h3 class="mt-1 text-sm font-bold text-slate-900 group-hover:text-blue-600 leading-snug">Rolling Wheel &amp; Tire Block Squishy</h3>
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-bold">
-              <span class="text-emerald-600">100% Bead-Free</span>
+              <span class="text-emerald-700">100% Bead-Free</span>
               <span class="text-blue-600">Specs &rarr;</span>
             </div>
           </div>
@@ -857,7 +839,7 @@
               <h3 class="mt-1 text-sm font-bold text-slate-900 group-hover:text-blue-600 leading-snug">Steamer Dumpling Squishy</h3>
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-bold">
-              <span class="text-emerald-600">100% Bead-Free</span>
+              <span class="text-emerald-700">100% Bead-Free</span>
               <span class="text-blue-600">Specs &rarr;</span>
             </div>
           </div>
@@ -873,7 +855,7 @@
               <h3 class="mt-1 text-sm font-bold text-slate-900 group-hover:text-blue-600 leading-snug">Cat Paw Silicone Taba Squishy</h3>
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-bold">
-              <span class="text-emerald-600">100% Bead-Free</span>
+              <span class="text-emerald-700">100% Bead-Free</span>
               <span class="text-blue-600">Specs &rarr;</span>
             </div>
           </div>
@@ -889,7 +871,7 @@
               <h3 class="mt-1 text-sm font-bold text-slate-900 group-hover:text-blue-600 leading-snug">Ice Cube Maltose Gel Stress Ball</h3>
             </div>
             <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-bold">
-              <span class="text-emerald-600">100% Bead-Free</span>
+              <span class="text-emerald-700">100% Bead-Free</span>
               <span class="text-blue-600">Specs &rarr;</span>
             </div>
           </div>
@@ -905,8 +887,7 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex flex-wrap items-end justify-between gap-4 mb-6">
       <div>
-        <span class="text-xs font-extrabold uppercase tracking-widest text-blue-600">2026 Highest-Demand Wholesale Shapes</span>
-        <h2 class="mt-1 text-2xl font-extrabold text-slate-900">Featured Viral Flagship Product Pages</h2>
+        <h2 class="text-2xl font-extrabold text-slate-900">Featured Viral Flagship Product Pages</h2>
       </div>
       <a href="/contact-us/" class="text-xs font-bold text-blue-600 hover:text-slate-900 !no-underline">Request Full 150-SKU FOB Sheet &rarr;</a>
     </div>
@@ -917,7 +898,7 @@
         <div class="mt-1 text-xs text-slate-500">Crunchy, Crystal Gel, Ribbon &amp; Xmas</div>
       </a>
       <a href="/products/highland-cow-squishy/" class="group rounded-2xl bg-slate-50 border border-slate-200 p-4 hover:border-blue-600 transition-colors !no-underline block">
-        <div class="text-xs font-bold text-emerald-600 uppercase">3 Textures In Stock</div>
+        <div class="text-xs font-bold text-emerald-700 uppercase">3 Textures In Stock</div>
         <div class="mt-1 text-sm font-extrabold text-slate-900 group-hover:text-blue-600">Highland Cow Squishy &rarr;</div>
         <div class="mt-1 text-xs text-slate-500">200g Slushie, 133g Pearl &amp; Crunchy</div>
       </a>
@@ -927,12 +908,12 @@
         <div class="mt-1 text-xs text-slate-500">Full 26-Key LED, 10-LED &amp; Non-LED</div>
       </a>
       <a href="/products/jumbo-axolotl-squishy/" class="group rounded-2xl bg-slate-50 border border-slate-200 p-4 hover:border-blue-600 transition-colors !no-underline block">
-        <div class="text-xs font-bold text-emerald-600 uppercase">350g Giant Dough</div>
+        <div class="text-xs font-bold text-emerald-700 uppercase">350g Giant Dough</div>
         <div class="mt-1 text-sm font-extrabold text-slate-900 group-hover:text-blue-600">Jumbo Axolotl Squishy &rarr;</div>
         <div class="mt-1 text-xs text-slate-500">16x18 cm &middot; 24/48 pcs Low MOQ</div>
       </a>
       <a href="/products/halloween-christmas-squishy-dog/" class="group rounded-2xl bg-slate-50 border border-slate-200 p-4 hover:border-blue-600 transition-colors !no-underline block">
-        <div class="text-xs font-bold text-amber-600 uppercase">Q3/Q4 Seasonal</div>
+        <div class="text-xs font-bold text-amber-800 uppercase">Q3/Q4 Seasonal</div>
         <div class="mt-1 text-sm font-extrabold text-slate-900 group-hover:text-blue-600">Halloween &amp; Xmas Dog &rarr;</div>
         <div class="mt-1 text-xs text-slate-500">210g Face-Changing &amp; Header Cards</div>
       </a>
@@ -947,12 +928,12 @@
         <div class="mt-1 text-xs text-slate-500">48 pcs/ctn (22.5kg FBA Safe)</div>
       </a>
       <a href="/products/crystal-rose-cube-stress-ball/" class="group rounded-2xl bg-slate-50 border border-slate-200 p-4 hover:border-blue-600 transition-colors !no-underline block">
-        <div class="text-xs font-bold text-emerald-600 uppercase">Bead-Free Gel</div>
+        <div class="text-xs font-bold text-emerald-700 uppercase">Bead-Free Gel</div>
         <div class="mt-1 text-sm font-extrabold text-slate-900 group-hover:text-blue-600">Crystal Rose Cube Ball &rarr;</div>
         <div class="mt-1 text-xs text-slate-500">5 cm, 115g Clear Gel + 3D Rose</div>
       </a>
       <a href="/products/dinosaur-squishy/" class="group rounded-2xl bg-slate-50 border border-slate-200 p-4 hover:border-blue-600 transition-colors !no-underline block">
-        <div class="text-xs font-bold text-emerald-600 uppercase">2 Textures</div>
+        <div class="text-xs font-bold text-emerald-700 uppercase">2 Textures</div>
         <div class="mt-1 text-sm font-extrabold text-slate-900 group-hover:text-blue-600">Dinosaur Squishy &rarr;</div>
         <div class="mt-1 text-xs text-slate-500">Crunchy TPR &amp; 110g Flour Dough</div>
       </a>
@@ -967,7 +948,7 @@
         <div class="mt-1 text-xs text-slate-500">105g Lying Kitty + 100g Cat Paw</div>
       </a>
       <a href="/products/jumbo-popsicle-squishy/" class="group rounded-2xl bg-slate-50 border border-slate-200 p-4 hover:border-blue-600 transition-colors !no-underline block">
-        <div class="text-xs font-bold text-amber-600 uppercase">Summer Jumbo</div>
+        <div class="text-xs font-bold text-amber-800 uppercase">Summer Jumbo</div>
         <div class="mt-1 text-sm font-extrabold text-slate-900 group-hover:text-blue-600">Jumbo Rocket Popsicle &rarr;</div>
         <div class="mt-1 text-xs text-slate-500">48 pcs/ctn Oversized Flour Dough</div>
       </a>
@@ -997,7 +978,7 @@
         <div class="mt-1 text-xs text-slate-500">Soft / Medium / Hard Resistance</div>
       </a>
       <a href="/products/squishy-gift-sets-blind-boxes/" class="group rounded-2xl bg-amber-50/50 border border-amber-200 p-4 hover:border-blue-600 transition-colors !no-underline block">
-        <div class="text-xs font-bold text-amber-700 uppercase">Mystery &amp; Advent</div>
+        <div class="text-xs font-bold text-amber-800 uppercase">Mystery &amp; Advent</div>
         <div class="mt-1 text-sm font-extrabold text-slate-900 group-hover:text-blue-600">Blind Boxes &amp; Gift Sets &rarr;</div>
         <div class="mt-1 text-xs text-slate-500">Blind Bags, 5/6-Pc Sets &amp; Calendars</div>
       </a>
@@ -1007,12 +988,12 @@
         <div class="mt-1 text-xs text-slate-500">Pre-Kitted Multi-Texture Packs</div>
       </a>
       <a href="/products/seasonal-holiday-squishies/" class="group rounded-2xl bg-slate-50 border border-slate-200 p-4 hover:border-blue-600 transition-colors !no-underline block">
-        <div class="text-xs font-bold text-amber-700 uppercase">Q1-Q4 Holiday</div>
+        <div class="text-xs font-bold text-amber-800 uppercase">Q1-Q4 Holiday</div>
         <div class="mt-1 text-sm font-extrabold text-slate-900 group-hover:text-blue-600">Seasonal Holiday Squishies &rarr;</div>
         <div class="mt-1 text-xs text-slate-500">Xmas, Halloween, Easter &amp; Valentine</div>
       </a>
       <a href="/products/piggy-puppy-animal-squishies/" class="group rounded-2xl bg-slate-50 border border-slate-200 p-4 hover:border-blue-600 transition-colors !no-underline block">
-        <div class="text-xs font-bold text-emerald-600 uppercase">4 Pet SKUs</div>
+        <div class="text-xs font-bold text-emerald-700 uppercase">4 Pet SKUs</div>
         <div class="mt-1 text-sm font-extrabold text-slate-900 group-hover:text-blue-600">Lying Piggy &amp; Puppy &rarr;</div>
         <div class="mt-1 text-xs text-slate-500">Crunchy TPR &amp; Pearl Gel</div>
       </a>
@@ -1022,7 +1003,7 @@
         <div class="mt-1 text-xs text-slate-500">Slushie &amp; 60g Pearl Gel (240/ctn)</div>
       </a>
       <a href="/products/giant-pencil-squishy/" class="group rounded-2xl bg-slate-50 border border-slate-200 p-4 hover:border-blue-600 transition-colors !no-underline block">
-        <div class="text-xs font-bold text-amber-600 uppercase">Back-to-School</div>
+        <div class="text-xs font-bold text-amber-800 uppercase">Back-to-School</div>
         <div class="mt-1 text-sm font-extrabold text-slate-900 group-hover:text-blue-600">Giant &amp; Mini Pencil &rarr;</div>
         <div class="mt-1 text-xs text-slate-500">3 Sizes: Jumbo 48/ctn &amp; Mini 240/ctn</div>
       </a>
@@ -1032,7 +1013,7 @@
         <div class="mt-1 text-xs text-slate-500">72 pcs/ctn (22 kg FBA Safe)</div>
       </a>
       <a href="/products/cloud-diamond-squishy/" class="group rounded-2xl bg-slate-50 border border-slate-200 p-4 hover:border-blue-600 transition-colors !no-underline block">
-        <div class="text-xs font-bold text-emerald-600 uppercase">Boutique Aesthetic</div>
+        <div class="text-xs font-bold text-emerald-700 uppercase">Boutique Aesthetic</div>
         <div class="mt-1 text-sm font-extrabold text-slate-900 group-hover:text-blue-600">Cloud &amp; Diamond Balls &rarr;</div>
         <div class="mt-1 text-xs text-slate-500">Silent 80g Cloud &amp; Clear Diamond</div>
       </a>
@@ -1046,10 +1027,7 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-8">
       <div>
-        <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs font-extrabold uppercase tracking-wider">
-          <i class="fa-solid fa-sparkles"></i> 2026 New Factory Line Expansion &middot; 100% CPC Certified
-        </span>
-        <h2 class="mt-3 text-2xl sm:text-3xl font-extrabold text-slate-900">Explore 122 Additional Stock Wholesale SKUs (Slushie, Crystal Gel, Dough Jumbo &amp; Fidget Keyboards)</h2>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Explore 122 Additional Stock Wholesale SKUs (Slushie, Crystal Gel, Dough Jumbo &amp; Fidget Keyboards)</h2>
         <p class="mt-2 text-sm sm:text-base text-slate-600 max-w-3xl">Direct from our expanded Jinhua molding lines: filter by material or search viral shapes like <strong>Highland Cow</strong>, <strong>Axolotl</strong>, <strong>Butter Bar</strong>, <strong>Rose Cube</strong>, or <strong>26-Key LED Fidget Keyboards</strong>. Every SKU ships with US CPC &amp; ASTM F963-23 test reports.</p>
       </div>
       <div class="w-full lg:w-80">
@@ -1063,7 +1041,7 @@
 
     <!-- Category Filter Pills -->
     <div class="flex flex-wrap gap-2 mb-6" id="v2-filter-bar">
-      <button type="button" data-v2-cat="ALL" class="px-4 py-2 rounded-xl bg-slate-900 text-white text-xs font-bold transition-colors">All New SKUs (122)</button><button type="button" data-v2-cat="Crunchy Block TPR" class="px-4 py-2 rounded-xl bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 text-xs font-bold transition-colors">Crunchy Block TPR (56)</button><button type="button" data-v2-cat="Crystal Clear Gel" class="px-4 py-2 rounded-xl bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 text-xs font-bold transition-colors">Crystal Clear Gel (28)</button><button type="button" data-v2-cat="Flour Dough &amp; Jumbo" class="px-4 py-2 rounded-xl bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 text-xs font-bold transition-colors">Flour Dough &amp; Jumbo (20)</button><button type="button" data-v2-cat="Slushie &amp; Ice-Crush" class="px-4 py-2 rounded-xl bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 text-xs font-bold transition-colors">Slushie &amp; Ice-Crush (11)</button><button type="button" data-v2-cat="Fidget Keyboards" class="px-4 py-2 rounded-xl bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 text-xs font-bold transition-colors">Fidget Keyboards (3)</button><button type="button" data-v2-cat="Gift Sets" class="px-4 py-2 rounded-xl bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 text-xs font-bold transition-colors">Gift Sets (3)</button><button type="button" data-v2-cat="Novelty &amp; Fidgets" class="px-4 py-2 rounded-xl bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 text-xs font-bold transition-colors">Novelty &amp; Fidgets (1)</button>
+      <button type="button" data-v2-cat="ALL" class="px-4 py-2.5 rounded-xl bg-slate-900 text-white text-xs font-bold transition-colors">All New SKUs (122)</button><button type="button" data-v2-cat="Crunchy Block TPR" class="px-4 py-2.5 rounded-xl bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 text-xs font-bold transition-colors">Crunchy Block TPR (56)</button><button type="button" data-v2-cat="Crystal Clear Gel" class="px-4 py-2.5 rounded-xl bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 text-xs font-bold transition-colors">Crystal Clear Gel (28)</button><button type="button" data-v2-cat="Flour Dough &amp; Jumbo" class="px-4 py-2.5 rounded-xl bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 text-xs font-bold transition-colors">Flour Dough &amp; Jumbo (20)</button><button type="button" data-v2-cat="Slushie &amp; Ice-Crush" class="px-4 py-2.5 rounded-xl bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 text-xs font-bold transition-colors">Slushie &amp; Ice-Crush (11)</button><button type="button" data-v2-cat="Fidget Keyboards" class="px-4 py-2.5 rounded-xl bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 text-xs font-bold transition-colors">Fidget Keyboards (3)</button><button type="button" data-v2-cat="Gift Sets" class="px-4 py-2.5 rounded-xl bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 text-xs font-bold transition-colors">Gift Sets (3)</button><button type="button" data-v2-cat="Novelty &amp; Fidgets" class="px-4 py-2.5 rounded-xl bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 text-xs font-bold transition-colors">Novelty &amp; Fidgets (1)</button>
     </div>
 
     <div class="flex items-center justify-between text-xs font-semibold text-slate-500 mb-4">
@@ -1091,7 +1069,7 @@
       </div>
       <form class="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 gap-3">
         <input type="hidden" name="request_type" value="2026 Wholesale Catalog PDF &amp; FOB Price Sheet" />
-        <input type="email" name="email" required placeholder="Work Email *" class="sm:col-span-2 w-full px-4 py-2.5 rounded-xl bg-slate-800 border border-slate-700 text-white placeholder-slate-400 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        <input type="email" name="email" required placeholder="Work Email *" class="sm:col-span-2 w-full px-4 py-2.5 rounded-xl bg-slate-800 border border-slate-700 text-white placeholder-slate-400 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" autocomplete="email" />
         <select name="buyer_channel" class="w-full px-3 py-2.5 rounded-xl bg-slate-800 border border-slate-700 text-slate-200 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500">
           <option value="Amazon FBA / TikTok Shop">Amazon FBA / TikTok</option>
           <option value="Toy Wholesaler / Importer">Wholesaler / Importer</option>
@@ -1145,7 +1123,7 @@
         '<div class="relative aspect-square bg-slate-100 overflow-hidden">' +
           '<img src="' + esc(s.img) + '" alt="' + esc(s.name) + ' wholesale" width="800" height="800" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />' +
           '<span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-full bg-slate-900/85 text-white text-xs font-bold tracking-wide">' + esc(s.id) + '</span>' +
-          '<span class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded-full bg-emerald-600/95 text-white text-xs font-bold">CPC</span>' +
+          '<span class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded-full bg-emerald-700/95 text-white text-xs font-bold">CPC</span>' +
         '</div>' +
         '<div class="p-4 flex-1 flex flex-col">' +
           '<div class="text-xs font-bold text-blue-600 uppercase tracking-wide">' + esc(s.cat) + '</div>' +
@@ -1172,9 +1150,9 @@
       activeCat = btn.getAttribute("data-v2-cat");
       visibleLimit = 24;
       filterBtns.forEach(function(b){
-        b.className = "px-4 py-2 rounded-xl bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 text-xs font-bold transition-colors";
+        b.className = "px-4 py-2.5 rounded-xl bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 text-xs font-bold transition-colors";
       });
-      btn.className = "px-4 py-2 rounded-xl bg-slate-900 text-white text-xs font-bold transition-colors";
+      btn.className = "px-4 py-2.5 rounded-xl bg-slate-900 text-white text-xs font-bold transition-colors";
       render();
     });
   });
@@ -1205,18 +1183,17 @@
 <section class="w-full bg-white py-16 border-b border-slate-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="mb-8">
-        <span class="text-xs font-bold uppercase tracking-widest text-blue-600">2026 Export Spec Matrix</span>
-        <h2 class="mt-2 text-2xl sm:text-3xl font-extrabold text-slate-900">All 8 Collections: MOQ, Carton Specs, Unit Weight &amp; OEM Thresholds</h2>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">All 8 Collections: MOQ, Carton Specs, Unit Weight &amp; OEM Thresholds</h2>
       </div>
       <div class="overflow-x-auto rounded-2xl border border-slate-200 shadow-sm">
         <table class="w-full text-left border-collapse text-sm">
           <thead>
             <tr class="bg-slate-900 text-white">
-              <th class="py-3.5 px-4 font-semibold">Collection Line</th>
-              <th class="py-3.5 px-4 font-semibold">Stock MOQ</th>
-              <th class="py-3.5 px-4 font-semibold">Packing / Carton</th>
-              <th class="py-3.5 px-4 font-semibold">Light OEM MOQ</th>
-              <th class="py-3.5 px-4 font-semibold">Lead Time</th>
+              <th scope="col" class="py-3.5 px-4 font-semibold">Collection Line</th>
+              <th scope="col" class="py-3.5 px-4 font-semibold">Stock MOQ</th>
+              <th scope="col" class="py-3.5 px-4 font-semibold">Packing / Carton</th>
+              <th scope="col" class="py-3.5 px-4 font-semibold">Light OEM MOQ</th>
+              <th scope="col" class="py-3.5 px-4 font-semibold">Lead Time</th>
             </tr>
           </thead>
           <tbody class="divide-y divide-slate-200">
@@ -1249,7 +1226,7 @@
         </div>
         <div class="p-7 rounded-2xl bg-white border border-slate-200 flex flex-col justify-between">
           <div>
-            <span class="text-xs font-extrabold uppercase text-emerald-600">Engine 02 &middot; US Search Leaders</span>
+            <span class="text-xs font-extrabold uppercase text-emerald-700">Engine 02 &middot; US Search Leaders</span>
             <h3 class="mt-2 text-xl font-bold text-slate-900">Dumpling, Cheese &amp; Strawberry</h3>
             <p class="mt-2 text-sm text-slate-600 leading-relaxed">Backed by 900,000+ combined monthly US searches. Ideal anchor SKUs for Amazon FBA 4-pack and 6-pack gift bundles.</p>
           </div>
@@ -1270,7 +1247,7 @@
   <!-- M07: H3-A Mid-Page Lead Capture Bar (bg-white | Low) -->
   <section class="w-full bg-white py-10 border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="rounded-2xl bg-slate-50 border border-slate-200 border-l-4 border-l-blue-600 p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+      <div class="rounded-2xl bg-slate-50 border border-slate-200 p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
         <div>
           <h2 class="text-xl font-extrabold text-slate-900">Need the Complete 2026 Carton CBM &amp; Tiered FOB Price Excel Sheet?</h2>
           <p class="mt-1 text-sm text-slate-600">Includes all 28 stock SKUs, plain vs. emoji pricing, gross weights (16&ndash;28 kg), and DDP air/ocean freight estimates.</p>
@@ -1284,8 +1261,7 @@
   <section class="w-full bg-slate-50 py-16 border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-aivb-type="tabs">
       <div class="mb-8">
-        <span class="text-xs font-bold uppercase tracking-widest text-blue-600">Curated Channel Assortments</span>
-        <h2 class="mt-2 text-2xl sm:text-3xl font-extrabold text-slate-900">Recommended Wholesale Mix by Buyer Business Model</h2>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Recommended Wholesale Mix by Buyer Business Model</h2>
       </div>
       <div role="tablist" class="flex flex-wrap gap-2 mb-6">
         <button type="button" role="tab" aria-selected="true" aria-controls="mix-fba" class="px-5 py-2.5 text-xs font-bold rounded-full border border-blue-600 bg-blue-600 text-white cursor-pointer">Amazon FBA &amp; TikTok</button>
@@ -1320,8 +1296,7 @@
   <section class="w-full bg-white py-16 border-b border-slate-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-2xl mx-auto mb-10">
-        <span class="text-xs font-bold uppercase tracking-widest text-blue-600">Scalable Order Tiers</span>
-        <h2 class="mt-2 text-2xl sm:text-3xl font-extrabold text-slate-900">Start Lean With 1 Carton &mdash; Scale to Full Container OEM</h2>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Start Lean With 1 Carton &mdash; Scale to Full Container OEM</h2>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div class="p-7 rounded-2xl bg-slate-50 border border-slate-200">
@@ -1329,9 +1304,9 @@
           <h3 class="mt-2 text-xl font-extrabold text-slate-900">1&ndash;3 Stock Cartons</h3>
           <div class="mt-1 text-xs font-bold text-blue-600">144 &ndash; 432 pcs Total</div>
           <ul class="mt-4 space-y-2 text-xs text-slate-600">
-            <li><i class="fa-solid fa-check text-emerald-600 mr-2"></i>Pick any of 25+ stock block molds</li>
-            <li><i class="fa-solid fa-check text-emerald-600 mr-2"></i>Plain or Emoji face editions</li>
-            <li><i class="fa-solid fa-check text-emerald-600 mr-2"></i>DDP Air Express (7&ndash;10 days)</li>
+            <li><i class="fa-solid fa-check text-emerald-700 mr-2"></i>Pick any of 25+ stock block molds</li>
+            <li><i class="fa-solid fa-check text-emerald-700 mr-2"></i>Plain or Emoji face editions</li>
+            <li><i class="fa-solid fa-check text-emerald-700 mr-2"></i>DDP Air Express (7&ndash;10 days)</li>
           </ul>
         </div>
         <div class="p-7 rounded-2xl bg-slate-900 text-white border-2 border-blue-600 shadow-xl">
@@ -1349,9 +1324,9 @@
           <h3 class="mt-2 text-xl font-extrabold text-slate-900">FCL &amp; Custom 3D Mold</h3>
           <div class="mt-1 text-xs font-bold text-blue-600">3,000+ pcs / Full Container</div>
           <ul class="mt-4 space-y-2 text-xs text-slate-600">
-            <li><i class="fa-solid fa-check text-emerald-600 mr-2"></i>Exclusive 3D character mold under NDA</li>
-            <li><i class="fa-solid fa-check text-emerald-600 mr-2"></i>Mix all 5 squishy lines in 1 container</li>
-            <li><i class="fa-solid fa-check text-emerald-600 mr-2"></i>FOB Ningbo / Shanghai &amp; SGS QC</li>
+            <li><i class="fa-solid fa-check text-emerald-700 mr-2"></i>Exclusive 3D character mold under NDA</li>
+            <li><i class="fa-solid fa-check text-emerald-700 mr-2"></i>Mix all 5 squishy lines in 1 container</li>
+            <li><i class="fa-solid fa-check text-emerald-700 mr-2"></i>FOB Ningbo / Shanghai &amp; SGS QC</li>
           </ul>
         </div>
       </div>
@@ -1391,8 +1366,7 @@
         <img src="/assets/images/cake-roll-block-squishy.webp" alt="Custom squishy packaging and Amazon FBA labeling" class="w-full aspect-[4/3] object-cover rounded-2xl border border-slate-200 shadow-md" / width="1200" height="900" loading="lazy" decoding="async" />
       </div>
       <div class="lg:col-span-7">
-        <span class="text-xs font-bold uppercase tracking-widest text-emerald-600">Value-Add Packaging &amp; Prep</span>
-        <h2 class="mt-2 text-2xl sm:text-3xl font-extrabold text-slate-900">Turn Bulk Cartons Into Retail-Ready Private-Label SKUs</h2>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Turn Bulk Cartons Into Retail-Ready Private-Label SKUs</h2>
         <p class="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
           Upgrade any wholesale squishy order with custom printed matte OPP bags, 12/24-pc PDQ countertop display trays, PET window gift boxes, blind foil pouches, and factory-applied Amazon FNSKU &amp; compliance tracking labels.
         </p>
@@ -1409,9 +1383,9 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-8">Export Documentation &amp; Spec Files Included With Every Quote</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200"><i class="fa-solid fa-file-excel text-emerald-600 text-xl mb-3"></i><h3 class="text-sm font-bold text-slate-900">28-SKU Stock Price Sheet</h3><p class="mt-1.5 text-xs text-slate-600">Plain &amp; emoji tiered pricing, carton counts, and gross weights.</p></div>
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200"><i class="fa-solid fa-file-excel text-emerald-700 text-xl mb-3"></i><h3 class="text-sm font-bold text-slate-900">28-SKU Stock Price Sheet</h3><p class="mt-1.5 text-xs text-slate-600">Plain &amp; emoji tiered pricing, carton counts, and gross weights.</p></div>
         <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200"><i class="fa-solid fa-flask text-blue-600 text-xl mb-3"></i><h3 class="text-sm font-bold text-slate-900">5-Material Comparison Card</h3><p class="mt-1.5 text-xs text-slate-600">Rebound specs, anti-dust finish, and shelf-life guidance.</p></div>
-        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200"><i class="fa-solid fa-shield-halved text-emerald-600 text-xl mb-3"></i><h3 class="text-sm font-bold text-slate-900">Safety Compliance Summary</h3><p class="mt-1.5 text-xs text-slate-600">100% bead-free statement + ASTM F963-23 / CPSIA / EN71 scope.</p></div>
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200"><i class="fa-solid fa-shield-halved text-emerald-700 text-xl mb-3"></i><h3 class="text-sm font-bold text-slate-900">Safety Compliance Summary</h3><p class="mt-1.5 text-xs text-slate-600">100% bead-free statement + ASTM F963-23 / CPSIA / EN71 scope.</p></div>
         <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200"><i class="fa-solid fa-ship text-slate-900 text-xl mb-3"></i><h3 class="text-sm font-bold text-slate-900">Carton CBM &amp; Freight Sheet</h3><p class="mt-1.5 text-xs text-slate-600">Exact master box dimensions for 20GP/40HQ &amp; DDP air planning.</p></div>
       </div>
     </div>
@@ -1422,8 +1396,7 @@
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3 mb-8">
         <div>
-          <span class="text-xs font-bold uppercase tracking-widest text-emerald-600">Buyer FAQ &amp; Direct Answers</span>
-          <h2 class="mt-2 text-2xl sm:text-3xl font-extrabold text-slate-900">10 Frequently Asked Bulk Ordering Questions</h2>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">10 Frequently Asked Bulk Ordering Questions</h2>
         </div>
         <span class="text-xs font-semibold text-slate-500"><i class="fa-regular fa-calendar-check text-blue-600 mr-1"></i>Last reviewed: November 2026 &middot; XEA Jinhua Factory</span>
       </div>
@@ -1506,8 +1479,7 @@
   <section class="w-full bg-white py-16">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="rounded-2xl bg-slate-900 text-white p-8 md:p-12 text-center shadow-xl">
-        <span class="text-xs font-bold uppercase tracking-widest text-blue-400">Direct Jinhua Factory Desk</span>
-        <h2 class="mt-2 text-2xl sm:text-3xl font-extrabold text-white">Ready to Mix Cartons or Launch Your Private-Label Squishy Line?</h2>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Ready to Mix Cartons or Launch Your Private-Label Squishy Line?</h2>
         <p class="mt-3 text-sm sm:text-base text-slate-300 max-w-2xl mx-auto">Tell us your target SKUs, quantities, and destination country&mdash;get our 2026 digital catalog and FOB/DDP quotation within 24 hours.</p>
         <div class="mt-7 flex flex-wrap justify-center gap-4">
           <a href="/contact-us/" class="px-8 py-4 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm shadow-lg !no-underline">Request Full Wholesale Quote &rarr;</a>
@@ -1521,12 +1493,11 @@
   <section class="w-full bg-white py-14 border-t border-slate-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="mb-6">
-        <span class="text-xs font-bold uppercase tracking-widest text-blue-600">Verified 2026 Export Specifications</span>
-        <h2 class="mt-2 text-2xl sm:text-3xl font-extrabold text-slate-900">XEA 5-Line Wholesale Squishy Sourcing Comparison (2026 Export Specs)</h2>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">XEA 5-Line Wholesale Squishy Sourcing Comparison (2026 Export Specs)</h2>
       </div>
       <div class="overflow-x-auto rounded-2xl border border-slate-200 shadow-sm">
         <table class="w-full text-left border-collapse text-sm">
-          <thead><tr class="bg-slate-900 text-white"><th class="py-3.5 px-4 font-semibold">Product Line</th><th class="py-3.5 px-4 font-semibold">Core Material</th><th class="py-3.5 px-4 font-semibold">Stock / OEM MOQ</th><th class="py-3.5 px-4 font-semibold">Primary Target Channel</th></tr></thead>
+          <thead><tr class="bg-slate-900 text-white"><th scope="col" class="py-3.5 px-4 font-semibold">Product Line</th><th scope="col" class="py-3.5 px-4 font-semibold">Core Material</th><th scope="col" class="py-3.5 px-4 font-semibold">Stock / OEM MOQ</th><th scope="col" class="py-3.5 px-4 font-semibold">Primary Target Channel</th></tr></thead>
           <tbody class="divide-y divide-slate-200"><tr class="bg-white"><td class="py-3.5 px-4 font-bold text-slate-900">Crunchy Building Block TPR</td><td class="py-3.5 px-4 ">TPR Shell + Bead-Free Block Core</td><td class="py-3.5 px-4 ">144 pcs (1 Ctn) / 500 OEM</td><td class="py-3.5 px-4 ">Amazon FBA, TikTok Shop, Toy Importers</td></tr><tr class="bg-slate-50"><td class="py-3.5 px-4 font-bold text-slate-900">Taba &amp; Platinum Silicone</td><td class="py-3.5 px-4 ">Food-Grade Platinum Silicone</td><td class="py-3.5 px-4 ">500 pcs / 3,000 Custom Mold</td><td class="py-3.5 px-4 ">TikTok Viral, Specialty Gift Retail</td></tr><tr class="bg-white"><td class="py-3.5 px-4 font-bold text-slate-900">Slow-Rising PU &amp; Maltose Gel</td><td class="py-3.5 px-4 ">PU Memory Foam / Maltose Gel</td><td class="py-3.5 px-4 ">500 pcs (Logo) / 3,000 Mold</td><td class="py-3.5 px-4 ">Promo Stress Balls, Sensory &amp; Therapy</td></tr><tr class="bg-slate-50"><td class="py-3.5 px-4 font-bold text-slate-900">Mochi Mini TPR Squishies</td><td class="py-3.5 px-4 ">Soft Mini TPR (200+ Molds)</td><td class="py-3.5 px-4 ">1,000 pcs / Pack Assortments</td><td class="py-3.5 px-4 ">Claw Machines, Party Favors, Easter/Xmas</td></tr><tr class="bg-white"><td class="py-3.5 px-4 font-bold text-slate-900">Novelty &amp; Thermochromic</td><td class="py-3.5 px-4 ">Color-Changing / ASMR TPR</td><td class="py-3.5 px-4 ">144&ndash;192 pcs (1 Ctn)</td><td class="py-3.5 px-4 ">High-Margin Gift Shops &amp; Viral Bundles</td></tr></tbody>
         </table>
       </div>
@@ -1538,8 +1509,7 @@
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3 mb-8">
         <div>
-          <span class="text-xs font-bold uppercase tracking-widest text-emerald-600">Buyer FAQ &amp; Direct Answers</span>
-          <h2 class="mt-2 text-2xl sm:text-3xl font-extrabold text-slate-900">Frequently Asked Wholesale Questions</h2>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Frequently Asked Wholesale Questions</h2>
         </div>
         <span class="text-xs font-semibold text-slate-500"><i class="fa-regular fa-calendar-check text-blue-600 mr-1"></i>Last reviewed: November 2026 &middot; XEA Jinhua Factory</span>
       </div>
@@ -1651,42 +1621,42 @@
     <!-- Col 2: Products by Material & Theme -->
     <div class="lg:col-span-3">
       <div class="text-xs font-extrabold uppercase tracking-wider text-white mb-4">Product Collections</div>
-      <ul class="space-y-2 text-xs">
-        <li><a href="/products/crunchy-building-block-squishies/" class="hover:text-white !no-underline">Crunchy Building Block TPR</a></li>
-        <li><a href="/products/taba-silicone-squishies/" class="hover:text-white !no-underline">Taba &amp; Platinum Silicone</a></li>
-        <li><a href="/products/food-bakery-squishies/" class="hover:text-white !no-underline">Food &amp; Bakery Squishies</a></li>
-        <li><a href="/products/fruit-squishies/" class="hover:text-white !no-underline">Orchard &amp; Tropical Fruit</a></li>
-        <li><a href="/products/animal-kawaii-squishies/" class="hover:text-white !no-underline">Animal &amp; Kawaii Squishies</a></li>
-        <li><a href="/products/slow-rising-stress-balls/" class="hover:text-white !no-underline">Slow-Rising PU &amp; Gel Balls</a></li>
-        <li><a href="/products/mochi-mini-squishies/" class="hover:text-white !no-underline">Mochi Mini TPR Bulk</a></li>
-        <li><a href="/products/novelty-squishies/" class="hover:text-white !no-underline">Novelty &amp; Color-Changing</a></li>
+      <ul class="space-y-1.5 text-xs">
+        <li><a href="/products/crunchy-building-block-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Crunchy Building Block TPR</a></li>
+        <li><a href="/products/taba-silicone-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Taba &amp; Platinum Silicone</a></li>
+        <li><a href="/products/food-bakery-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Food &amp; Bakery Squishies</a></li>
+        <li><a href="/products/fruit-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Orchard &amp; Tropical Fruit</a></li>
+        <li><a href="/products/animal-kawaii-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Animal &amp; Kawaii Squishies</a></li>
+        <li><a href="/products/slow-rising-stress-balls/" class="inline-block py-0.5 hover:text-white !no-underline">Slow-Rising PU &amp; Gel Balls</a></li>
+        <li><a href="/products/mochi-mini-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Mochi Mini TPR Bulk</a></li>
+        <li><a href="/products/novelty-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Novelty &amp; Color-Changing</a></li>
       </ul>
     </div>
 
     <!-- Col 3: OEM & Buyer Solutions -->
     <div class="lg:col-span-3">
       <div class="text-xs font-extrabold uppercase tracking-wider text-white mb-4">OEM &amp; Buyer Solutions</div>
-      <ul class="space-y-2 text-xs">
-        <li><a href="/oem-odm/" class="hover:text-white !no-underline">OEM &amp; ODM Custom Molding</a></li>
-        <li><a href="/custom-packaging/" class="hover:text-white !no-underline">Custom Packaging &amp; Logo</a></li>
-        <li><a href="/ecommerce-fba/" class="hover:text-white !no-underline">Amazon FBA &amp; TikTok Shop</a></li>
-        <li><a href="/claw-machine-party-favors/" class="hover:text-white !no-underline">Claw Machine, Party &amp; Promo</a></li>
-        <li><a href="/solutions/" class="hover:text-white !no-underline">All B2B Buyer Solutions</a></li>
-        <li><a href="/products/" class="hover:text-white !no-underline">Full 150-SKU Catalog Hub</a></li>
+      <ul class="space-y-1.5 text-xs">
+        <li><a href="/oem-odm/" class="inline-block py-0.5 hover:text-white !no-underline">OEM &amp; ODM Custom Molding</a></li>
+        <li><a href="/custom-packaging/" class="inline-block py-0.5 hover:text-white !no-underline">Custom Packaging &amp; Logo</a></li>
+        <li><a href="/ecommerce-fba/" class="inline-block py-0.5 hover:text-white !no-underline">Amazon FBA &amp; TikTok Shop</a></li>
+        <li><a href="/claw-machine-party-favors/" class="inline-block py-0.5 hover:text-white !no-underline">Claw Machine, Party &amp; Promo</a></li>
+        <li><a href="/solutions/" class="inline-block py-0.5 hover:text-white !no-underline">All B2B Buyer Solutions</a></li>
+        <li><a href="/products/" class="inline-block py-0.5 hover:text-white !no-underline">Full 150-SKU Catalog Hub</a></li>
       </ul>
     </div>
 
     <!-- Col 4: Factory & Legal -->
     <div class="lg:col-span-2">
       <div class="text-xs font-extrabold uppercase tracking-wider text-white mb-4">Company</div>
-      <ul class="space-y-2 text-xs">
-        <li><a href="/factory-quality/" class="hover:text-white !no-underline">Factory &amp; QA Lab</a></li>
-        <li><a href="/faq/" class="hover:text-white !no-underline">Procurement &amp; CPSC FAQ</a></li>
-        <li><a href="/blog/" class="hover:text-white !no-underline">Sourcing Blog &amp; Guides</a></li>
-        <li><a href="/about-us/" class="hover:text-white !no-underline">About XEAtoy</a></li>
-        <li><a href="/contact-us/" class="hover:text-white !no-underline font-bold text-blue-400">Contact &amp; RFQ</a></li>
-        <li><a href="/privacy-policy/" class="hover:text-white !no-underline">Privacy Policy</a></li>
-        <li><a href="/terms-of-service/" class="hover:text-white !no-underline">Terms of Service</a></li>
+      <ul class="space-y-1.5 text-xs">
+        <li><a href="/factory-quality/" class="inline-block py-0.5 hover:text-white !no-underline">Factory &amp; QA Lab</a></li>
+        <li><a href="/faq/" class="inline-block py-0.5 hover:text-white !no-underline">Procurement &amp; CPSC FAQ</a></li>
+        <li><a href="/blog/" class="inline-block py-0.5 hover:text-white !no-underline">Sourcing Blog &amp; Guides</a></li>
+        <li><a href="/about-us/" class="inline-block py-0.5 hover:text-white !no-underline">About XEAtoy</a></li>
+        <li><a href="/contact-us/" class="inline-block py-0.5 hover:text-white !no-underline font-bold text-blue-400">Contact &amp; RFQ</a></li>
+        <li><a href="/privacy-policy/" class="inline-block py-0.5 hover:text-white !no-underline">Privacy Policy</a></li>
+        <li><a href="/terms-of-service/" class="inline-block py-0.5 hover:text-white !no-underline">Terms of Service</a></li>
       </ul>
     </div>
   </div>

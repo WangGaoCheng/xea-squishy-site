@@ -11,8 +11,9 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://xeatoy.com/solutions/" />
   <meta property="og:image" content="https://xeatoy.com/assets/images/cheese-block-squishy.webp" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="/assets/css/main.css?v=20261128" />
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /></noscript>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How does XEA adapt MOQ and logistics for different B2B buyer models?", "acceptedAnswer": {"@type": "Answer", "text": "Operating directly in Jinhua, Zhejiang, XEA bridges low-MOQ e-commerce testing (144 pcs/ctn stock) and full container OEM/ODM manufacturing (3,000+ pcs custom molds) under one roof."}}, {"@type": "Question", "name": "Can XEA support multi-SKU container consolidation?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Importers can combine crunchy block TPR, platinum taba silicone, slow-rising PU foam, maltose gel stress balls, and mini mochi packs in a single FOB Ningbo/Shanghai shipment."}}, {"@type": "Question", "name": "Are all XEA wholesale solutions compliant with US and EU toy laws?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Every line is 100% water-bead-free and manufactured to meet ASTM F963-23, CPSIA, CPC, EN71 Parts 1\u20133, and CE compliance."}}, {"@type": "Question", "name": "How do I get matched with the right sourcing plan?", "acceptedAnswer": {"@type": "Answer", "text": "Submit your sales channel, target SKU categories, and estimated volume on our Contact & RFQ page to receive a tailored catalog and landed cost breakdown within 24 hours."}}]}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,36 +28,30 @@
       --xea-muted: #64748b;
       --xea-primary: #2563eb;
       --xea-primary-hover: #1d4ed8;
-      --xea-accent: #d97706;
-      --xea-success: #059669;
+      --xea-accent: #92400e;
+      --xea-success: #047857;
       --xea-border: #e2e8f0;
       --xea-radius-card: 1rem;
       --xea-font-sans: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       --xea-font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
     }
-    html { scroll-behavior: smooth; }
+    html { color-scheme: light; scroll-behavior: smooth; }
     header.xea-site-header { border-bottom: 1px solid var(--xea-border); }
-    @layer base {
-      body {
-        font-family: var(--xea-font-sans);
-        font-size: 16px;
-        line-height: 1.6;
-        color: var(--xea-body);
-        background-color: var(--xea-surface);
-      }
-      h1 { font-size: 40px; line-height: 1.15; font-weight: 800; letter-spacing: -0.025em; }
-      h2 { font-size: 28px; line-height: 1.25; font-weight: 800; letter-spacing: -0.02em; }
-      h3 { font-size: 20px; line-height: 1.35; font-weight: 700; }
-      h4 { font-size: 16px; line-height: 1.4; font-weight: 700; }
-    }
     table, .font-mono, .tabular-nums { font-variant-numeric: tabular-nums; }
+    main p, main li, main details > p, main blockquote { max-width: 50ch; text-wrap: pretty; }
+    main .text-center > p, main p.text-center { margin-inline: auto; }
+    h1, h2, h3, h4 { text-wrap: balance; }
+    input::placeholder, textarea::placeholder { color: #64748b; opacity: 1; }
+    .bg-slate-900 input::placeholder, .bg-slate-900 textarea::placeholder,
+    .bg-slate-950 input::placeholder, .bg-slate-950 textarea::placeholder,
+    .bg-slate-800 input::placeholder, .bg-slate-800 textarea::placeholder { color: #cbd5e1; opacity: 1; }
     ::selection { background-color: #dbeafe; color: #1e3a8a; }
     :focus-visible { outline: 2px solid var(--xea-primary); outline-offset: 2px; }
     @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
       *, *::before, *::after {
-        animation-duration: 0.01ms !important;
+        animation-name: none !important;
         animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
       }
     }
@@ -141,7 +136,7 @@
 
               <!-- Col 2: By Shape / Theme -->
               <div class="col-span-4">
-                <div class="text-xs font-extrabold uppercase tracking-wider text-emerald-600 mb-3"><i class="fa-solid fa-shapes mr-1.5"></i>By Shape &amp; Theme</div>
+                <div class="text-xs font-extrabold uppercase tracking-wider text-emerald-700 mb-3"><i class="fa-solid fa-shapes mr-1.5"></i>By Shape &amp; Theme</div>
                 <ul class="space-y-2">
                   <li>
                     <a href="/products/food-bakery-squishies/" class="block p-2 rounded-xl hover:bg-slate-50 !no-underline">
@@ -214,7 +209,7 @@
                 <div class="text-xs text-slate-500 mt-0.5">NDA tooling from 3,000 pcs</div>
               </a>
               <a href="/custom-packaging/" class="block p-3 rounded-xl hover:bg-slate-50 !no-underline">
-                <div class="text-sm font-bold text-slate-900"><i class="fa-solid fa-box-open text-emerald-600 mr-2"></i>Custom Packaging &amp; Logo</div>
+                <div class="text-sm font-bold text-slate-900"><i class="fa-solid fa-box-open text-emerald-700 mr-2"></i>Custom Packaging &amp; Logo</div>
                 <div class="text-xs text-slate-500 mt-0.5">PDQ trays, window boxes &amp; FNSKU (500 pcs)</div>
               </a>
               <hr class="my-1 border-slate-100" />
@@ -238,7 +233,7 @@
                 <div class="text-xs text-slate-500 mt-0.5">1-carton test MOQ, CPC &amp; DDP shipping</div>
               </a>
               <a href="/claw-machine-party-favors/" class="block p-3 rounded-xl hover:bg-slate-50 !no-underline">
-                <div class="text-sm font-bold text-slate-900"><i class="fa-solid fa-trophy text-emerald-600 mr-2"></i>Claw Machine, Party &amp; Promo</div>
+                <div class="text-sm font-bold text-slate-900"><i class="fa-solid fa-trophy text-emerald-700 mr-2"></i>Claw Machine, Party &amp; Promo</div>
                 <div class="text-xs text-slate-500 mt-0.5">High-volume prizes &amp; logo stress balls</div>
               </a>
               <hr class="my-1 border-slate-100" />
@@ -300,10 +295,7 @@
   <!-- M01: Solutions Overview Hero (bg-slate-900) -->
   <section class="w-full bg-slate-900 text-white py-16 md:py-22 border-b border-slate-800">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-600/20 border border-blue-500/40 text-blue-300 text-xs font-bold uppercase tracking-wider">
-        <i class="fa-solid fa-compass"></i> Tailored Sourcing Playbooks by Business Model
-      </span>
-      <h1 class="mt-4 text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-[1.15]">
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-[1.15]">
         B2B <span class="text-blue-400">Sensory &amp; Squishy Wholesale</span> Solutions
       </h1>
       <p class="mt-5 text-base md:text-lg text-slate-300 leading-relaxed max-w-3xl mx-auto">
@@ -316,26 +308,22 @@
   <section class="w-full bg-slate-50 py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-6">
       <a href="/ecommerce-fba/" class="group block p-8 rounded-2xl bg-white border border-slate-200 hover:border-blue-600 hover:shadow-lg transition-all !no-underline">
-        <span class="text-xs font-bold uppercase text-blue-600">Channel 01 &middot; E-Commerce</span>
-        <h2 class="mt-2 text-2xl font-extrabold text-slate-900 group-hover:text-blue-600">Amazon FBA &amp; TikTok Shop Sellers</h2>
+        <h2 class="text-2xl font-extrabold text-slate-900 group-hover:text-blue-600">Amazon FBA &amp; TikTok Shop Sellers</h2>
         <p class="mt-3 text-sm text-slate-600 leading-relaxed">1-carton (144 pcs) test orders, FNSKU labeling, CPC/ASTM F963-23 gating support, and DDP air/ocean shipping.</p>
         <span class="mt-5 inline-block text-sm font-bold text-blue-600">Explore FBA Solution &rarr;</span>
       </a>
       <a href="/claw-machine-party-favors/" class="group block p-8 rounded-2xl bg-white border border-slate-200 hover:border-blue-600 hover:shadow-lg transition-all !no-underline">
-        <span class="text-xs font-bold uppercase text-emerald-600">Channel 02 &middot; Volume &amp; Events</span>
-        <h2 class="mt-2 text-2xl font-extrabold text-slate-900 group-hover:text-blue-600">Claw Machines, Party Favors &amp; Promo</h2>
+        <h2 class="text-2xl font-extrabold text-slate-900 group-hover:text-blue-600">Claw Machines, Party Favors &amp; Promo</h2>
         <p class="mt-3 text-sm text-slate-600 leading-relaxed">High-volume prize assortments, capsule mochi packs, and logo-imprinted promotional stress balls for agencies.</p>
         <span class="mt-5 inline-block text-sm font-bold text-blue-600">Explore Volume Solution &rarr;</span>
       </a>
       <a href="/oem-odm/" class="group block p-8 rounded-2xl bg-white border border-slate-200 hover:border-blue-600 hover:shadow-lg transition-all !no-underline">
-        <span class="text-xs font-bold uppercase text-blue-600">Channel 03 &middot; Private Label</span>
-        <h2 class="mt-2 text-2xl font-extrabold text-slate-900 group-hover:text-blue-600">OEM / ODM Brands &amp; IP Licensing</h2>
+        <h2 class="text-2xl font-extrabold text-slate-900 group-hover:text-blue-600">OEM / ODM Brands &amp; IP Licensing</h2>
         <p class="mt-3 text-sm text-slate-600 leading-relaxed">Custom 3D character molds (3,000 pcs MOQ), Pantone color matching, scented formulas, and NDA mold protection.</p>
         <span class="mt-5 inline-block text-sm font-bold text-blue-600">Explore OEM/ODM Solution &rarr;</span>
       </a>
       <a href="/custom-packaging/" class="group block p-8 rounded-2xl bg-white border border-slate-200 hover:border-blue-600 hover:shadow-lg transition-all !no-underline">
-        <span class="text-xs font-bold uppercase text-slate-700">Channel 04 &middot; Brick &amp; Mortar</span>
-        <h2 class="mt-2 text-2xl font-extrabold text-slate-900 group-hover:text-blue-600">Toy Importers &amp; Retail Chains</h2>
+        <h2 class="text-2xl font-extrabold text-slate-900 group-hover:text-blue-600">Toy Importers &amp; Retail Chains</h2>
         <p class="mt-3 text-sm text-slate-600 leading-relaxed">PDQ display trays, blind boxes, window gift sets, and multi-SKU container consolidation out of Ningbo / Shanghai.</p>
         <span class="mt-5 inline-block text-sm font-bold text-blue-600">Explore Packaging Solution &rarr;</span>
       </a>
@@ -359,7 +347,7 @@
       <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-6">Channel-by-Channel Margin, Packaging &amp; Logistics Blueprint</h2>
       <div class="overflow-x-auto rounded-2xl border border-slate-200 shadow-sm">
         <table class="w-full text-left border-collapse text-sm">
-          <thead><tr class="bg-slate-900 text-white"><th class="py-3.5 px-4 font-semibold">Business Model</th><th class="py-3.5 px-4 font-semibold">Recommended Product Mix</th><th class="py-3.5 px-4 font-semibold">Optimal Packaging</th><th class="py-3.5 px-4 font-semibold">Best Shipping Mode</th></tr></thead>
+          <thead><tr class="bg-slate-900 text-white"><th scope="col" class="py-3.5 px-4 font-semibold">Business Model</th><th scope="col" class="py-3.5 px-4 font-semibold">Recommended Product Mix</th><th scope="col" class="py-3.5 px-4 font-semibold">Optimal Packaging</th><th scope="col" class="py-3.5 px-4 font-semibold">Best Shipping Mode</th></tr></thead>
           <tbody class="divide-y divide-slate-200"><tr class="bg-white"><td class="py-3.5 px-4 font-bold text-slate-900">Amazon FBA / TikTok Shop</td><td class="py-3.5 px-4 ">Crunchy Blocks + Taba + Color-Change</td><td class="py-3.5 px-4 ">4/6-Pack PET Window Box + FNSKU</td><td class="py-3.5 px-4 ">DDP Air (7&ndash;10d) / Fast Boat</td></tr><tr class="bg-slate-50"><td class="py-3.5 px-4 font-bold text-slate-900">Brick-and-Mortar Retail Chains</td><td class="py-3.5 px-4 ">Food, Fruit, Animal &amp; Taba Silicone</td><td class="py-3.5 px-4 ">12/24-Pc PDQ Display + Hang Card</td><td class="py-3.5 px-4 ">FOB Ningbo / 20GP-40HQ</td></tr><tr class="bg-white"><td class="py-3.5 px-4 font-bold text-slate-900">Claw Machines &amp; Party Supply</td><td class="py-3.5 px-4 ">144/192 Block Cartons + Mini Mochi</td><td class="py-3.5 px-4 ">Individual OPP / 50mm Capsules</td><td class="py-3.5 px-4 ">Ocean LCL / FCL Consolidation</td></tr><tr class="bg-slate-50"><td class="py-3.5 px-4 font-bold text-slate-900">Promotional &amp; Private-Label OEM</td><td class="py-3.5 px-4 ">Logo PU/Gel Stress Balls + 3D Molds</td><td class="py-3.5 px-4 ">Custom Printed Bag / Foil Blind Box</td><td class="py-3.5 px-4 ">Air Express / DDP Ocean</td></tr></tbody>
         </table>
       </div>
@@ -372,19 +360,19 @@
       <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-8">4 Multi-Channel Importer Headaches &mdash; Solved Under One Roof</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div class="p-6 rounded-2xl bg-amber-50/70 border border-amber-200">
-          <div class="text-xs font-extrabold uppercase text-amber-700 mb-2"><i class="fa-solid fa-triangle-exclamation mr-1.5"></i>Headache #1: Managing 4 Separate Factories</div>
+          <div class="text-xs font-extrabold uppercase text-amber-800 mb-2"><i class="fa-solid fa-triangle-exclamation mr-1.5"></i>Headache #1: Managing 4 Separate Factories</div>
           <p class="text-sm text-slate-700 leading-relaxed">Buying TPR blocks, silicone taba, PU foam, and mochi separately multiplies shipping &amp; QC costs.</p>
           <hr class="my-3 border-slate-200/80" /><div class="text-xs font-bold text-emerald-700"><i class="fa-solid fa-shield-halved mr-1.5"></i>XEA Shield: XEA consolidates all 5 squishy lines into one Jinhua export shipment.</div>
         </div>        <div class="p-6 rounded-2xl bg-amber-50/70 border border-amber-200">
-          <div class="text-xs font-extrabold uppercase text-amber-700 mb-2"><i class="fa-solid fa-triangle-exclamation mr-1.5"></i>Headache #2: Rigid One-Size-Fits-All MOQs</div>
+          <div class="text-xs font-extrabold uppercase text-amber-800 mb-2"><i class="fa-solid fa-triangle-exclamation mr-1.5"></i>Headache #2: Rigid One-Size-Fits-All MOQs</div>
           <p class="text-sm text-slate-700 leading-relaxed">Factories built only for mega-chains reject e-commerce sellers testing new SKUs.</p>
           <hr class="my-3 border-slate-200/80" /><div class="text-xs font-bold text-emerald-700"><i class="fa-solid fa-shield-halved mr-1.5"></i>XEA Shield: Scalable tiers from 1 stock carton (144 pcs) up to 40HQ custom molds.</div>
         </div>        <div class="p-6 rounded-2xl bg-amber-50/70 border border-amber-200">
-          <div class="text-xs font-extrabold uppercase text-amber-700 mb-2"><i class="fa-solid fa-triangle-exclamation mr-1.5"></i>Headache #3: Fragmented Compliance Paperwork</div>
+          <div class="text-xs font-extrabold uppercase text-amber-800 mb-2"><i class="fa-solid fa-triangle-exclamation mr-1.5"></i>Headache #3: Fragmented Compliance Paperwork</div>
           <p class="text-sm text-slate-700 leading-relaxed">Different workshops use inconsistent raw materials that fail US/EU lab checks.</p>
           <hr class="my-3 border-slate-200/80" /><div class="text-xs font-bold text-emerald-700"><i class="fa-solid fa-shield-halved mr-1.5"></i>XEA Shield: Unified 100% water-bead-free ASTM F963-23 / CPSIA / EN71 factory standards.</div>
         </div>        <div class="p-6 rounded-2xl bg-amber-50/70 border border-amber-200">
-          <div class="text-xs font-extrabold uppercase text-amber-700 mb-2"><i class="fa-solid fa-triangle-exclamation mr-1.5"></i>Headache #4: Slow English Communication</div>
+          <div class="text-xs font-extrabold uppercase text-amber-800 mb-2"><i class="fa-solid fa-triangle-exclamation mr-1.5"></i>Headache #4: Slow English Communication</div>
           <p class="text-sm text-slate-700 leading-relaxed">Misunderstood packaging dielines or FNSKU specs ruin delivery schedules.</p>
           <hr class="my-3 border-slate-200/80" /><div class="text-xs font-bold text-emerald-700"><i class="fa-solid fa-shield-halved mr-1.5"></i>XEA Shield: Dedicated English-speaking export specialists with 24-hour response SLA.</div>
         </div>
@@ -397,19 +385,19 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-8">4 Core Capabilities Powering Every XEA B2B Solution</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 border-t-4 border-t-blue-600">
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
           <span class="text-xs font-extrabold text-blue-600">CAPABILITY 01</span>
           <h3 class="mt-2 text-base font-bold text-slate-900">5-Material Manufacturing</h3>
           <p class="mt-2 text-xs text-slate-600 leading-relaxed">Full coverage across TPR, platinum silicone, PU foam, maltose gel, and mochi.</p>
-        </div>        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 border-t-4 border-t-blue-600">
+        </div>        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
           <span class="text-xs font-extrabold text-blue-600">CAPABILITY 02</span>
           <h3 class="mt-2 text-base font-bold text-slate-900">In-House Kitting &amp; Prep</h3>
           <p class="mt-2 text-xs text-slate-600 leading-relaxed">Custom gift sets, PDQ displays, pad printing, and Amazon FNSKU labeling.</p>
-        </div>        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 border-t-4 border-t-blue-600">
+        </div>        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
           <span class="text-xs font-extrabold text-blue-600">CAPABILITY 03</span>
           <h3 class="mt-2 text-base font-bold text-slate-900">AQL 2.5 Quality Lab</h3>
           <p class="mt-2 text-xs text-slate-600 leading-relaxed">Strict incoming resin, seam pull, print rub, and carton drop inspections.</p>
-        </div>        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 border-t-4 border-t-blue-600">
+        </div>        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
           <span class="text-xs font-extrabold text-blue-600">CAPABILITY 04</span>
           <h3 class="mt-2 text-base font-bold text-slate-900">Flexible Global Freight</h3>
           <p class="mt-2 text-xs text-slate-600 leading-relaxed">EXW Jinhua, FOB Ningbo/Shanghai, and door-to-door DDP worldwide.</p>
@@ -421,7 +409,7 @@
   <!-- TANK-SL-05: H3-A Mid-Page Lead Capture Bar (bg-slate-50 | Low) -->
   <section class="w-full bg-slate-50 py-10 border-t border-slate-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="rounded-2xl bg-white border border-slate-200 border-l-4 border-l-blue-600 p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+      <div class="rounded-2xl bg-white border border-slate-200 p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
         <div>
           <h2 class="text-xl font-extrabold text-slate-900">Not Sure Which Product Mix Fits Your Market Best?</h2>
           <p class="mt-1 text-sm text-slate-600">Tell us your sales channel and target budget&mdash;our export advisors will build a custom starter assortment within 24 hours.</p>
@@ -527,7 +515,7 @@
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="rounded-2xl bg-slate-50 border border-slate-200 p-8 grid grid-cols-1 md:grid-cols-3 gap-6">
         <div><span class="text-xs font-extrabold text-blue-600 uppercase">US &amp; Canada Ready</span><h3 class="mt-1 text-base font-bold text-slate-900">ASTM F963-23 + CPC</h3><p class="mt-1.5 text-xs text-slate-600">100% bead-free compliance engineered for North American retail &amp; Amazon.</p></div>
-        <div><span class="text-xs font-extrabold text-emerald-600 uppercase">EU &amp; UK Ready</span><h3 class="mt-1 text-base font-bold text-slate-900">EN71 Parts 1&ndash;3 + CE</h3><p class="mt-1.5 text-xs text-slate-600">Phthalate-free materials and pre-checked European packaging icons.</p></div>
+        <div><span class="text-xs font-extrabold text-emerald-700 uppercase">EU &amp; UK Ready</span><h3 class="mt-1 text-base font-bold text-slate-900">EN71 Parts 1&ndash;3 + CE</h3><p class="mt-1.5 text-xs text-slate-600">Phthalate-free materials and pre-checked European packaging icons.</p></div>
         <div><span class="text-xs font-extrabold text-slate-700 uppercase">Global Logistics</span><h3 class="mt-1 text-base font-bold text-slate-900">EXW / FOB / DDP</h3><p class="mt-1.5 text-xs text-slate-600">Seamless air express or ocean container shipping from Ningbo &amp; Shanghai.</p></div>
       </div>
     </div>
@@ -558,12 +546,11 @@
   <section class="w-full bg-white py-14 border-t border-slate-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="mb-6">
-        <span class="text-xs font-bold uppercase tracking-widest text-blue-600">Verified 2026 Export Specifications</span>
-        <h2 class="mt-2 text-2xl sm:text-3xl font-extrabold text-slate-900">XEA B2B Sourcing Playbook by Buyer Type (2026)</h2>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">XEA B2B Sourcing Playbook by Buyer Type (2026)</h2>
       </div>
       <div class="overflow-x-auto rounded-2xl border border-slate-200 shadow-sm">
         <table class="w-full text-left border-collapse text-sm">
-          <thead><tr class="bg-slate-900 text-white"><th class="py-3.5 px-4 font-semibold">Buyer Segment</th><th class="py-3.5 px-4 font-semibold">Recommended Starting MOQ</th><th class="py-3.5 px-4 font-semibold">Key Value-Add Services</th><th class="py-3.5 px-4 font-semibold">Lead Time</th></tr></thead>
+          <thead><tr class="bg-slate-900 text-white"><th scope="col" class="py-3.5 px-4 font-semibold">Buyer Segment</th><th scope="col" class="py-3.5 px-4 font-semibold">Recommended Starting MOQ</th><th scope="col" class="py-3.5 px-4 font-semibold">Key Value-Add Services</th><th scope="col" class="py-3.5 px-4 font-semibold">Lead Time</th></tr></thead>
           <tbody class="divide-y divide-slate-200"><tr class="bg-white"><td class="py-3.5 px-4 font-bold text-slate-900">Amazon FBA / TikTok Sellers</td><td class="py-3.5 px-4 ">144 pcs (1 Stock Carton)</td><td class="py-3.5 px-4 ">FNSKU, Multi-Pack Bundling, DDP Air/Sea</td><td class="py-3.5 px-4 ">3&ndash;5d Sample / 15&ndash;20d Bulk</td></tr><tr class="bg-slate-50"><td class="py-3.5 px-4 font-bold text-slate-900">Claw &amp; Party Distributors</td><td class="py-3.5 px-4 ">144&ndash;1,000 pcs Mixed</td><td class="py-3.5 px-4 ">Individual OPP Bags, Capsule / Loose Bulk</td><td class="py-3.5 px-4 ">15&ndash;25 Days</td></tr><tr class="bg-white"><td class="py-3.5 px-4 font-bold text-slate-900">OEM / Private-Label Brands</td><td class="py-3.5 px-4 ">500 (Logo) / 3,000 (3D Mold)</td><td class="py-3.5 px-4 ">NDA Tooling, Pantone Match, Custom Boxes</td><td class="py-3.5 px-4 ">25&ndash;35 Days (New Mold)</td></tr><tr class="bg-slate-50"><td class="py-3.5 px-4 font-bold text-slate-900">Retail Chains &amp; Importers</td><td class="py-3.5 px-4 ">Container / LCL Mixed</td><td class="py-3.5 px-4 ">PDQ Displays, AQL 2.5 QC, ASTM &amp; EN71</td><td class="py-3.5 px-4 ">20&ndash;30 Days FOB Ningbo</td></tr></tbody>
         </table>
       </div>
@@ -575,8 +562,7 @@
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3 mb-8">
         <div>
-          <span class="text-xs font-bold uppercase tracking-widest text-emerald-600">Buyer FAQ &amp; Direct Answers</span>
-          <h2 class="mt-2 text-2xl sm:text-3xl font-extrabold text-slate-900">Frequently Asked Wholesale Questions</h2>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Frequently Asked Wholesale Questions</h2>
         </div>
         <span class="text-xs font-semibold text-slate-500"><i class="fa-regular fa-calendar-check text-blue-600 mr-1"></i>Last reviewed: November 2026 &middot; XEA Jinhua Factory</span>
       </div>
@@ -651,42 +637,42 @@
     <!-- Col 2: Products by Material & Theme -->
     <div class="lg:col-span-3">
       <div class="text-xs font-extrabold uppercase tracking-wider text-white mb-4">Product Collections</div>
-      <ul class="space-y-2 text-xs">
-        <li><a href="/products/crunchy-building-block-squishies/" class="hover:text-white !no-underline">Crunchy Building Block TPR</a></li>
-        <li><a href="/products/taba-silicone-squishies/" class="hover:text-white !no-underline">Taba &amp; Platinum Silicone</a></li>
-        <li><a href="/products/food-bakery-squishies/" class="hover:text-white !no-underline">Food &amp; Bakery Squishies</a></li>
-        <li><a href="/products/fruit-squishies/" class="hover:text-white !no-underline">Orchard &amp; Tropical Fruit</a></li>
-        <li><a href="/products/animal-kawaii-squishies/" class="hover:text-white !no-underline">Animal &amp; Kawaii Squishies</a></li>
-        <li><a href="/products/slow-rising-stress-balls/" class="hover:text-white !no-underline">Slow-Rising PU &amp; Gel Balls</a></li>
-        <li><a href="/products/mochi-mini-squishies/" class="hover:text-white !no-underline">Mochi Mini TPR Bulk</a></li>
-        <li><a href="/products/novelty-squishies/" class="hover:text-white !no-underline">Novelty &amp; Color-Changing</a></li>
+      <ul class="space-y-1.5 text-xs">
+        <li><a href="/products/crunchy-building-block-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Crunchy Building Block TPR</a></li>
+        <li><a href="/products/taba-silicone-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Taba &amp; Platinum Silicone</a></li>
+        <li><a href="/products/food-bakery-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Food &amp; Bakery Squishies</a></li>
+        <li><a href="/products/fruit-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Orchard &amp; Tropical Fruit</a></li>
+        <li><a href="/products/animal-kawaii-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Animal &amp; Kawaii Squishies</a></li>
+        <li><a href="/products/slow-rising-stress-balls/" class="inline-block py-0.5 hover:text-white !no-underline">Slow-Rising PU &amp; Gel Balls</a></li>
+        <li><a href="/products/mochi-mini-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Mochi Mini TPR Bulk</a></li>
+        <li><a href="/products/novelty-squishies/" class="inline-block py-0.5 hover:text-white !no-underline">Novelty &amp; Color-Changing</a></li>
       </ul>
     </div>
 
     <!-- Col 3: OEM & Buyer Solutions -->
     <div class="lg:col-span-3">
       <div class="text-xs font-extrabold uppercase tracking-wider text-white mb-4">OEM &amp; Buyer Solutions</div>
-      <ul class="space-y-2 text-xs">
-        <li><a href="/oem-odm/" class="hover:text-white !no-underline">OEM &amp; ODM Custom Molding</a></li>
-        <li><a href="/custom-packaging/" class="hover:text-white !no-underline">Custom Packaging &amp; Logo</a></li>
-        <li><a href="/ecommerce-fba/" class="hover:text-white !no-underline">Amazon FBA &amp; TikTok Shop</a></li>
-        <li><a href="/claw-machine-party-favors/" class="hover:text-white !no-underline">Claw Machine, Party &amp; Promo</a></li>
-        <li><a href="/solutions/" class="hover:text-white !no-underline">All B2B Buyer Solutions</a></li>
-        <li><a href="/products/" class="hover:text-white !no-underline">Full 150-SKU Catalog Hub</a></li>
+      <ul class="space-y-1.5 text-xs">
+        <li><a href="/oem-odm/" class="inline-block py-0.5 hover:text-white !no-underline">OEM &amp; ODM Custom Molding</a></li>
+        <li><a href="/custom-packaging/" class="inline-block py-0.5 hover:text-white !no-underline">Custom Packaging &amp; Logo</a></li>
+        <li><a href="/ecommerce-fba/" class="inline-block py-0.5 hover:text-white !no-underline">Amazon FBA &amp; TikTok Shop</a></li>
+        <li><a href="/claw-machine-party-favors/" class="inline-block py-0.5 hover:text-white !no-underline">Claw Machine, Party &amp; Promo</a></li>
+        <li><a href="/solutions/" class="inline-block py-0.5 hover:text-white !no-underline">All B2B Buyer Solutions</a></li>
+        <li><a href="/products/" class="inline-block py-0.5 hover:text-white !no-underline">Full 150-SKU Catalog Hub</a></li>
       </ul>
     </div>
 
     <!-- Col 4: Factory & Legal -->
     <div class="lg:col-span-2">
       <div class="text-xs font-extrabold uppercase tracking-wider text-white mb-4">Company</div>
-      <ul class="space-y-2 text-xs">
-        <li><a href="/factory-quality/" class="hover:text-white !no-underline">Factory &amp; QA Lab</a></li>
-        <li><a href="/faq/" class="hover:text-white !no-underline">Procurement &amp; CPSC FAQ</a></li>
-        <li><a href="/blog/" class="hover:text-white !no-underline">Sourcing Blog &amp; Guides</a></li>
-        <li><a href="/about-us/" class="hover:text-white !no-underline">About XEAtoy</a></li>
-        <li><a href="/contact-us/" class="hover:text-white !no-underline font-bold text-blue-400">Contact &amp; RFQ</a></li>
-        <li><a href="/privacy-policy/" class="hover:text-white !no-underline">Privacy Policy</a></li>
-        <li><a href="/terms-of-service/" class="hover:text-white !no-underline">Terms of Service</a></li>
+      <ul class="space-y-1.5 text-xs">
+        <li><a href="/factory-quality/" class="inline-block py-0.5 hover:text-white !no-underline">Factory &amp; QA Lab</a></li>
+        <li><a href="/faq/" class="inline-block py-0.5 hover:text-white !no-underline">Procurement &amp; CPSC FAQ</a></li>
+        <li><a href="/blog/" class="inline-block py-0.5 hover:text-white !no-underline">Sourcing Blog &amp; Guides</a></li>
+        <li><a href="/about-us/" class="inline-block py-0.5 hover:text-white !no-underline">About XEAtoy</a></li>
+        <li><a href="/contact-us/" class="inline-block py-0.5 hover:text-white !no-underline font-bold text-blue-400">Contact &amp; RFQ</a></li>
+        <li><a href="/privacy-policy/" class="inline-block py-0.5 hover:text-white !no-underline">Privacy Policy</a></li>
+        <li><a href="/terms-of-service/" class="inline-block py-0.5 hover:text-white !no-underline">Terms of Service</a></li>
       </ul>
     </div>
   </div>
